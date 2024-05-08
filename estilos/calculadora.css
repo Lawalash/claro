@@ -1,0 +1,99 @@
+body {
+  background-color: #f8f9fa;
+  padding-top: 50px;
+}
+
+#h1comb{
+  text-align: center;
+  padding-bottom: 30px;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+#resultado {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.centerbox {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 3px;
+}
+
+
+#rentabilidadeCheckbox:checked + .centerbox {
+  color: green; 
+  font-weight: bold; 
+}
+#pontoAdicionalCheckbox:checked + .centerbox {
+  color: green;
+  font-weight: bold;
+}
+
+
+#boxCheckbox:checked + .centerbox {
+  color: green;
+  font-weight: bold;
+}
+
+/* Estilo para as opções dentro da caixa de seleção de ponto adicional */
+#pontoAdicional option {
+  background-color: #7cb6f0; /* Cor de fundo azul */
+  color: #fff; /* Cor do texto branco */
+}
+
+/* Estilo para as opções dentro da caixa de seleção de desconto */
+#desconto option {
+  background-color: #7cb6f0; /* Cor de fundo azul */
+  color: #fff; /* Cor do texto branco */
+}
+
+/* Estilo para as opções dentro da caixa de seleção de rentabilidade */
+#rentabilidade option {
+  background-color: #7cb6f0; /* Cor de fundo azul */
+  color: #fff; /* Cor do texto branco */
+}
+
+/* Estilos para o cabeçalho */
+header {
+  background-color: #f8f9fa; /* Cor de fundo cinza claro */
+  padding: 10px 0; /* Espaçamento interno */
+  text-align: center; /* Alinhamento do texto no centro */
+}
+
+.logo {
+  color: #000; /* Cor do texto preto */
+  font-size: 24px; /* Tamanho da fonte */
+  font-weight: bold; /* Negrito */
+  text-decoration: none; /* Remover sublinhado do link */
+}
+
+.header-menu ul {
+  list-style-type: none; /* Remover marcadores da lista */
+  padding: 0; /* Remover espaçamento interno da lista */
+}
+
+.header-menu li {
+  display: inline-block; /* Exibir os itens da lista em linha */
+  margin-right: 20px; /* Espaçamento entre os itens */
+}
+
+.header-menu li a {
+  color: #000; /* Cor do texto preto */
+  text-decoration: none; /* Remover sublinhado do link */
+}
+
+.header-menu li a:hover {
+  text-decoration: underline; /* Sublinhar o link ao passar o mouse */
+}

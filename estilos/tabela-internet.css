@@ -1,0 +1,515 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --cor0: white;
+    --cor1: black;
+    --cor2: #DA291C;
+    --cor3: #b32218;
+}
+
+
+img[src*="https://www.000webhost.com/static/default.000webhost.com/images/powered-by-000webhost.png"] {
+    display: none;
+  }
+  
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #b32218;
+    background: linear-gradient(rgba(22, 22, 22, 0.164), rgba(20, 20, 20, 0.212)), url(../imagens/internet.png);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+}
+
+header {
+    width: 100%;
+    height: 2vh;
+    padding-top: 44px;
+    margin-bottom: 20px;
+}
+
+.menu-content {
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 0 20px;
+}
+
+
+.menu-content .menu-toggle {
+    display: none;
+}
+.logo {
+    font-size: 1.2rem;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+    text-decoration: none; /* Remove o sublinhado */
+    color: white; /* Mantém a cor padrão do texto */
+
+}
+.logo:hover {
+    text-decoration: none; /* Remove o sublinhado ao passar o mouse */
+    color: white; /* Mantém a cor padrão do texto */
+}
+
+.menu-content .list-itens {
+    margin-right: 10px;
+    display: flex;
+    list-style: none;
+    gap: 10px;
+  }
+  
+  .menu-content .list-itens a {
+    text-decoration: none;
+    color: white;
+    padding: 0.7rem;
+    transform: 2ms ease-in;
+    position: relative;
+  }
+  
+  .menu-content .list-itens a:before {
+    content: ' ';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 3px;
+    background-color: var(--cor2);
+    transition: all 1.5s ease; 
+  }
+  
+  .menu-content .list-itens a:hover:before {
+    width: 100%;
+  }
+
+  
+
+  main {
+   
+    min-width: 300px;
+    max-width: 980px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    position: relative;
+    z-index: 1; /* Para garantir que a tabela fique acima da imagem de fundo */
+}
+
+#escuroA{
+    background-color: var(--cor3);
+    border-radius: 25px;
+}
+
+.table-container {
+    position: relative;
+    
+    margin: auto;
+    display: none; /* Inicialmente esconde a tabela */
+    z-index: 1; /* Posiciona acima do plano de fundo */
+}
+table{
+    background-color: var(--cor0);
+    border-collapse: collapse;
+    
+}
+thead{
+    font-size: 1.3em;
+}
+.check{
+    margin-left: 20px;
+    
+}
+#check:hover{
+    color: black;
+}
+th{
+    font-size: 1em;
+}
+.tr1{
+    background-color: rgb(207, 207, 207);
+}
+.trh1{
+    font-size: 1.2em;
+    text-align: center;
+}
+th,td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.h1corpo{
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.menuofert{
+    background-color: darkgray;
+}
+
+#plano{
+    background-color: darkgray;
+    color: white;
+    text-align: bolder; 
+}
+#plano1{
+    background-color: rgb(49, 49, 49);
+    color: white;
+    text-align: bolder; 
+}
+#plano2{
+    background-color: rgb(87, 87, 87);
+    color: rgb(255, 255, 255); 
+}
+#center{
+    text-align: center;
+    padding-top: 17%;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 1.1em;
+    background-color: white;
+    
+}
+#center:hover{
+    background-color: white;
+}
+
+#centerent{
+    vertical-align: middle;
+    text-align: center;
+}
+
+#center1{
+    text-align: center;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.buttonth {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttonth:hover {
+    background-color: #0056b3;
+}
+
+#iconpdf{
+    max-width:34px;
+}
+
+.cursor-pointer:hover {
+    cursor: pointer;
+    color:white;
+    background-color: rgb(169, 169, 169);
+}
+
+
+/* Estilo para remover o cursor pointer do th */
+.cursor-pointer th:hover {
+    cursor: auto;
+    color: black;
+}
+
+.cursor-pointer1:hover {
+    cursor: pointer;
+    color:black;
+    background-color: rgb(169, 169, 169);
+}
+
+/* Estilo para remover o cursor pointer do th */
+.cursor-pointer1 th:hover {
+    cursor: auto;
+}
+
+/* Estilos para o modal */
+.modal {
+    display: none; /* Inicia oculto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: hidden; /* Remova a rolagem vertical no modal */
+    background-color: rgba(0, 0, 0, 0.4); /* Fundo escuro */
+    border-radius: 10px 10px 10px 10px; /* Bordas arredondadas */
+    
+}
+
+.modal-content {
+    
+    margin: auto; /* Centraliza horizontalmente */
+    margin-top: 2%; /* Ajusta a margem superior para centralizar verticalmente */
+    padding: 0; /* Remova o padding padrão */
+    border: 1px solid #949494;
+    height: 90%;
+    width: 80%;
+    max-width: 800px; /* Largura máxima */
+    overflow-x: auto; /* Adiciona rolagem lateral apenas */
+    max-height: calc(100% - 50px); /* Altura máxima do modal */
+    position: relative; /* Garante que o cabeçalho fique dentro do modal */
+}
+
+
+#headermodal {
+    position: static; /* Mantém o cabeçalho fixo no topo dentro do modal */
+    top: 0;
+    background-color: white;
+    padding: 5px 20px; /* Adicione padding horizontal e vertical menor */
+    z-index: 2; /* Garante que o cabeçalho esteja acima do conteúdo rolando */
+    margin-top: 40px;
+    margin-bottom: 120px;
+    height: -20px; /* Altura desejada para o cabeçalho */
+   
+}
+#headermodal:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 60px;
+    background-color: rgba(169, 169, 169, 0.596);
+}
+
+#headermodal h1 {
+    font-size: 2em; /* Define o tamanho da fonte do h1 para 1.5em */
+    font-weight: bolder;
+}
+
+.app-icons img {
+    width: 80px; /* Defina a largura da imagem */
+
+    margin-left: 40px; /* Ajuste o espaçamento horizontal entre as imagens */
+    
+    overflow: hidden; /* Garante que a parte fora do círculo não seja exibida */
+    position: relative; /* Define a posição relativa para as imagens */
+    transition: transform 0.1s ease-in-out; /* Adiciona uma transição suave ao passar o mouse */
+}
+
+
+
+.app-icons img:hover::after {
+    content: attr(title); /* Exibe o conteúdo do atributo 'title' como dica de ferramenta */
+    position: absolute; /* Define a posição absoluta para a dica de ferramenta */
+    bottom: -30px; /* Ajusta a distância da dica de ferramenta em relação à imagem */
+    left: 50%; /* Centraliza a dica de ferramenta horizontalmente */
+    transform: translateX(-50%); /* Centraliza a dica de ferramenta horizontalmente */
+    background-color: rgba(0, 0, 0, 0.8); /* Cor de fundo da dica de ferramenta */
+    color: white; /* Cor do texto da dica de ferramenta */
+    padding: 5px 10px; /* Espaçamento interno da dica de ferramenta */
+    border-radius: 5px; /* Bordas arredondadas da dica de ferramenta */
+    font-size: 20px; /* Tamanho da fonte da dica de ferramenta */
+    white-space: nowrap; /* Evita que o texto da dica de ferramenta quebre em várias linhas */
+    transition: none; /* Remove a transição para tornar a exibição instantânea */
+}
+
+
+
+#mainmodal {
+    padding: 10px; /* Adicione um espaço interno para evitar que o conteúdo encoste nas bordas do modal */
+    overflow-x: auto; /* Adiciona rolagem lateral apenas para o #mainmodal */
+}
+#mainmodal h2{
+    font-size: 1.1em;
+    font-weight: bolder;
+    padding-left: 40px;
+}
+#mainmodal p{
+    font-size: 1em;
+    padding-left: 40px;
+}
+
+/* Estilo para o botão de fechar */
+.close {
+    float: right;
+    cursor: pointer;
+    position: relative;
+    margin-left: 10px;
+    font-size: 20px; /* Tamanho do X */
+}
+
+/* Estilo para o círculo ao redor do botão de fechar */
+.close:before {
+    content: '';
+    display: block;
+    width: 30px; /* Tamanho do círculo */
+    height: 30px; /* Tamanho do círculo */
+    border-radius: 50%; /* Transforma em um círculo */
+    border: 2px solid black; /* Cor da borda do círculo */
+    position: absolute;
+    top: -5px; /* Ajusta a posição vertical */
+    right: -8px; /* Ajusta a posição horizontal */
+}
+
+/* SIMBOLOS */ 
+
+/* Estilo para o ícone de Wi-Fi */
+.wifi-icon {
+    font-size: 0.8em; /* Tamanho do ícone */
+    margin-right: 7px; /* Espaçamento entre o ícone e o texto */
+}
+
+/* Estilo para o ícone de upload */
+.download-icon {
+    font-size: 0.8em; /* Tamanho do ícone */
+    margin-right: 7px; /* Espaçamento entre o ícone e o texto */
+}
+
+/* Estilo para o ícone de upload */
+.upload-icon {
+    font-size: 0.8em; /* Tamanho do ícone */
+    margin-right: 7px; /* Espaçamento entre o ícone e o texto */
+}
+
+
+/* Estilo para o ícone de play */
+.play-icon {
+    font-size: 0.8em; /* Tamanho do ícone */
+    margin-right: 7px; /* Espaçamento entre o ícone e o texto */
+}
+
+/* Estilo para o ícone de TV */
+.tv-icon {
+    font-size: 0.8em; /* Tamanho do ícone */
+    margin-right: 7px; /* Espaçamento entre o íco#centerne e o texto */
+}
+
+/* Estilo para o ícone de modem */
+.modem-icon {
+    font-size: 1em; /* Tamanho do ícone */
+    margin-right: 7px; /* Espaçamento entre o ícone e o texto */
+}
+
+/* Estilo para o ícone de conector */
+.plug-icon {
+    font-size: 0.8em; /* Tamanho do ícone */
+    margin-right: 7px; /* Espaçamento entre o ícone e o texto */}
+
+
+/* MODAL PARA AS CIDADES */
+
+.modal2 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal2-content {
+    background-color: #fff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.close2 {
+    color: #333;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.close2:hover,
+.close2:focus {
+    color: #555;
+}
+
+#pesquisarCidade {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#confirmarCidade {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#confirmarCidade:hover {
+    background-color: #0056b3;
+}
+
+.list-cidades {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-cidades li {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.list-cidades li:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+
+
+.fade-in {
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Garante que o elemento fique sempre em cima */
+#respostaOferta {
+    z-index: 9999; /* Valor alto para ficar em cima de outros elementos */
+}
+
+
+.tabela-escondida {
+    display: none;
+}
+/* FIM DO MODAL PARA CIDADES*/
+
+
+
+/* CSS FIXA PARA AS PROMOÇÕES */

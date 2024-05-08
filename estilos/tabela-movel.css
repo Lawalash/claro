@@ -1,0 +1,312 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root { 
+    --cor0:white;
+    --cor1:black;
+    --cor2:#DA291C;
+    --cor3:#b32218;
+}
+
+img[src*="https://www.000webhost.com/static/default.000webhost.com/images/powered-by-000webhost.png"] {
+    display: none;
+  }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #b32218;
+    background:  linear-gradient(rgba(22, 22, 22, 0.164), rgba(20, 20, 20, 0.212)), url(../imagens/claro-movel.png);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+}
+
+header {
+    width: 100%;
+    height: 2vh;
+    padding-top: 44px;
+    margin-bottom: 45px;
+}
+
+.menu-content {
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem; /* Ajuste o tamanho da fonte aqui */
+    padding: 0 20px;
+}
+
+.menu-content .menu-toggle {
+    display: none;
+}
+
+.logo {
+    font-size: 1.2rem;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+    text-decoration: none; /* Remove o sublinhado */
+    color: white; /* Mantém a cor padrão do texto */
+
+}
+.logo:hover {
+    text-decoration: none; /* Remove o sublinhado ao passar o mouse */
+    color: white; /* Mantém a cor padrão do texto */
+}
+
+.menu-content .list-itens {
+    margin-right: 10px;
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.menu-content .list-itens a {
+    text-decoration: none;
+    color: white;
+    padding: 0.7rem;
+    font-size: 1.2em;
+    transform: 2ms ease-in;
+    position: relative;
+}
+
+.menu-content .list-itens a:before {
+    content: ' ';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 3px;
+    background-color: var(--cor2);
+    transition: all 1.5s ease; 
+}
+
+.menu-content .list-itens a:hover:before {
+    width: 100%;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1300px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    position: relative;
+    z-index: 1; /* Para garantir que a tabela fique acima da imagem de fundo */
+}
+
+#escuroA {
+    background-color: var(--cor3);
+    border-radius: 25px;
+}
+
+.table-container {
+    position: relative;
+    margin: auto;
+    display: none; /* Inicialmente esconde a tabela */
+    z-index: 1; /* Posiciona acima do plano de fundo */
+}
+
+table {
+    background-color: var(--cor0);
+    border-collapse: collapse;
+}
+
+thead {
+    font-size: 1.2em; /* Ajuste o tamanho da fonte aqui */
+}
+
+.check {
+    margin-left: 20px;
+}
+
+#check:hover {
+    color: black;
+}
+
+th {
+    font-size: 0.8em;
+}
+
+.tr1 {
+    background-color: rgb(207, 207, 207);
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.h1corpo {
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.trh1{
+    font-size: 1.6em;
+    text-align: center;
+}
+.logo-app{  
+    max-width: 30px;  /* Ajuste o tamanho máximo conforme necessário */
+    height: auto;
+    display: block;
+    margin:  auto; 
+    margin-top: 30px;
+}
+.logo-app2{  
+    max-width: 45px;  /* Ajuste o tamanho máximo conforme necessário */
+    height: auto;
+    display: block;
+    margin:  auto; 
+    margin-top: 30px;
+}
+
+.table-controle th, .table-controle td {
+    text-align: center;
+}
+
+#iconpdf{
+    max-width:34px;
+    margin-top: 70px;
+    vertical-align: middle;
+}
+
+.buttonth {
+    font-size: 1.2em;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: transparent; /* Define o fundo como transparente */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    outline: none; /* Remove o contorno ao focar no botão */
+    
+}
+.buttonth {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttonth:hover {
+    background-color: #0056b3;
+}
+.grupg1g2{
+    font-size: 1.2em;
+    color: black;
+    background-color: darkgray;
+    font-weight: bolder;
+}
+
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.close {
+    color: #333;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.close:hover,
+.close:focus {
+    color: #555;
+}
+
+#pesquisarCidade {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#confirmarCidade {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#confirmarCidade:hover {
+    background-color: #0056b3;
+}
+
+.list-cidades {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-cidades li {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.list-cidades li:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+
+
+.fade-in {
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Garante que o elemento fique sempre em cima */
+#respostaOferta {
+    z-index: 9999; /* Valor alto para ficar em cima de outros elementos */
+}
+

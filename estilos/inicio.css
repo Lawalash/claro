@@ -1,0 +1,227 @@
+/* style.css */
+
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+:root{
+    --cor0:white;
+    --cor1:black;
+    --cor2:#1E73BE;
+    --cor3:#A961D7;
+    --cor4:#DA291C;
+    --cor5:#b32218;
+
+}
+
+/* Zerando CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fundo-tela */
+
+html {
+  width: 100vw;
+  height: 100vh;
+  font-size: 62.5%;
+  
+  font-family: 'Lato', sans-serif;
+}
+
+img[src*="https://www.000webhost.com/static/default.000webhost.com/images/powered-by-000webhost.png"] {
+  display: none;
+}
+
+body {
+  background: linear-gradient(rgba(112, 112, 112, 0.384), rgba(20, 20, 20, 1)), url(../imagens/claro.jpeg);
+  background-position: center center;
+  background-size: cover;
+  background-position-y: 0px;
+  background-repeat: no-repeat;
+  overflow: hidden; /* Adicione esta linha para ocultar barras de rolagem */
+
+}
+
+
+/* Menu - Header - NavBar */
+
+header {
+  width: 100%;
+  height: 10vh;
+  background-color: rgba(22, 22, 22, 0.2);
+}
+
+.menu-content {
+  text-transform: uppercase;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.8rem;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 2rem;
+  letter-spacing: 0.4rem;
+  cursor: pointer;
+  color: white;
+  
+}
+
+.menu-content .menu-toggle {
+  display: none;
+}
+
+.menu-content .list-itens {
+  margin-right: 10px;
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+.menu-content .list-itens a {
+  text-decoration: none;
+  color: white;
+  padding: 1.7rem;
+  transform: 2ms ease-in;
+  position: relative;
+}
+
+.menu-content .list-itens a:before {
+  content: ' ';
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 0px;
+  height: 3px;
+  background-color: var(--cor4);
+  transition: all 1.5s ease; 
+}
+
+.menu-content .list-itens a:hover:before {
+  width: 100%;
+}
+
+/* Centro - Conteudo Principal */
+
+/* Conteudo central */
+main {
+  height: 93vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#center-container {
+  text-align: center;
+}
+
+#click-to-show {
+  font-size: 2rem;
+  letter-spacing: 0.4rem;
+  cursor: pointer;
+  color: white;
+}
+#sites-container {
+  max-width: 1200px;
+  display: none;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+#sites-container.show-sites {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.btns {
+  display: flex;
+  flex-wrap: wrap; /* Adiciona esta linha para quebrar a linha quando não houver espaço */
+  justify-content: center;
+  gap: 20px;
+}
+.btns img{
+  max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do botão */
+  max-height: 100%; /* Garante que a imagem não ultrapasse o tamanho do botão */
+}
+.buttonclaro:hover{
+  color: #DA291C;
+  font-size: 1.6em;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.buttoncorreios:hover{
+  color: #FBBC30;
+  font-size: 1.6em;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.buttoncpf:hover{
+  color: #1659BF;
+  font-size: 1.6em;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.buttoncnpj:hover{
+  color: #0F4098;
+  font-size: 1.6em;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.buttonnegocia:hover{
+  color: #E41F2C;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.buttonforms:hover{
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.btns button {
+  width: 250px;
+  height: 60px;
+  cursor: pointer;
+  border: 1px solid white;
+  color: white;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  border-radius: 20px;
+  position: relative;
+  transition: 1.}
+
+  .btns button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #eee5e552; /* Cor do efeito de transição */
+    border-radius: 20px;
+    transition: width 0.7s ease-out; /* Tempo e tipo de transição */
+    z-index: -1; /* Coloca o efeito por trás do texto do botão */
+  }
+  
+  .btns button:hover::before {
+    width: 100%;
+  }
+
+
+/* fim do conteúdo central */

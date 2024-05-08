@@ -1,0 +1,300 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+:root { 
+    --cor0:white;
+    --cor1:black;
+    --cor2:#DA291C;
+    --cor3:#b32218;
+   
+}
+
+img[src*="https://www.000webhost.com/static/default.000webhost.com/images/powered-by-000webhost.png"] {
+  display: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+   
+    
+ background:  linear-gradient(rgba(22, 22, 22, 0.164), rgba(20, 20, 20, 0.212)), url(../imagens/Claro.jpg) ;
+  background-position: center center;
+  background-size: cover;
+  background-position-y: 0px;
+  background-repeat: no-repeat;
+ 
+}
+header {
+    width: 100%;
+    height: 2vh;
+    padding-top: 35px;
+    margin-bottom: 20px;
+    
+    
+  }
+.menu-content {
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 0 20px;
+  }
+
+
+.menu-content .menu-toggle {
+    display: none;
+}
+.logo {
+  font-size: 1.2rem;
+  letter-spacing: 0.4rem;
+  cursor: pointer;
+  text-decoration: none; /* Remove o sublinhado */
+  color: white; /* Mantém a cor padrão do texto */
+
+}
+.logo:hover {
+  text-decoration: none; /* Remove o sublinhado ao passar o mouse */
+  color: white; /* Mantém a cor padrão do texto */
+}
+
+.menu-content .list-itens {
+    margin-right: 10px;
+    display: flex;
+    list-style: none;
+    gap: 10px;
+  }
+  
+  .menu-content .list-itens a {
+    text-decoration: none;
+    color: white;
+    padding: 0.7rem;
+    transform: 2ms ease-in;
+    position: relative;
+  }
+  
+  .menu-content .list-itens a:before {
+    content: ' ';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 3px;
+    background-color: var(--cor2);
+    transition: all 1.5s ease; 
+  }
+  
+  .menu-content .list-itens a:hover:before {
+    width: 100%;
+  }
+
+  
+
+  main {
+   
+    min-width: 300px;
+    max-width: 824px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    position: relative;
+    z-index: 1; /* Para garantir que a tabela fique acima da imagem de fundo */
+}
+
+
+
+#check{
+  margin-left: 20px;
+  background-color: var(--cor3);
+  border-radius: 25px;
+    
+}
+
+#check:hover{
+    color: black;
+}
+/* FIM DA PARTE DE CIMA */
+
+
+/* CORPO DO CHECKLIST */
+strong{
+    color: black;
+}
+.checklist-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .checklist-item {
+    margin-bottom: 15px;
+    position: relative;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  label {
+    display: block;
+    padding: 8px;
+    background-color: #f4f4f4;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+
+  label:hover {
+    background-color: var(--cor2);
+    color: white;
+  }
+  .lab1:hover{
+    color: white;
+  }
+
+  
+
+/* FIM DO CORPO DO CHECKLIST */
+
+/* CSS DA TABELA */
+table{
+    background-color: var(--cor0);
+    border-collapse: collapse;
+    
+}
+thead{
+    font-size: 1.3em;
+}
+#check{
+    margin-left: 20px;
+    
+}
+#check:hover{
+    color: black;
+}
+th{
+    font-size: 0,8em;
+}
+tr{
+    background-color: #DA291C;
+    color: white;
+}
+th,td {
+    border: 1px solid black;
+    padding: 10px;
+}
+td{
+    background-color: white;
+    color: black;
+}
+.center{
+    margin:auto;
+    margin-bottom: 20px;
+    }
+/* FIM DA CSS DA TABELA */
+
+/* CSS DA TABELA BENEFICIOS DO PLANO */
+.direct{
+    color: black;
+    text-decoration: none;
+    
+   
+}
+
+.direct1:hover {
+    background-color: #da291c88;
+    color: white;
+    transition-duration: .3s;
+
+    
+}
+
+
+/* FIM DA CSS DA TABELA BENEFICIOS DO PLANO */
+
+/* CALCULADORA */
+/* Estilos para a calculadora */
+.calculator {
+  max-width: 350px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Centralizar conteúdo */
+}
+
+.calculator label,
+.calculator input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.calculator input[type="number"]::before {
+  content: "R$ "; /* Adiciona o R$ antes do input de número */
+}
+
+.calculator button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.calculator button:hover {
+  background-color: #45a049;
+}
+
+.calculator #result {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+
+/* FIM DA CALCULADORA */
+
+
+.accordion-button::after {
+  content: '\002B';
+  transition: transform 0.35s ease;
+}
+
+.accordion-item.collapsed .accordion-button::after {
+  content: '\2212';
+  transition: transform 0.35s ease;
+}
+
+
+/* Estilos para o acordeão */
+
+
+.accordion-button {
+  background-color: #f4f4f4;
+  color: black;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.accordion-button:hover {
+  background-color: #eaeaea;
+}
+
+.accordion-body {
+  padding: 10px;
+  background-color: #e6e5e5;
+  border: 1px solid #e6e5e5;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Adiciona margem inferior para todos os itens */
+}
+
+/* Fim dos estilos para o acordeão */
+

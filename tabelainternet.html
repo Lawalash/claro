@@ -502,8 +502,9 @@
         <div class="app-icons">
             <img  style="max-width: 60px;" src="imagens/icones/mc-afee.jpeg" alt="Claro Video" title="mcafee">
             <img  style="max-width: 60px;" src="imagens/icones/skeelo.png" alt="Skeelo" title="Skeelo">
-
         </div>
+
+
             <main id="mainmodal">
                 <h2><i class="fas fa-wifi wifi-icon"></i>Wi-Fi grátis</h2>
                     <p>para sua casa e wi-fi também fora de casa com a rede #NET-CLARO-WIFI</p>
@@ -530,333 +531,334 @@
 
         <div class="modal2-content">
 
-        <span class="close2">&times;</span>
+        <hedaer id="headercidade">
 
-        <h2 class="text-center">Selecione a cidade</h2>
+            <span class="close2">&times;</span>
+            <h2 class="text-center">Selecione a cidade</h2>
+            <input type="text" id="pesquisarCidade" placeholder="Pesquisar cidade...">
+            <button id="confirmarCidade">Confirmar</button>
+            
+        </hedaer>
 
-        <input type="text" id="pesquisarCidade" placeholder="Pesquisar cidade...">
-
-        <button id="confirmarCidade">Confirmar</button>
-
-        <ul id="listaCidadesModal" class="list-cidades">
-                    <!-- Adicione suas cidades aqui -->
-                    <li>Cascavel-PR</li>
-                    <li>Cianorte-PR</li>
-                    <li>Estancia Velha-RS</li>
-                    <li>Navegantes-SC</li>
-                    <li>Sapiranga-RS</li>
-                    <li>Xangri-La-RS</li>
-                    <li>Aparecida-SP</li>
-                    <li>Belford Roxo-RJ</li>
-                    <li>Betim-MG</li>
-                    <li>Botucatu-SP</li>
-                    <li>Campos Dos Goytacazes-RJ</li>
-                    <li>Duque De Caxias-RJ</li>
-                    <li>Nova Odessa-SP</li>
-                    <li>Potim-SP</li>
-                    <li>Presidente Prudente-SP</li>
-                    <li>Rio Das Ostras-RJ</li>
-                    <li>Sao Joao De Meriti-RJ</li>
-                    <li>Teofilo Otoni-MG</li>
-                    <li>Teresopolis-RJ</li>
-                    <li>Campina Grande-PB</li>
-                    <li>Alegrete-RS</li>
-                    <li>Ararangua-SC</li>
-                    <li>Arroio Do Meio-RS</li>
-                    <li>Cacador-SC</li>
-                    <li>Cachoeira Do Sul-RS</li>
-                    <li>Camaqua-RS</li>
-                    <li>Camboriu-SC</li>
-                    <li>Canela-RS</li>
-                    <li>Carazinho-RS</li>
-                    <li>Carlos Barbosa-RS</li>
-                    <li>Charqueadas-RS</li>
-                    <li>Concordia-SC</li>
-                    <li>Dois Irmaos-RS</li>
-                    <li>Eldorado Do Sul-RS</li>
-                    <li>Encantado-RS</li>
-                    <li>Estrela-RS</li>
-                    <li>Fraiburgo-SC</li>
-                    <li>Frederico Westphalen-RS</li>
-                    <li>Garibaldi-RS</li>
-                    <li>Gaspar-SC</li>
-                    <li>Gramado-RS</li>
-                    <li>Guaiba-RS</li>
-                    <li>Herval DOeste-SC</li>
-                    <li>Icara-SC</li>
-                    <li>Igrejinha-RS</li>
-                    <li>Imbe-RS</li>
-                    <li>Indaial-SC</li>
-                    <li>Itaqui-RS</li>
-                    <li>Ivoti-RS</li>
-                    <li>Joacaba-SC</li>
-                    <li>Lages-SC</li>
-                    <li>Mafra-SC</li>
-                    <li>Marau-RS</li>
-                    <li>Montenegro-RS</li>
-                    <li>Nova Petropolis-RS</li>
-                    <li>Osorio-RS</li>
-                    <li>Palmeira Das Missoes-RS</li>
-
-
-                    <li>Panambi-RS</li>
-                    <li>Paranagua-PR</li>
-                    <li>Parobe-RS</li>
-                    <li>Rio Do Sul-SC</li>
-                    <li>Rio Negrinho-SC</li>
-                    <li>Rio Pardo-RS</li>
-                    <li>Rosario Do Sul-RS</li>
-                    <li>Santa Rosa-RS</li>
-                    <li>Santana Do Livramento-RS</li>
-                    <li>Santo Angelo-RS</li>
-                    <li>Sao Bento Do Sul-SC</li>
-                    <li>Sao Borja-RS</li>
-                    <li>Sao Francisco Do Sul-SC</li>
-                    <li>Sao Gabriel-RS</li>
-                    <li>Sao Lourenco Do Sul-RS</li>
-                    <li>Sao Luiz Gonzaga-RS</li>
-                    <li>Taquara-RS</li>
-                    <li>Teutonia-RS</li>
-                    <li>Timbo-SC</li>
-                    <li>Torres-RS</li>
-                    <li>Tramandai-RS</li>
-                    <li>Tres Coroas-RS</li>
-                    <li>Tubarao-SC</li>
-                    <li>Vacaria-RS</li>
-                    <li>Venancio Aires-RS</li>
-                    <li>Vera Cruz-RS</li>
-                    <li>Veranopolis-RS</li>
-                    <li>Videira-SC</li>
-                    <li>Xanxere-SC</li>
-                    <li>Xaxim-SC</li>
-                    <li>Adamantina-SP</li>
-                    <li>Agudos-SP</li>
-                    <li>Alvares Machado-SP</li>
-                    <li>Americo Brasiliense-SP</li>
-                    <li>Amparo-SP</li>
-                    <li>Andradina-SP</li>
-                    <li>Aracruz-ES</li>
-                    <li>Araguari-MG</li>
-                    <li>Araxa-MG</li>
-                    <li>Armacao Dos Buzios-RJ</li>
-                    <li>Avare-SP</li>
-                    <li>Bady Bassitt-SP</li>
-                    <li>Barbacena-MG</li>
-                    <li>Barretos-SP</li>
-                    <li>Barrinha-SP</li>
-                    <li>Batatais-SP</li>
-                    <li>Bebedouro-SP</li>
-                    <li>Birigui-SP</li>
-                    <li>Boituva-SP</li>
-                    <li>Cabo Frio-RJ</li>
-                    <li>Cabreuva-SP</li>
-                    <li>Cajamar-SP</li>
-                    <li>Campo Limpo Paulista-SP</li>
-                    <li>Campos Do Jordao-SP</li>
-                    <li>Casa Branca-SP</li>
-                    <li>Cataguases-MG</li>
-                    <li>Catanduva-SP</li>
-                    <li>Cerquilho-SP</li>
-                    <li>Colatina-ES</li>
-                    <li>Conselheiro Lafaiete-MG</li>
-                    <li>Cordeiropolis-SP</li>
-                    <li>Coronel Fabriciano-MG</li>
-                    <li>Cravinhos-SP</li>
-                    <li>Descalvado-SP</li>
-                    <li>Divinopolis-MG</li>
-                    <li>Dracena-SP</li>
-                    <li>Espirito Santo Do Pinhal-SP</li>
-                    
-                    <li>Fernandopolis-SP</li>
-                    <li>Garca-SP</li>
-                    <li>Guaira-SP</li>
-                    <li>Guapiacu-SP</li>
-                    <li>Guararapes-SP</li>
-                    <li>Ibate-SP</li>
-                    <li>Ibiuna-SP</li>
-                    <li>Ipero-SP</li>
-                    <li>Itabira-MG</li>
-                    <li>Itaguai-RJ</li>
-                    <li>Itajuba-MG</li>
-                    <li>Itapeva-SP</li>
-                    <li>Itapira-SP</li>
-                    <li>Itaquaquecetuba-SP</li>
-                    <li>Itauna-MG</li>
-                    <li>Ituiutaba-MG</li>
-                    <li>Ituverava-SP</li>
-                    <li>Jaboticabal-SP</li>
-                    <li>Jales-SP</li>
-                    <li>Jardinopolis-SP</li>
-                    <li>Jarinu-SP</li>
-                    <li>Jose Bonifacio-SP</li>
-                    <li>Lagoa Santa-MG</li>
-                    <li>Laranjal Paulista-SP</li>
-                    <li>Lavras-MG</li>
-                    <li>Leme-SP</li>
-                    <li>Lencois Paulista-SP</li>
-                    <li>Lins-SP</li>
-                    <li>Louveira-SP</li>
-                    <li>Manhuacu-MG</li>
-                    <li>Matao-SP</li>
-                    <li>Miguel Pereira-RJ</li>
-                    <li>Mirandopolis-SP</li>
-                    <li>Mococa-SP</li>
-                    <li>Monte Alto-SP</li>
-                    <li>Montes Claros-MG</li>
-                    <li>Nova Friburgo-RJ</li>
-                    <li>Olimpia-SP</li>
-                    <li>Orlandia-SP</li>
-                    <li>Ourinhos-SP</li>
-                    <li>Para De Minas-MG</li>
-                    <li>Paraiba Do Sul-RJ</li>
-                    <li>Passos-MG</li>
-                    <li>Patos De Minas-MG</li>
-                    <li>Pedreira-SP</li>
-                    <li>Penapolis-SP</li>
-                    <li>Piedade-SP</li>
-                    <li>Piracaia-SP</li>
-                    <li>Pirassununga-SP</li>
-                    <li>Pocos De Caldas-MG</li>
-                    <li>Pontal-SP</li>
-                    <li>Porto Ferreira-SP</li>
-                    <li>Potirendaba-SP</li>
-                    <li>Pouso Alegre-MG</li>
-                    <li>Presidente Bernardes-SP</li>
-                    <li>Promissao-SP</li>
-                    <li>Registro-SP</li>
-                    <li>Santa Cruz das Palmeiras-SP</li>
-                    <li>Santa Cruz Do Rio Pardo-SP</li>
-                    <li>Santa Gertrudes-SP</li>
-                    <li>Santa Isabel-SP</li>
-                    <li>Santa Luzia-MG</li>
-                    <li>Santa Rosa De Viterbo-SP</li>
-                    <li>Sao Joao Da Boa Vista-SP</li>
-                    <li>Sao Joao Del Rei-MG</li>
-                    <li>Sao Joaquim Da Barra-SP</li>
-                    <li>Sao Jose Do Rio Pardo-SP</li>
-                    <li>Sao Pedro Da Aldeia-RJ</li>
-                    <li>Serra Negra-SP</li>
-                    <li>Serrana-SP</li>
-                    <li>Tambau-SP</li>
-                    <li>Tatui-SP</li>
-                    <li>Timoteo-MG</li>
-                    <li>Tremembe-SP</li>
-                    <li>Tres Coracoes-MG</li>
-                    <li>Tres Rios-RJ</li>
-                    <li>Uba-MG</li>
-                    <li>Valenca-RJ</li>
-                    <li>Valparaiso-SP</li>
-                    <li>Varzea Paulista-SP</li>
-                    <li>Vassouras-RJ</li>
-                    <li>Vespasiano-MG</li>
-                    <li>Vicosa-MG</li>
-                    <li>Votuporanga-SP</li>
-                    <li>Caldas Novas-GO</li>
-                    <li>Formosa-GO</li>
-                    <li>Itumbiara-GO</li>
-                    <li>Jatai-GO</li>
-                    <li>Lucas Do Rio Verde-MT</li>
-                    <li>Navirai-MS</li>
-                    <li>Nova Mutum-MT</li>
-                    <li>Ponta Pora-MS</li>
-                    <li>Rio Verde-GO</li>
-                    <li>Santa Helena De Goias-GO</li>
-                    <li>Senador Canedo-GO</li>
-                    <li>Sinop-MT</li>
-                    <li>Sorriso-MT</li>
-                    <li>Tres Lagoas-MS</li>
-                    <li>Trindade-GO</li>
-                    <li>Valparaiso De Goias-GO</li>
-                    <li>Araguaina-TO</li>
-                    <li>Ariquemes-RO</li>
-                    <li>Cacoal-RO</li>
-                    <li>Castanhal-PA</li>
-                    <li>Gurupi-TO</li>
-                    <li>Ji-Parana-RO</li>
-                    <li>Macapa-AP</li>
-                    <li>Maraba-PA</li>
-                    <li>Paragominas-PA</li>
-                    <li>Paraiso Do Tocantins-TO</li>
-                    <li>Parauapebas-PA</li>
-                    <li>Vilhena-RO</li>
-                    <li>Alagoinhas-BA</li>
-                    <li>Aquiraz-CE</li>
-                    <li>Arapiraca-AL</li>
-                    <li>Barreiras-BA</li>
-                    <li>Caxias-MA</li>
-                    <li>Eunapolis-BA</li>
-                    <li>Eusebio-CE</li>
-                    <li>Feira De Santana-BA</li>
-                    <li>Ilheus-BA</li>
-                    <li>Imperatriz-MA</li>
-                    <li>Itabuna-BA</li>
-                    <li>Jequie-BA</li>
-                    <li>Juazeiro Do Norte-CE</li>
-                    <li>Juazeiro-BA</li>
-                    <li>Mossoro-RN</li>
-                    <li>Parnaiba-PI</li>
-                    <li>Petrolina-PE</li>
-                    <li>Porto Seguro-BA</li>
-                    <li>Sobral-CE</li>
-                    <li>Teixeira De Freitas-BA</li>
-                    <li>Timon-MA</li>
-                    <li>Bage-RS</li>
-                    <li>Balneario Camboriu-SC</li>
-                    <li>Bento Goncalves-RS</li>
-                    <li>Blumenau-SC</li>
-                    <li>Brusque-SC</li>
-                    <li>Campo Bom-RS</li>
-                    <li>Capao Da Canoa-RS</li>
-                    <li>Chapeco-SC</li>
-                    <li>Criciuma-SC</li>
-                    <li>Cruz Alta-RS</li>
-                    <li>Erechim-RS</li>
-                    <li>Guarapuava-PR</li>
-                    <li>Itajai-SC</li>
-                    <li>Itapema-SC</li>
-                    <li>Lajeado-RS</li>
-                    <li>Passo Fundo-RS</li>
-                    <li>Ponta Grossa-PR</li>
-                    <li>Santa Cruz Do Sul-RS</li>
-                    <li>Santa Maria-RS</li>
-                    <li>Sao Leopoldo-RS</li>
-                    <li>Uruguaiana-RS</li>
-                    <li>Aracatuba-SP</li>
-                    <li>Artur Nogueira-SP</li>
-                    <li>Barra Mansa-RJ</li>
-                    <li>Bertioga-SP</li>
-                    <li>Cachoeira Paulista-SP</li>
-                    <li>Cachoeiro De Itapemirim-ES</li>
-                    <li>Cruzeiro-SP</li>
-                    <li>Governador Valadares-MG</li>
-                    <li>Guaratingueta-SP</li>
-                    <li>Hortolandia-SP</li>
-                    <li>Ipatinga-MG</li>
-                    <li>Itapetininga-SP</li>
-                    <li>Juiz De Fora-MG</li>
-                    <li>Limeira-SP</li>
-                    <li>Lorena-SP</li>
-                    <li>Macae-RJ</li>
-                    <li>Marilia-SP</li>
-                    <li>Nilopolis-RJ</li>
-                    <li>Nova Iguacu-RJ</li>
-                    <li>Nova Lima-MG</li>
-                    <li>Petropolis-RJ</li>
-                    <li>Pindamonhangaba-SP</li>
-                    <li>Resende-RJ</li>
-                    <li>Sete Lagoas-MG</li>
-                    <li>Sumare-SP</li>
-                    <li>Uberaba-MG</li>
-                    <li>Uberlandia-MG</li>
-                    <li>Varginha-MG</li>
-                    <li>Volta Redonda-RJ</li>
-                    <li>Anapolis-GO</li>
-                    <li>Dourados-MS</li>
-                    <li>Rondonopolis-MT</li>
-                    <li>Caruaru-PE</li>
-                    <li>Vitoria Da Conquista-BA</li>
-                    <!-- Adicione outras cidades conforme necessário -->
-                </ul>
+        <main id="maincidade">
+            <ul id="listaCidadesModal" class="list-cidades">
+                        <!-- Adicione suas cidades aqui -->
+                        <li>Cascavel-PR</li>
+                        <li>Cianorte-PR</li>
+                        <li>Estancia Velha-RS</li>
+                        <li>Navegantes-SC</li>
+                        <li>Sapiranga-RS</li>
+                        <li>Xangri-La-RS</li>
+                        <li>Aparecida-SP</li>
+                        <li>Belford Roxo-RJ</li>
+                        <li>Betim-MG</li>
+                        <li>Botucatu-SP</li>
+                        <li>Campos Dos Goytacazes-RJ</li>
+                        <li>Duque De Caxias-RJ</li>
+                        <li>Nova Odessa-SP</li>
+                        <li>Potim-SP</li>
+                        <li>Presidente Prudente-SP</li>
+                        <li>Rio Das Ostras-RJ</li>
+                        <li>Sao Joao De Meriti-RJ</li>
+                        <li>Teofilo Otoni-MG</li>
+                        <li>Teresopolis-RJ</li>
+                        <li>Campina Grande-PB</li>
+                        <li>Alegrete-RS</li>
+                        <li>Ararangua-SC</li>
+                        <li>Arroio Do Meio-RS</li>
+                        <li>Cacador-SC</li>
+                        <li>Cachoeira Do Sul-RS</li>
+                        <li>Camaqua-RS</li>
+                        <li>Camboriu-SC</li>
+                        <li>Canela-RS</li>
+                        <li>Carazinho-RS</li>
+                        <li>Carlos Barbosa-RS</li>
+                        <li>Charqueadas-RS</li>
+                        <li>Concordia-SC</li>
+                        <li>Dois Irmaos-RS</li>
+                        <li>Eldorado Do Sul-RS</li>
+                        <li>Encantado-RS</li>
+                        <li>Estrela-RS</li>
+                        <li>Fraiburgo-SC</li>
+                        <li>Frederico Westphalen-RS</li>
+                        <li>Garibaldi-RS</li>
+                        <li>Gaspar-SC</li>
+                        <li>Gramado-RS</li>
+                        <li>Guaiba-RS</li>
+                        <li>Herval DOeste-SC</li>
+                        <li>Icara-SC</li>
+                        <li>Igrejinha-RS</li>
+                        <li>Imbe-RS</li>
+                        <li>Indaial-SC</li>
+                        <li>Itaqui-RS</li>
+                        <li>Ivoti-RS</li>
+                        <li>Joacaba-SC</li>
+                        <li>Lages-SC</li>
+                        <li>Mafra-SC</li>
+                        <li>Marau-RS</li>
+                        <li>Montenegro-RS</li>
+                        <li>Nova Petropolis-RS</li>
+                        <li>Osorio-RS</li>
+                        <li>Palmeira Das Missoes-RS</li>
+                        <li>Panambi-RS</li>
+                        <li>Paranagua-PR</li>
+                        <li>Parobe-RS</li>
+                        <li>Rio Do Sul-SC</li>
+                        <li>Rio Negrinho-SC</li>
+                        <li>Rio Pardo-RS</li>
+                        <li>Rosario Do Sul-RS</li>
+                        <li>Santa Rosa-RS</li>
+                        <li>Santana Do Livramento-RS</li>
+                        <li>Santo Angelo-RS</li>
+                        <li>Sao Bento Do Sul-SC</li>
+                        <li>Sao Borja-RS</li>
+                        <li>Sao Francisco Do Sul-SC</li>
+                        <li>Sao Gabriel-RS</li>
+                        <li>Sao Lourenco Do Sul-RS</li>
+                        <li>Sao Luiz Gonzaga-RS</li>
+                        <li>Taquara-RS</li>
+                        <li>Teutonia-RS</li>
+                        <li>Timbo-SC</li>
+                        <li>Torres-RS</li>
+                        <li>Tramandai-RS</li>
+                        <li>Tres Coroas-RS</li>
+                        <li>Tubarao-SC</li>
+                        <li>Vacaria-RS</li>
+                        <li>Venancio Aires-RS</li>
+                        <li>Vera Cruz-RS</li>
+                        <li>Veranopolis-RS</li>
+                        <li>Videira-SC</li>
+                        <li>Xanxere-SC</li>
+                        <li>Xaxim-SC</li>
+                        <li>Adamantina-SP</li>
+                        <li>Agudos-SP</li>
+                        <li>Alvares Machado-SP</li>
+                        <li>Americo Brasiliense-SP</li>
+                        <li>Amparo-SP</li>
+                        <li>Andradina-SP</li>
+                        <li>Aracruz-ES</li>
+                        <li>Araguari-MG</li>
+                        <li>Araxa-MG</li>
+                        <li>Armacao Dos Buzios-RJ</li>
+                        <li>Avare-SP</li>
+                        <li>Bady Bassitt-SP</li>
+                        <li>Barbacena-MG</li>
+                        <li>Barretos-SP</li>
+                        <li>Barrinha-SP</li>
+                        <li>Batatais-SP</li>
+                        <li>Bebedouro-SP</li>
+                        <li>Birigui-SP</li>
+                        <li>Boituva-SP</li>
+                        <li>Cabo Frio-RJ</li>
+                        <li>Cabreuva-SP</li>
+                        <li>Cajamar-SP</li>
+                        <li>Campo Limpo Paulista-SP</li>
+                        <li>Campos Do Jordao-SP</li>
+                        <li>Casa Branca-SP</li>
+                        <li>Cataguases-MG</li>
+                        <li>Catanduva-SP</li>
+                        <li>Cerquilho-SP</li>
+                        <li>Colatina-ES</li>
+                        <li>Conselheiro Lafaiete-MG</li>
+                        <li>Cordeiropolis-SP</li>
+                        <li>Coronel Fabriciano-MG</li>
+                        <li>Cravinhos-SP</li>
+                        <li>Descalvado-SP</li>
+                        <li>Divinopolis-MG</li>
+                        <li>Dracena-SP</li>
+                        <li>Espirito Santo Do Pinhal-SP</li>
+            
+                        <li>Fernandopolis-SP</li>
+                        <li>Garca-SP</li>
+                        <li>Guaira-SP</li>
+                        <li>Guapiacu-SP</li>
+                        <li>Guararapes-SP</li>
+                        <li>Ibate-SP</li>
+                        <li>Ibiuna-SP</li>
+                        <li>Ipero-SP</li>
+                        <li>Itabira-MG</li>
+                        <li>Itaguai-RJ</li>
+                        <li>Itajuba-MG</li>
+                        <li>Itapeva-SP</li>
+                        <li>Itapira-SP</li>
+                        <li>Itaquaquecetuba-SP</li>
+                        <li>Itauna-MG</li>
+                        <li>Ituiutaba-MG</li>
+                        <li>Ituverava-SP</li>
+                        <li>Jaboticabal-SP</li>
+                        <li>Jales-SP</li>
+                        <li>Jardinopolis-SP</li>
+                        <li>Jarinu-SP</li>
+                        <li>Jose Bonifacio-SP</li>
+                        <li>Lagoa Santa-MG</li>
+                        <li>Laranjal Paulista-SP</li>
+                        <li>Lavras-MG</li>
+                        <li>Leme-SP</li>
+                        <li>Lencois Paulista-SP</li>
+                        <li>Lins-SP</li>
+                        <li>Louveira-SP</li>
+                        <li>Manhuacu-MG</li>
+                        <li>Matao-SP</li>
+                        <li>Miguel Pereira-RJ</li>
+                        <li>Mirandopolis-SP</li>
+                        <li>Mococa-SP</li>
+                        <li>Monte Alto-SP</li>
+                        <li>Montes Claros-MG</li>
+                        <li>Nova Friburgo-RJ</li>
+                        <li>Olimpia-SP</li>
+                        <li>Orlandia-SP</li>
+                        <li>Ourinhos-SP</li>
+                        <li>Para De Minas-MG</li>
+                        <li>Paraiba Do Sul-RJ</li>
+                        <li>Passos-MG</li>
+                        <li>Patos De Minas-MG</li>
+                        <li>Pedreira-SP</li>
+                        <li>Penapolis-SP</li>
+                        <li>Piedade-SP</li>
+                        <li>Piracaia-SP</li>
+                        <li>Pirassununga-SP</li>
+                        <li>Pocos De Caldas-MG</li>
+                        <li>Pontal-SP</li>
+                        <li>Porto Ferreira-SP</li>
+                        <li>Potirendaba-SP</li>
+                        <li>Pouso Alegre-MG</li>
+                        <li>Presidente Bernardes-SP</li>
+                        <li>Promissao-SP</li>
+                        <li>Registro-SP</li>
+                        <li>Santa Cruz das Palmeiras-SP</li>
+                        <li>Santa Cruz Do Rio Pardo-SP</li>
+                        <li>Santa Gertrudes-SP</li>
+                        <li>Santa Isabel-SP</li>
+                        <li>Santa Luzia-MG</li>
+                        <li>Santa Rosa De Viterbo-SP</li>
+                        <li>Sao Joao Da Boa Vista-SP</li>
+                        <li>Sao Joao Del Rei-MG</li>
+                        <li>Sao Joaquim Da Barra-SP</li>
+                        <li>Sao Jose Do Rio Pardo-SP</li>
+                        <li>Sao Pedro Da Aldeia-RJ</li>
+                        <li>Serra Negra-SP</li>
+                        <li>Serrana-SP</li>
+                        <li>Tambau-SP</li>
+                        <li>Tatui-SP</li>
+                        <li>Timoteo-MG</li>
+                        <li>Tremembe-SP</li>
+                        <li>Tres Coracoes-MG</li>
+                        <li>Tres Rios-RJ</li>
+                        <li>Uba-MG</li>
+                        <li>Valenca-RJ</li>
+                        <li>Valparaiso-SP</li>
+                        <li>Varzea Paulista-SP</li>
+                        <li>Vassouras-RJ</li>
+                        <li>Vespasiano-MG</li>
+                        <li>Vicosa-MG</li>
+                        <li>Votuporanga-SP</li>
+                        <li>Caldas Novas-GO</li>
+                        <li>Formosa-GO</li>
+                        <li>Itumbiara-GO</li>
+                        <li>Jatai-GO</li>
+                        <li>Lucas Do Rio Verde-MT</li>
+                        <li>Navirai-MS</li>
+                        <li>Nova Mutum-MT</li>
+                        <li>Ponta Pora-MS</li>
+                        <li>Rio Verde-GO</li>
+                        <li>Santa Helena De Goias-GO</li>
+                        <li>Senador Canedo-GO</li>
+                        <li>Sinop-MT</li>
+                        <li>Sorriso-MT</li>
+                        <li>Tres Lagoas-MS</li>
+                        <li>Trindade-GO</li>
+                        <li>Valparaiso De Goias-GO</li>
+                        <li>Araguaina-TO</li>
+                        <li>Ariquemes-RO</li>
+                        <li>Cacoal-RO</li>
+                        <li>Castanhal-PA</li>
+                        <li>Gurupi-TO</li>
+                        <li>Ji-Parana-RO</li>
+                        <li>Macapa-AP</li>
+                        <li>Maraba-PA</li>
+                        <li>Paragominas-PA</li>
+                        <li>Paraiso Do Tocantins-TO</li>
+                        <li>Parauapebas-PA</li>
+                        <li>Vilhena-RO</li>
+                        <li>Alagoinhas-BA</li>
+                        <li>Aquiraz-CE</li>
+                        <li>Arapiraca-AL</li>
+                        <li>Barreiras-BA</li>
+                        <li>Caxias-MA</li>
+                        <li>Eunapolis-BA</li>
+                        <li>Eusebio-CE</li>
+                        <li>Feira De Santana-BA</li>
+                        <li>Ilheus-BA</li>
+                        <li>Imperatriz-MA</li>
+                        <li>Itabuna-BA</li>
+                        <li>Jequie-BA</li>
+                        <li>Juazeiro Do Norte-CE</li>
+                        <li>Juazeiro-BA</li>
+                        <li>Mossoro-RN</li>
+                        <li>Parnaiba-PI</li>
+                        <li>Petrolina-PE</li>
+                        <li>Porto Seguro-BA</li>
+                        <li>Sobral-CE</li>
+                        <li>Teixeira De Freitas-BA</li>
+                        <li>Timon-MA</li>
+                        <li>Bage-RS</li>
+                        <li>Balneario Camboriu-SC</li>
+                        <li>Bento Goncalves-RS</li>
+                        <li>Blumenau-SC</li>
+                        <li>Brusque-SC</li>
+                        <li>Campo Bom-RS</li>
+                        <li>Capao Da Canoa-RS</li>
+                        <li>Chapeco-SC</li>
+                        <li>Criciuma-SC</li>
+                        <li>Cruz Alta-RS</li>
+                        <li>Erechim-RS</li>
+                        <li>Guarapuava-PR</li>
+                        <li>Itajai-SC</li>
+                        <li>Itapema-SC</li>
+                        <li>Lajeado-RS</li>
+                        <li>Passo Fundo-RS</li>
+                        <li>Ponta Grossa-PR</li>
+                        <li>Santa Cruz Do Sul-RS</li>
+                        <li>Santa Maria-RS</li>
+                        <li>Sao Leopoldo-RS</li>
+                        <li>Uruguaiana-RS</li>
+                        <li>Aracatuba-SP</li>
+                        <li>Artur Nogueira-SP</li>
+                        <li>Barra Mansa-RJ</li>
+                        <li>Bertioga-SP</li>
+                        <li>Cachoeira Paulista-SP</li>
+                        <li>Cachoeiro De Itapemirim-ES</li>
+                        <li>Cruzeiro-SP</li>
+                        <li>Governador Valadares-MG</li>
+                        <li>Guaratingueta-SP</li>
+                        <li>Hortolandia-SP</li>
+                        <li>Ipatinga-MG</li>
+                        <li>Itapetininga-SP</li>
+                        <li>Juiz De Fora-MG</li>
+                        <li>Limeira-SP</li>
+                        <li>Lorena-SP</li>
+                        <li>Macae-RJ</li>
+                        <li>Marilia-SP</li>
+                        <li>Nilopolis-RJ</li>
+                        <li>Nova Iguacu-RJ</li>
+                        <li>Nova Lima-MG</li>
+                        <li>Petropolis-RJ</li>
+                        <li>Pindamonhangaba-SP</li>
+                        <li>Resende-RJ</li>
+                        <li>Sete Lagoas-MG</li>
+                        <li>Sumare-SP</li>
+                        <li>Uberaba-MG</li>
+                        <li>Uberlandia-MG</li>
+                        <li>Varginha-MG</li>
+                        <li>Volta Redonda-RJ</li>
+                        <li>Anapolis-GO</li>
+                        <li>Dourados-MS</li>
+                        <li>Rondonopolis-MT</li>
+                        <li>Caruaru-PE</li>
+                        <li>Vitoria Da Conquista-BA</li>
+                        <!-- Adicione outras cidades conforme necessário -->
+                    </ul>
+        </main>
             </div>
         </div>
 

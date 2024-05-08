@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Móvel</title>
+    <link rel="stylesheet" href="estilos/tabela-movel.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+</head>
+<body>
+    
+
+    <header>
+        <div class="menu-content">
+            <div class="menu-toggle">
+                
+            </div>
+            <a href="home.html" class="logo">TABELA DE PREÇO</a>
+
+            
+            <nav>
+                <ul class="list-itens">
+                    <li><a href="tabelainternet.html">INTERNET</a></li>
+                    <li><a href="tabelaclarotv.html">CLARO TV BOX</a></li>
+                    <li><a onclick="return false;" href="tabelamovel.html">MÓVEL</a></li>
+                    <li><a href="tabelafixo.html">FIXO</a></li>
+                    <li><a href="calculadora.html">MONTE SEU PLANO</a></li>
+                    <li><a href="tabelacheck.html">CHECKLIST</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <main id="tabelaMovel" style="display: none;">
+        <p id="respostaOferta" class="fade-in" style="display: none; position: fixed; top: 0; left: 50%; transform: translateX(-50%); background-color: #f0f0f0; padding: 10px; border-bottom: 1px solid #ccc;"></p>
+
+
+            <div class="container mt-5">
+                
+                <table class="table table-bordered table-controle">
+                    <thead class="thead-dark">
+                        <tr class="trh1">
+                            <th colspan="8">PLANO CONTROLE</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">PRODUTO</th>
+                            <th scope="col">BONUS DE REDES SOCIAIS E APP DE VIDEOS</th>
+                            <th scope="col">PARA REDES SOCIAIS E APPS DE VIDEOS</th>
+                            <th scope="col">PREÇO NO BOLETO</th>
+                            <th scope="col">PREÇO NO DÉBITO</th>
+                            <th scope="col">APP ILIMITADO</th>
+                            <th scope="col">NOMENCLATURA</th>
+                            <th scope="col">ASSINATURA INCLUSA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Claro Net Celular - Controle 20GB</td>
+                            <td>3GB</td>
+                            <td>
+                                
+                                <img class="logo-app" src="imagens/icones/icon-youtube.png" alt="WhatsApp">
+                            
+                            </td>
+                            <td>R$54,90</td>
+                            <td>R$49,90</td>
+                            <td>
+                                
+                                <img class="logo-app" src="imagens/icones/icon-wpp.png" alt="WhatsApp">
+                            
+                            </td>
+                            <td>CONTROLE 20GB S/AP PA</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Claro Net Celular - Controle 25GB</td>
+                            <td>5GB</td>
+                            <td rowspan="2">
+
+                                <img class="logo-app" src="imagens/icones/icon-youtube.png" alt="WhatsApp">
+                                <img class="logo-app" src="imagens/icones/icon-facebook.png" alt="WhatsApp">
+                                <img class="logo-app" src="imagens/icones/icon-tiktok.png" alt="WhatsApp">
+                                <img class="logo-app" src="imagens/icones/icon-twitter.png" alt="WhatsApp">
+                                <img class="logo-app" src="imagens/icones/icon-instagram.png" alt="WhatsApp">
+                            
+                            </td>
+                            <td>R$64,90</td>
+                            <td>R$59,90</td>
+                            <td>
+                                <img class="logo-app" src="imagens/icones/icon-wpp.png" alt="WhatsApp">
+                            
+                            </td>
+                            <td>CONTROLE 30GB S/AP PA</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Claro Net Celular - Controle 30GB</td>
+                            <td>5GB</td>
+                            <td>R$74,90</td>
+                            <td>R$69,90</td>
+                            <td>
+                                
+                                <img class="logo-app" src="imagens/icones/icon-wpp.png" alt="WhatsApp">
+                            
+                            </td>
+                            <td>CONTROLE 25GB GAMING S/AP PAD</td>
+                            <td>POKEMON GO, ASPHALT 9 LEGENDS E GARENA FREE FIRE + PERKS (BRINDES DENTRO DOS JOGOS COMO ARMAS, SKINS, MAPAS, ETC)</td>
+                        </tr>
+                        <tr style="text-align: center;">
+                            <th colspan="8"><button id="toggleButton" class="buttonth">Mostrar Oferta</button></th>
+                        </tr>
+
+                        <!-- OFERTAS -->
+
+                        <tr class="mostrar-oferta" style="text-align: center; display: none;">
+                            <th colspan="8" class="grupg1g2">OFERTA GRUPO G1</th>
+                        </tr>
+
+                        <tr class="mostrar-oferta" style="text-align: center; display: none;">
+                            <td colspan="8">
+                                <!-- Botão para exibir a lista de cidades -->
+                                <button id="exibirListaButton" class="buttonth">Exibir Lista de Cidades</button>
+                            </td>
+                        </tr>
+                        
+                        <!-- Janela modal -->
+                        <div id="janelaModal" class="modal" style="display: none;">
+
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+
+                                <h2 class="text-center">Selecione a cidade</h2>
+
+                                <input type="text" id="pesquisarCidade" placeholder="Pesquisar cidade...">
+                                
+                                <button id="confirmarCidade">Confirmar</button>
+                                <ul id="listaCidadesModal" class="list-cidades">
+
+                                    
+                                        <li>Almirante Tamandare-PR</li>
+                                        <li>Alvorada-RS</li>
+                                        <li>Americana-SP</li>
+                                        <li>Ananindeua-PA</li>
+                                        <li>Anapolis-GO</li>
+                                        <li>Aparecida De Goiania-GO</li>
+                                        <li>Aparecida-SP</li>
+                                        <li>Aracaju-SE</li>
+                                        <li>Aracatuba-SP</li>
+                                        <li>Arapongas-PR</li>
+                                        <li>Araraquara-SP</li>
+                                        <li>Araras-SP</li>
+                                        <li>Araucaria-PR</li>
+                                        <li>Artur Nogueira-SP</li>
+                                        <li>Atibaia-SP</li>
+                                        <li>Bage-RS</li>
+                                        <li>Balneario Camboriu-SC</li>
+                                        <li>Barra Mansa-RJ</li>
+                                        <li>Barueri-SP</li>
+                                        <li>Belem-PA</li>
+                                        <li>Belford Roxo-RJ</li>
+                                        <li>Belo Horizonte-MG</li>
+                                        <li>Bento Goncalves-RS</li>
+                                        <li>Bertioga-SP</li>
+                                        <li>Betim-MG</li>
+                                        <li>Blumenau-SC</li>
+                                        <li>Botucatu-SP</li>
+                                        <li>Braganca Paulista-SP</li>
+                                        <li>Brasilia-DF</li>
+                                        <li>Brusque-SC</li>
+                                        <li>Cabedelo-PB</li>
+                                        <li>Cacapava-SP</li>
+                                        <li>Cachoeira Paulista-SP</li>
+                                        <li>Cachoeirinha-RS</li>
+                                        <li>Cachoeiro De Itapemirim-ES</li>
+                                        <li>Campina Grande-PB</li>
+                                        <li>Campo Bom-RS</li>
+                                        <li>Campo Grande-MS</li>
+                                        <li>Campo Largo-PR</li>
+                                        <li>Campos Dos Goytacazes-RJ</li>
+                                        <li>Canoas-RS</li>
+                                        <li>Capao Da Canoa-RS</li>
+                                        <li>Capivari-SP</li>
+                                        <li>Carapicuiba-SP</li>
+                                        <li>Cariacica-ES</li>
+                                        <li>Caruaru-PE</li>
+                                        <li>Cascavel-PR</li>
+                                        <li>Caxias Do Sul-RS</li>
+                                        <li>Chapeco-SC</li>
+                                        <li>Cianorte-PR</li>
+                                        <li>Colombo-PR</li>
+                                        <li>Contagem-MG</li>
+                                        <li>Cosmopolis-SP</li>
+                                        <li>Cotia-SP</li>
+                                        <li>Criciuma-SC</li>
+                                        <li>Cruz Alta-RS</li>
+                                        <li>Cruzeiro-SP</li>
+                                        <li>Cubatao-SP</li>
+                                        <li>Cuiaba-MT</li>
+                                        <li>Curitiba-PR</li>
+                                        <li>Diadema-SP</li>
+                                        <li>Dourados-MS</li>
+                                        <li>Duque De Caxias-RJ</li>
+                                        <li>Elias Fausto-SP</li>
+                                        <li>Embu Das Artes-SP</li>
+                                        <li>Erechim-RS</li>
+                                        <li>Estancia Velha-RS</li>
+                                        <li>Esteio-RS</li>
+                                        <li>Farroupilha-RS</li>
+                                        <li>Florianopolis-SC</li>
+                                        <li>Fortaleza-CE</li>
+                                        <li>Franca-SP</li>
+                                        <li>Goiania-GO</li>
+                                        <li>Governador Valadares-MG</li>
+                                        <li>Gravatai-RS</li>
+                                        <li>Guarapuava-PR</li>
+                                        <li>Guaratingueta-SP</li>
+                                        <li>Guaruja-SP</li>
+                                        <li>Guarulhos-SP</li>
+                                        <li>Hortolândia-SP</li>
+                                        <li>Indaiatuba-SP</li>
+                                        <li>Ipatinga-MG</li>
+                                        <li>Itajaí-SC</li>
+                                        <li>Itapecerica Da Serra-SP</li>
+                                        <li>Itapema-SC</li>
+                                        <li>Itapetininga-SP</li>
+                                        <li>Itapevi-SP</li>
+                                        <li>Itu-SP</li>
+                                        <li>Jaboatão Dos Guararapes-PE</li>
+                                        <li>Jacareí-SP</li>
+                                        <li>Jandira-SP</li>
+                                        <li>Jau-SP</li>
+                                        <li>João Pessoa-PB</li>
+                                        <li>Joinville-SC</li>
+                                        <li>Juiz De Fora-MG</li>
+                                        <li>Jundiaí-SP</li>
+                                        <li>Lajeado-RS</li>
+                                        <li>Lauro De Freitas-BA</li>
+                                        <li>Limeira-SP</li>
+                                        <li>Londrina-PR</li>
+                                        <li>Lorena-SP</li>
+                                        <li>Macaé-RJ</li>
+                                        <li>Maceió-AL</li>
+                                        <li>Manaus-AM</li>
+                                        <li>Marília-SP</li>
+                                        <li>Maringá-PR</li>
+                                        <li>Mauá-SP</li>
+                                        <li>Mesquita-RJ</li>
+                                        <li>Mogi Das Cruzes-SP</li>
+                                        <li>Mogi Guaçu-SP</li>
+                                        <li>Mogi Mirim-SP</li>
+                                        <li>Monte Mor-SP</li>
+                                        <li>Natal-RN</li>
+                                        <li>Navegantes-SC</li>
+                                        <li>Nilópolis-RJ</li>
+                                        <li>Niterói-RJ</li>
+
+
+
+
+
+
+
+
+
+
+                                        <li>Nova Iguaçu-RJ</li>
+                                        <li>Nova Lima-MG</li>
+                                        <li>Nova Odessa-SP</li>
+                                        <li>Novo Hamburgo-RS</li>
+                                        <li>Olinda-PE</li>
+                                        <li>Osasco-SP</li>
+                                        <li>Palhoça-SC</li>
+                                        <li>Palmas-TO</li>
+                                        <li>Parnamirim-RN</li>
+                                        <li>Passo Fundo-RS</li>
+                                        <li>Paulínia-SP</li>
+                                        <li>Paulista-PE</li>
+                                        <li>Pelotas-RS</li>
+                                        <li>Petrópolis-RJ</li>
+                                        <li>Pindamonhangaba-SP</li>
+                                        <li>Pinhais-PR</li>
+                                        <li>Piracicaba-SP</li>
+                                        <li>Poá-SP</li>
+                                        <li>Ponta Grossa-PR</li>
+                                        <li>Porto Alegre-RS</li>
+                                        <li>Porto Feliz-SP</li>
+                                        <li>Porto Velho-RO</li>
+                                        <li>Potim-SP</li>
+                                        <li>Praia Grande-SP</li>
+                                        <li>Presidente Prudente-SP</li>
+                                        <li>Rafard-SP</li>
+                                        <li>Recife-PE</li>
+                                        <li>Resende-RJ</li>
+                                        <li>Ribeirão Preto-SP</li>
+                                        <li>Rio Branco-AC</li>
+                                        <li>Rio Claro-SP</li>
+                                        <li>Rio Das Ostras-RJ</li>
+                                        <li>Rio Grande-RS</li>
+                                        <li>Rondonópolis-MT</li>
+                                        <li>Sabará-MG</li>
+                                        <li>Salto-SP</li>
+                                        <li>Salvador-BA</li>
+                                        <li>Santa Barbara D'Oeste-SP</li>
+                                        <li>Santa Cruz Do Sul-RS</li>
+                                        <li>Santa Maria-RS</li>
+                                        <li>Santana De Parnaiba-SP</li>
+                                        <li>Santo Andre-SP</li>
+                                        <li>Santos-SP</li>
+                                        <li>Sao Bernardo Do Campo-SP</li>
+                                        <li>Sao Caetano Do Sul-SP</li>
+                                        <li>Sao Carlos-SP</li>
+                                        <li>Sao Goncalo-RJ</li>
+                                        <li>Sao Joao De Meriti-RJ</li>
+                                        <li>Sao Jose Do Rio Preto-SP</li>
+                                        <li>Sao Jose Dos Campos-SP</li>
+                                        <li>Sao Jose Dos Pinhais-PR</li>
+                                        <li>Sao Jose-SC</li>
+                                        <li>Sao Leopoldo-RS</li>
+                                        <li>Sao Luis-MA</li>
+                                        <li>Sao Vicente-SP</li>
+                                        <li>Sapiranga-RS</li>
+                                        <li>Sapucaia Do Sul-RS</li>
+                                        <li>Serra-ES</li>
+                                        <li>Sertaozinho-SP</li>
+                                        <li>Sete Lagoas-MG</li>
+                                        <li>Sorocaba-SP</li>
+                                        <li>Sumare-SP</li>
+                                        <li>Suzano-SP</li>
+                                        <li>Taboao Da Serra-SP</li>
+                                        <li>Taubate-SP</li>
+                                        <li>Teofilo Otoni-MG</li>
+                                        <li>Teresina-PI</li>
+                                        <li>Teresopolis-RJ</li>
+                                        <li>Tiete-SP</li>
+                                        <li>Uberaba-MG</li>
+                                        <li>Uberlandia-MG</li>
+                                        <li>Uruguaiana-RS</li>
+                                        <li>Valinhos-SP</li>
+                                        <li>Vargem Grande Paulista-SP</li>
+                                        <li>Varginha-MG</li>
+                                        <li>Varzea Grande-MT</li>
+                                        <li>Viamao-RS</li>
+                                        <li>Vila Velha-ES</li>
+                                        <li>Vinhedo-SP</li>
+                                        <li>Vitoria Da Conquista-BA</li>
+                                        <li>Vitoria-ES</li>
+                                        <li>Volta Redonda-RJ</li>
+                                        <li>Votorantim-SP</li>
+                                        <li>Xangri-La-RS</li>
+                                        <li>Alegrete-RS</li>
+                                        <li>Alfenas-MG</li>
+                                        <li>Aluminio-SP</li>
+                                        <li>Alvares Machado-SP</li>
+                                        <li>Americo Brasiliense-SP</li>
+                                        <li>Amparo-SP</li>
+                                        <li>Andradina-SP</li>
+                                        <li>Apucarana-PR</li>
+                                        <li>Aquiraz-CE</li>
+                                        <li>Araguaina-TO</li>
+                                        <li>Araguari-MG</li>
+                                        <li>Arapiraca-AL</li>
+                                        <li>Ararangua-SC</li>
+                                        <li>Araxa-MG</li>
+                                        <li>Arcos-MG</li>
+                                        <li>Ariquemes-RO</li>
+                                        <li>Armacao Dos Buzios-RJ</li>
+                                        <li>Arroio Do Meio-RS</li>
+                                        <li>Aruja-SP</li>
+                                        <li>Avare-SP</li>
+                                        <li>Barbacena-MG</li>
+                                        <li>Barreiras-BA</li>
+                                        <li>Barretos-SP</li>
+                                        <li>Barrinha-SP</li>
+                                        <li>Batatais-SP</li>
+                                        <li>Bauru-SP</li>
+                                        <li>Bebedouro-SP</li>
+                                        <li>Birigui-SP</li>
+                                        <li>Boituva-SP</li>
+                                        <li>Cabo Frio-RJ</li>
+                                        <li>Cabreuva-SP</li>
+                                        <li>Cacador-SC</li>
+
+
+
+
+
+
+
+
+                                        <li>Cachoeira Do Sul-RS</li>
+                                        <li>Cachoeira Paulista-SP</li>
+                                        <li>Cachoeirinha-RS</li>
+                                        <li>Cachoeiro De Itapemirim-ES</li>
+                                        <li>Cacoal-RO</li>
+                                        <li>Caieiras-SP</li>
+                                        <li>Cajamar-SP</li>
+                                        <li>Caldas Novas-GO</li>
+                                        <li>Camacari-BA</li>
+                                        <li>Camaqua-RS</li>
+                                        <li>Cambe-PR</li>
+                                        <li>Camboriu-SC</li>
+                                        <li>Campina Grande do Sul-PR</li>
+                                        <li>Campinas-SP</li>
+                                        <li>Campo Bom-RS</li>
+                                        <li>Campo Grande-MS</li>
+                                        <li>Campo Largo-PR</li>
+                                        <li>Campo Limpo Paulista-SP</li>
+                                        <li>Campo Mourao-PR</li>
+                                        <li>Campos Do Jordao-SP</li>
+                                        <li>Canela-RS</li>
+                                        <li>Canoas-RS</li>
+                                        <li>Capao da Canoa-RS</li>
+                                        <li>Caraguatatuba-SP</li>
+                                        <li>Carazinho-RS</li>
+                                        <li>Cariacica-ES</li>
+                                        <li>Carlos Barbosa-RS</li>
+                                        <li>Caruaru-PE</li>
+                                        <li>Casa Branca-SP</li>
+                                        <li>Castanhal-PA</li>
+                                        <li>Castro-PR</li>
+                                        <li>Cataguases-MG</li>
+                                        <li>Catanduva-SP</li>
+                                        <li>Caxias Do Sul-RS</li>
+                                        <li>Caxias-MA</li>
+                                        <li>Cerquilho-SP</li>
+                                        <li>Chapeco-SC</li>
+                                        <li>Charqueadas-RS</li>
+                                        <li>Colatina-ES</li>
+                                        <li>Concordia-SC</li>
+                                        <li>Conselheiro Lafaiete-MG</li>
+                                        <li>Contagem-MG</li>
+                                        <li>Cordeiropolis-SP</li>
+                                        <li>Cornélio Procópio-PR</li>
+                                        <li>Coronel Fabriciano-MG</li>
+                                        <li>Cosmopolis-SP</li>
+                                        <li>Cravinhos-SP</li>
+                                        <li>Criciuma-SC</li>
+                                        <li>Cruzeiro-SP</li>
+                                        <li>Cuiaba-MT</li>
+                                        <li>Curitiba-PR</li>
+                                        <li>Descalvado-SP</li>
+                                        <li>Diadema-SP</li>
+                                        <li>Divinopolis-MG</li>
+                                        <li>Dois Irmaos-RS</li>
+                                        <li>Dourados-MS</li>
+                                        <li>Dracena-SP</li>
+                                        <li>Eldorado Do Sul-RS</li>
+                                        <li>Elias Fausto-SP</li>
+                                        <li>Embu Das Artes-SP</li>
+                                        <li>Encantado-RS</li>
+                                        <li>Erechim-RS</li>
+                                        <li>Espirito Santo Do Pinhal-SP</li>
+                                        <li>Estrela-RS</li>
+                                        <li>Eunapolis-BA</li>
+                                        <li>Eusebio-CE</li>
+                                        <li>Farroupilha-RS</li>
+                                        <li>Fazenda Rio Grande-PR</li>
+                                        <li>Feira De Santana-BA</li>
+                                        <li>Fernandopolis-SP</li>
+                                        <li>Florianopolis-SC</li>
+                                        <li>Formiga-MG</li>
+                                        <li>Fortaleza-CE</li>
+                                        <li>Foz do Iguacu-PR</li>
+                                        <li>Fraiburgo-SC</li>
+                                        <li>Frederico Westphalen-RS</li>
+                                        <li>Garca-SP</li>
+                                        <li>Garibaldi-RS</li>
+                                        <li>Gaspar-SC</li>
+                                        <li>Goiania-GO</li>
+                                        <li>Governador Valadares-MG</li>
+                                        <li>Gramado-RS</li>
+                                        <li>Gravatai-RS</li>
+                                        <li>Guaiba-RS</li>
+                                        <li>Guaira-SP</li>
+                                        <li>Guapiacu-SP</li>
+                                        <li>Guaramirim-SC</li>
+                                        <li>Guarapuava-PR</li>
+                                        <li>Guararapes-SP</li>
+                                        <li>Guaratingueta-SP</li>
+                                        <li>Guaratuba-PR</li>
+                                        <li>Guaruja-SP</li>
+                                        <li>Guarulhos-SP</li>
+                                        <li>Guaxupe-MG</li>
+                                        <li>Gurupi-TO</li>
+                                        <li>Herval D'Oeste-SC</li>
+                                        <li>Hortolandia-SP</li>
+                                        <li>Ibate-SP</li>
+                                        <li>Ibipora-PR</li>
+                                        <li>Ibiuna-SP</li>
+                                        <li>Icara-SC</li>
+                                        <li>Igrejinha-RS</li>
+                                        <li>Ijui-RS</li>
+                                        <li>Ilheus-BA</li>
+                                        <li>Imbe-RS</li>
+                                        <li>Imperatriz-MA</li>
+                                        <li>Indaial-SC</li>
+                                        <li>Indaiatuba-SP</li>
+                                        <li>Ipatinga-MG</li>
+                                        <li>Ipero-SP</li>
+                                        <li>Itabira-MG</li>
+                                        <li>Itabuna-BA</li>
+                                        <li>Itaguai-RJ</li>
+                                        <li>Itajai-SC</li>
+                                        <li>Itajuba-MG</li>
+                                        <li>Itanhaem-SP</li>
+                                        <li>Itapema-SC</li>
+                                        <li>Itapetininga-SP</li>
+                                        <li>Itapeva-SP</li>
+                                        <li>Itapira-SP</li>
+                                        <li>Itaquaquecetuba-SP</li>
+                                        <li>Itaqui-RS</li>
+                                        <li>Itatiba-SP</li>
+                                        <li>Itauna-MG</li>
+                                        <li>Ituiutaba-MG</li>
+                                        <li>Itumbiara-GO</li>
+                                        <li>Itupeva-SP</li>
+                                        <li>Itu-SP</li>
+                                        <li>Ituverava-SP</li>
+                                        <li>Ivoti-RS</li>
+                                        <li>Jaboatao Dos Guararapes-PE</li>
+                                        <li>Jaboticabal-SP</li>
+                                        <li>Jacarei-SP</li>
+                                        <li>Jaguariuna-SP</li>
+                                        <li>Jales-SP</li>
+                                        <li>Jaragua Do Sul-SC</li>
+                                        <li>Jardinopolis-SP</li>
+                                        <li>Jarinu-SP</li>
+                                        <li>Jau-SP</li>
+                                        <li>Jequie-BA</li>
+                                        <li>Ji-Parana-RO</li>
+                                        <li>Joacaba-SC</li>
+                                        <li>Joao Monlevade-MG</li>
+                                        <li>Joao Pessoa-PB</li>
+                                        <li>Joinville-SC</li>
+                                        <li>Jose Bonifacio-SP</li>
+                                        <li>Juazeiro Do Norte-CE</li>
+                                        <li>Juazeiro-BA</li>
+                                        <li>Juiz de</li>
+                                        <li>Jundiai-SP</li>
+                                        <li>Lages-SC</li>
+                                        <li>Lagoa da Prata-MG</li>
+                                        <li>Lagoa Santa-MG</li>
+                                        <li>Lajeado-RS</li>
+                                        <li>Laranjal Paulista-SP</li>
+                                        <li>Lauro De Freitas-BA</li>
+                                        <li>Lavras-MG</li>
+                                        <li>Leme-SP</li>
+                                        <li>Lencois Paulista-SP</li>
+                                        <li>Leopoldina-MG</li>
+                                        <li>Limeira-SP</li>
+                                        <li>Lins-SP</li>
+                                        <li>Londrina-PR</li>
+                                        <li>Lorena-SP</li>
+                                        <li>Louveira-SP</li>
+                                        <li>Lucas Do Rio Verde-MT</li>
+
+
+
+
+
+
+                                        <li>Macae-RJ</li>
+                                        <li>Macapa-AP</li>
+                                        <li>Maceio-AL</li>
+                                        <li>Mafra-SC</li>
+                                        <li>Mairinque-SP</li>
+                                        <li>Manaus-AM</li>
+                                        <li>Manhuacu-MG</li>
+                                        <li>Maraba-PA</li>
+                                        <li>Marau-RS</li>
+                                        <li>Marechal Candido Rondon-PR</li>
+                                        <li>Mariana-MG</li>
+                                        <li>Marilia-SP</li>
+                                        <li>Mata De Sao Joao-BA</li>
+                                        <li>Matao-SP</li>
+                                        <li>Matinhos-PR</li>
+                                        <li>Matozinhos-MG</li>
+                                        <li>Medianeira-PR</li>
+                                        <li>Miguel Pereira-RJ</li>
+                                        <li>Mirandopolis-SP</li>
+                                        <li>Mirassol-SP</li>
+                                        <li>Mococa-SP</li>
+                                        <li>Mogi Das Cruzes-SP</li>
+                                        <li>Mogi Mirim-SP</li>
+                                        <li>Mongagua-SP</li>
+                                        <li>Monte Alto-SP</li>
+                                        <li>Monte Carmelo-MG</li>
+                                        <li>Montenegro-RS</li>
+                                        <li>Montes Claros-MG</li>
+                                        <li>Mossoro-RN</li>
+                                        <li>Muriae-MG</li>
+                                        <li>Natal-RN</li>
+                                        <li>Navirai-MS</li>
+                                        <li>Nilopolis-RJ</li>
+                                        <li>Niteroi-RJ</li>
+                                        <li>Nova Friburgo-RJ</li>
+                                        <li>Nova Iguacu-RJ</li>
+                                        <li>Nova Lima-MG</li>
+                                        <li>Nova Petropolis-RS</li>
+                                        <li>Nova Serrana-MG</li>
+                                        <li>Novo Hamburgo-RS</li>
+                                        <li>Olimpia-SP</li>
+                                        <li>Olinda-PE</li>
+                                        <li>Orlandia-SP</li>
+                                        <li>Osasco-SP</li>
+                                        <li>Osorio-RS</li>
+                                        <li>Ourinhos-SP</li>
+                                        <li>Ouro Preto-MG</li>
+                                        <li>Paicandu-PR</li>
+                                        <li>Palhoca-SC</li>
+                                        <li>Palmas-PR</li>
+                                        <li>Palmas-TO</li>
+                                        <li>Palmeira Das Missoes-RS</li>
+                                        <li>Panambi-RS</li>
+                                        <li>Para De Minas-MG</li>
+                                        <li>Paragominas-PA</li>
+                                        <li>Paraiba Do Sul-RJ</li>
+                                        <li>Paraiso Do Tocantins-TO</li>
+                                        <li>Paranagua-PR</li>
+                                        <li>Parnaiba-PI</li>
+                                        <li>Parnamirim-RN</li>
+                                        <li>Parobe-RS</li>
+                                        <li>Passo Fundo-RS</li>
+                                        <li>Pato Branco-PR</li>
+                                        <li>Patos De Minas-MG</li>
+                                        <li>Paulinia-SP</li>
+                                        <li>Paulista-PE</li>
+                                        <li>Pedreira-SP</li>
+                                        <li>Pedro Leopoldo-MG</li>
+                                        <li>Pelotas-RS</li>
+                                        <li>Penapolis-SP</li>
+                                        <li>Peruibe-SP</li>
+                                        <li>Petrolina-PE</li>
+                                        <li>Petropolis-RJ</li>
+                                        <li>Piedade-SP</li>
+                                        <li>Pindamonhangaba-SP</li>
+                                        <li>Piracicaba-SP</li>
+                                        <li>Piraquara-PR</li>
+                                        <li>Pirassununga-SP</li>
+                                        <li>Piumhi-MG</li>
+                                        <li>Pocos De Caldas-MG</li>
+                                        <li>Ponta Grossa-PR</li>
+                                        <li>Ponta Pora-MS</li>
+                                        <li>Pontal-SP</li>
+                                        <li>Ponte Nova -MG</li>
+                                        <li>Porto Alegre-RS</li>
+                                        <li>Porto Ferreira-SP</li>
+                                        <li>Porto Seguro-BA</li>
+                                        <li>Porto Velho-RO</li>
+                                        <li>Pouso Alegre-MG</li>
+                                        <li>Praia Grande-SP</li>
+                                        <li>Presidente Bernardes-SP</li>
+                                        <li>Promissao-SP</li>
+                                        <li>Quatro Barras-PR</li>
+                                        <li>Recife-PE</li>
+                                        <li>Registro-SP</li>
+                                        <li>Resende-RJ</li>
+                                        <li>Ribeirao Pires-SP</li>
+                                        <li>Ribeirao Preto-SP</li>
+                                        <li>Rio Branco-AC</li>
+                                        <li>Rio Claro-SP</li>
+                                        <li>Rio De Janeiro-RJ</li>
+                                        <li>Rio Do Sul-SC</li>
+                                        <li>Rio Grande-RS</li>
+                                        <li>Rio Negrinho-SC</li>
+                                        <li>Rio Pardo-RS</li>
+                                        <li>Rio Verde-GO</li>
+                                        <li>Rolandia-PR</li>
+                                        <li>Rondonopolis-MT</li>
+                                        <li>Rosario Do Sul-RS</li>
+                                        <li>Sacramento-MG</li>
+                                        <li>Salvador-BA</li>
+                                        <li>Santa Cruz das Palmeiras-SP</li>
+                                        <li>Santa Cruz de Minas-MG</li>
+                                        <li>Santa Cruz Do Rio Pardo-SP</li>
+                                        <li>Santa Cruz Do Sul-RS</li>
+                                        <li>Santa Gertrudes-SP</li>
+                                        <li>Santa Helena De Goias-GO</li>
+                                        <li>Santa Isabel-SP</li>
+                                        <li>Santa Luzia-MG</li>
+                                        <li>Santa Maria-RS</li>
+                                        <li>Santa Rita do Sapucai-MG</li>
+                                        <li>Santa Rosa Do Viterbo-SP</li>
+                                        <li>Santa Rosa-RS</li>
+                                        <li>Santana Do Livramento-RS</li>
+                                        <li>Santana-AP</li>
+                                        <li>Santo Andre-SP</li>
+                                        <li>Santo Angelo-RS</li>
+                                        <li>Santos-SP</li>
+                                        <li>Sul-SC</li>
+                                        <li>Sao Bernardo Do Campo-SP</li>
+                                        <li>Sao Borja-RS</li>
+                                        <li>Sao Caetano Do Sul-SP</li>
+                                        <li>Sao Francisco Do Sul-SC</li>
+                                        <li>Sao Gabriel-RS</li>
+                                        <li>Sao Joao Da Boa Vista-SP</li>
+                                        <li>Sao Joao Del Rei-MG</li>
+                                        <li>Sao Joaquim Da Barra-SP</li>
+                                        <li>Sao Jose Do Rio Pardo-SP</li>
+                                        <li>Sao Jose Do Rio Preto-SP</li>
+
+
+
+
+
+
+
+                                        <li>Sao Jose Dos Campos-SP</li>
+                                        <li>Sao Jose-SC</li>
+                                        <li>Sao Leopoldo-RS</li>
+                                        <li>Sao Lourenco Do Sul-RS</li>
+                                        <li>Sao Luis-MA</li>
+                                        <li>Sao Luiz Gonzaga-RS</li>
+                                        <li>Sao Paulo-SP</li>
+                                        <li>Sao Pedro Da Aldeia-RJ</li>
+                                        <li>Sao Roque-SP</li>
+                                        <li>Sao Sebastiao do Paraiso-MG</li>
+                                        <li>Sao Sebastiao-SP</li>
+                                        <li>Sarandi-PR</li>
+                                        <li>Senador Canedo-GO</li>
+                                        <li>Serra Negra-SP</li>
+                                        <li>Serra-ES</li>
+                                        <li>Serrana-SP</li>
+                                        <li>Sete Lagoas-MG</li>
+                                        <li>Sinop-MT</li>
+                                        <li>Sobral-CE</li>
+                                        <li>Sorocaba-SP</li>
+                                        <li>Sorriso-MT</li>
+                                        <li>Sumare-SP</li>
+                                        <li>Tambau-SP</li>
+                                        <li>Taquara-RS</li>
+                                        <li>Tatui-SP</li>
+                                        <li>Taubate-SP</li>
+                                        <li>Teixeira De Freitas-BA</li>
+                                        <li>Telemaco Borba-PR</li>
+                                        <li>Teresina-PI</li>
+                                        <li>Teutonia-RS</li>
+                                        <li>Timbo-SC</li>
+                                        <li>Timon-MA</li>
+                                        <li>Timoteo-MG</li>
+                                        <li>Toledo-PR</li>
+                                        <li>Torres-RS</li>
+                                        <li>Tramandai-RS</li>
+                                        <li>Tremembe-SP</li>
+                                        <li>Tres Coracoes-MG</li>
+                                        <li>Tres Coroas-RS</li>
+                                        <li>Tres Lagoas-MS</li>
+                                        <li>Tres Rios-RJ</li>
+                                        <li>Trindade-GO</li>
+                                        <li>Tubarao-SC</li>
+                                        <li>Uba-MG</li>
+                                        <li>Ubatuba-SP</li>
+                                        <li>Uberaba-MG</li>
+                                        <li>Uberlandia-MG</li>
+                                        <li>Umuruama-PR</li>
+                                        <li>Uniao Da Vitoria-PR</li>
+                                        <li>Uruguaiana-RS</li>
+                                        <li>Vacaria-RS</li>
+                                        <li>Valenca-RJ</li>
+                                        <li>Valinhos-SP</li>
+                                        <li>Valparaiso De Goias-GO</li>
+                                        <li>Valparaiso-SP</li>
+                                        <li>Varginha-MG</li>
+                                        <li>Varzea Paulista-SP</li>
+                                        <li>Vassouras-RJ</li>
+                                        <li>Venancio Aires-RS</li>
+                                        <li>Vera Cruz-SP</li>
+                                        <li>Veranopolis-RS</li>
+                                        <li>Vespasiano-MG</li>
+                                        <li>Viamao-RS</li>
+                                        <li>Vicosa-MG</li>
+                                        <li>Videira-SC</li>
+                                        <li>Vila Velha-ES</li>
+                                        <li>Vilhena-RO</li>
+                                        <li>Vitoria Da Conquista-BA</li>
+                                        <li>Vitoria-ES</li>
+                                        <li>Volta Redonda-RJ</li>
+                                        <li>Votuporanga-SP</li>
+                                        <li>Xanxere-SC</li>
+                                        <li>Xaxim-SC</li>
+
+
+
+                                </ul>
+                                
+                                <p id="respostaOferta"></p>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+
+
+                        <tr class="mostrar-oferta" style="text-align: center; display: none;" >
+                           
+                            <td>Claro Net Celular - Controle 15GB</td>
+                            <td>3GB</td>
+                            <td>
+                                
+                                <img class="logo-app" src="imagens/icones/icon-youtube.png" alt="WhatsApp">
+                            
+                            </td>
+                            <td>R$39,90</td>
+                            <td>R$34,90</td>
+                            <td>
+                                
+                                <img class="logo-app" src="imagens/icones/icon-wpp.png" alt="WhatsApp">
+                            
+                            </td>
+                            <td>OFERTA SEG CONCORRÊNCIA CONTROLE_15GB</td>
+                            <td>-</td>
+
+                        </tr>
+                        
+
+                        <tr class="mostrar-oferta" style="text-align: center; display: none;" >
+                           
+                            <td>Claro Net Celular - Controle 25GB</td>
+                            <td>5GB</td>
+                            <td rowspan="2">
+
+                                <img class="logo-app" src="imagens/icones/icon-youtube.png" alt="WhatsApp">
+                                <img class="logo-app" src="imagens/icones/icon-facebook.png" alt="WhatsApp">
+                                <img class="logo-app" src="imagens/icones/icon-tiktok.png" alt="WhatsApp">
+                                <img class="logo-app" src="imagens/icones/icon-twitter.png" alt="WhatsApp">
+                                <img class="logo-app" src="imagens/icones/icon-instagram.png" alt="WhatsApp">
+                            
+                            </td>
+                            <td>R$54,90</td>
+                            <td>R$49,90</td>
+                            <td>
+                                <img class="logo-app" src="imagens/icones/icon-wpp.png" alt="WhatsApp">
+                            
+                            </td>
+                            <td>CONTROLE 30GB S/AP RENT</td>
+                            <td>-</td>
+
+                        </tr>
+
+                        <tr class="mostrar-oferta" style="text-align: center; display: none;" >
+                           
+                            <td>Claro Net Celular - Controle 30GB</td>
+                            <td>5GB</td>
+                            <td>R$69,90</td>
+                            <td>R$64,90</td>
+                            <td>
+                                
+                                <img class="logo-app" src="imagens/icones/icon-wpp.png" alt="WhatsApp">
+                            
+                            </td>
+                            <td>CONTROLE 25GB GAMING S/AP PAD RENT</td>
+                            <td>POKEMON GO, ASPHALT 9 LEGENDS E GARENA FREE FIRE + PERKS (BRINDES DENTRO DOS JOGOS COMO ARMAS, SKINS, MAPAS, ETC)</td>
+
+                        </tr>
+                        
+                        <tr class="mostrar-oferta" style="text-align: center; display: none;">
+                            <th colspan="8" class="grupg1g2">OFERTA GRUPO G2</th>
+                        </tr>
+                        
+                        <tr class="mostrar-oferta" style="text-align: center; display: none;" >
+                           
+                            <td>Claro Net Celular - Controle 20GB</td>
+                            <td>3GB</td>
+                            <td>
+                                
+                                <img class="logo-app" src="imagens/icones/icon-youtube.png" alt="WhatsApp">
+                            
+                            </td>
+                            <td>R$44,90</td>
+                            <td>R$39,90</td>
+                            <td>
+                                
+                                <img class="logo-app" src="imagens/icones/icon-wpp.png" alt="WhatsApp">
+                            
+                            </td>
+                            <td>OFERTA SEG CONCORRÊNCIA CONTROLE_15GB</td>
+                            <td>-</td>
+
+                        </tr>
+                        
+                        
+                        
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="container mt-5">
+                
+                <table class="table table-bordered">
+                    <thead class="thead-dark">
+                        <tr class="trh1">
+                            <th colspan="8">PLANO PÓS PAGO</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">PRODUTO</th>
+                            <th scope="col">FRANQUIA EXTRA PLAY</th>
+                            <th scope="col">FRANQUIA TOTAL</th>
+                            <th scope="col">PREÇO NO BOLETO</th>
+                            <th scope="col">PREÇO NO DÉBITO</th>
+                            <th scope="col">PASSAPORTE INCLUSO</th>
+                            <th scope="col">NOMENCLATURA</th>
+                            <th scope="col">APPS PARA UTILIZAR</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Claro Net Celular - Pós pago 25GB</td>
+                            <td>25GB</td>
+                            <td>50GB</td>
+                            <td>R$89,90</td>
+                            <td>R$79,90</td>
+                            <td>AMÉRICAS TITULAR</td>
+                            <td>POS 25GB S/AP PAD</td>
+                            <td rowspan="5">
+                                <img class="logo-app2" src="imagens/icones/icon-disney.png">
+                                <img class="logo-app2" src="imagens/icones/icon-netflix.png">
+                                <img class="logo-app2" src="imagens/icones/icon-youtube.png">
+                                <img class="logo-app2" src="imagens/icones/icon-clarotv.png">
+                                <img class="logo-app2" src="imagens/icones/icon-hbo.png">
+                                <img class="logo-app2" src="imagens/icones/icon-disney.png">
+                                <img class="logo-app2" src="imagens/icones/icon-globoplay.png">
+                                <img class="logo-app2" src="imagens/icones/icon-tiktok.png">
+                                <img class="logo-app2" src="imagens/icones/icon-star.png">
+                                <img class="logo-app2" src="imagens/icones/icon-instagram.png">
+                                <img class="logo-app2" src="imagens/icones/icon-facebook.png">
+                                <img class="logo-app2" src="imagens/icones/icon-twitter.png">
+                                <!-- Adicione mais logos conforme necessário -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Claro Net Celular - Pós pago 50GB</td>
+                            <td>50GB</td>
+                            <td>100GB</td>
+                            <td>R$119,90</td>
+                            <td>R$109,90</td>
+                            <td>AMÉRICAS TITULAR E DEPENDENTE</td>
+                            <td>POS 50GB S/AP PAD</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Claro Net Celular - Pós pago 100GB</td>
+                            <td>100GB</td>
+                            <td>200GB</td>
+                            <td>R$169,90</td>
+                            <td>R$159,90</td>
+                            <td>AMÉRICAS TITULAR E DEPENDENTE</td>
+                            <td>POS 100GB S/AP PAD</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Claro Net Celular - Pós pago 150GB</td>
+                            <td>150GB</td>
+                            <td>300GB</td>
+                            <td>R$219,90</td>
+                            <td>R$209,90</td>
+                            <td>AMÉRICAS TITULAR E DEPENDENTE</td>
+                            <td>POS 150GB S/AP PAD</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Claro Net Celular - Pós pago 300GB</td>
+                            <td>300GB</td>
+                            <td>600GB</td>
+                            <td>R$319,90</td>
+                            <td>R$309,90</td>
+                            <td>AMÉRICAS E EUROPA TITULAR E DEPENDENTE</td>
+                            <td>POS 300GB S/AP PAD</td>
+                            
+                        </tr>
+                        <tr>
+                            <th style="text-align: center; font-size: 1.2em;"><strong>DEPENDENTE</strong></th>
+                            <td colspan="7" style="text-align: center; font-size: 1.2em;">R$50,00</td>
+                        </tr>
+                       <tr>
+                        <td>50GB</td>
+                        <td colspan="4">Não tem dependente gratuito, mas pode adquiri  1 pago</td>
+                        <td style="text-align: center;" colspan="3"><strong>PDF MÓVEL</strong></td>
+                       </tr>
+
+                       <tr>
+                        <td>100GB</td>
+                        <td colspan="4">Não tem dependente gratuito, mas pode adquiri  2 pago</td>
+
+                        <td colspan="3" rowspan="4" style="text-align: center;">
+                            <a href="pdf-residencial/movel.pdf">
+                                <img id="iconpdf" src="imagens/icon-pdf.png" alt="pdf">
+                                <p><strong>Móvel</strong></p>
+                            </a>
+                        </td>
+                       </tr>
+                       <tr>
+                        <td>200GB</td>
+                        <td colspan="4">Tem direito a 1 gratuito, e pode adquiri + 2 pago</td>
+                       </tr>
+                       <tr>
+                        <td>300GB</td>
+                        <td colspan="4">Tem direito a 2 gratuito, e pode adquiri 2 pago</td>
+                       </tr>
+                       <tr>
+                        <td>600GB</td>
+                        <td colspan="4">Tem direito a 3 gratuito, e pode adquiri 2 pago</td>
+                       </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+    </main>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="estilosJS/movel.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de Combos</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="estilos/calculadora.css">
+</head>
+<body>
+
+<header>
+  <div class="menu-content">
+    <a href="tabelainternet.html" class="logo">TABELA DE PREÇO</a>
+  </div>
+</header>
+
+<div class="container">
+  <h1 id="h1comb">Monte seu Combo</h1>
+  <form id="comboForm">
+    <div class="form-group">
+      <label for="internet">INTERNET RESIDENCIAL:</label>
+      <select class="form-control" id="internet" name="internet">
+        <option value="0">Nenhuma</option>
+        <option value="299.90">1 GIGA (Globoplay) - R$299.90</option>
+        <option value="154.90">750 Megas (Globoplay) - R$154.90</option>
+        <option value="124.90">500 Megas (Globoplay) - R$124.90</option>
+        <option value="104.90">350 Megas (Globoplay) - R$104.90</option>
+        <option value="84.90">250 Megas - R$84.90</option>
+      </select>
+    </div>
+    
+    <div class="form-group text-center">
+      <input type="checkbox" id="rentabilidadeCheckbox" onchange="mostrarRentabilidade()">
+      <label for="rentabilidadeCheckbox" class="centerbox">Mostrar Rentabilidade:</label>
+    </div>
+
+    <div class="form-group" id="rentabilidadeDiv" style="display: none;">
+      <label for="rentabilidade">Rentabilidade:</label>
+      <select class="form-control" id="rentabilidade" name="rentabilidade">
+        <option value="0">Nenhuma</option>
+        <option value="134.90">750 Megas (Globoplay) - R$134.90</option>
+        <option value="104.90">500 Megas (Globoplay) - R$104.90</option>
+        <option value="94.90">350 Megas (Globoplay) - R$94.90</option>
+      </select>
+    </div>
+      
+    <div class="form-group">
+      <label for="tv">PLANO DE TV:</label>
+      <select class="form-control" id="tv" name="tv">
+        <option value="0">Nenhuma</option>
+        <option value="114.90">BOX CLARO TV+ - R$114.90</option>
+        <option value="144.90">4K CLARO TV+ - R$144.90</option>
+        <option value="154.90">SOUNDBOX CLARO TV+ - R$154.90</option>
+        <option value="74.90">APP CLARO TV+ - R$74.90</option>
+      </select>
+    </div>
+
+    <div class="form-group text-center">
+      <input type="checkbox" id="boxCheckbox" onchange="mostrarDesconto()">
+      <label for="boxCheckbox" class="centerbox">Com desconto:</label>
+  </div>
+
+    <div class="form-group text-center">
+      <input type="checkbox" id="pontoAdicionalCheckbox" onchange="mostrarPontoAdicional()">
+      <label for="pontoAdicionalCheckbox" class="centerbox">Ponto Adicional:</label>
+  </div>
+
+    <div class="form-group" id="pontoAdicionalDiv" style="display: none;">
+      <label for="pontoAdicional">PONTO ADICIONAL:</label>
+      <select class="form-control" id="pontoAdicional" name="pontoAdicional">
+        <option value="0">Nenhuma</option>
+        <option value="59.90">TV - BOX CLARO TV+: R$59.90</option>
+        <option value="59.90">TV - 4K CLARO TV+: R$59.90</option>
+        <option value="89.90">SOUNDBOX - CLARO TV+: R$89.90</option>
+      </select>
+    </div>
+
+    <div class="form-group" id="descontoDiv" style="display: none;">
+      <label for="desconto">Desconto:</label>
+      <select class="form-control" id="desconto" name="desconto">
+        <option value="0">Nenhum</option>
+        <option value="84.90">TV - BOX CLARO TV+: R$84,90</option>
+        <option value="114.90">TV - 4K CLARO TV+: R$114,90</option>
+        <option value="39.95">APP CLARO TV+: R$39.95</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="telefone">TELEFONE FIXO:</label>
+      <select class="form-control" id="telefone" name="telefone">
+        <option value="0">Nenhuma</option>
+        <option value="35.00">ILIMITADO BRASIL TOTAL - R$35.00</option>
+        <option value="65.00">ILIMITADO MUNDO TOTAL - R$65.00</option>
+      </select>
+    </div>
+
+    <small class="form-text text-muted" style="margin-bottom: 10px;">* Valores mencionados são para pagamento via boleto. Cada produto em débito possui um desconto de R$5,00.</small>
+
+    <small class="form-text text-muted" style="margin-bottom: 10px;">* CLIENTE LEVA O TELEFONE FIXO POR R$5,00 QUANDO: o cliente aceita oferta de INTERNET e MÓVEL, ou INTERNET, MÓVEL, TV.</small>
+
+    <div class="form-group">
+      <button type="button" class="btn btn-primary" onclick="calcularValor()">Calcular Valor</button>
+    </div>
+  </form>
+  
+  <div id="resultado" class="mt-4"></div>
+</div>
+
+<script src="estilosJS/calculadora.js"></script>
+</body>
+</html>

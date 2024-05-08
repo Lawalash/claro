@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist</title>
+    <link rel="stylesheet" href="estilos/checklist.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <header>
+    <div class="menu-content">
+        <div class="menu-toggle">
+            
+        </div>
+        <a href="home.html" class="logo">TABELA DE PREÇO</a>
+
+        
+        <nav class="header-menu">
+            <ul class="list-itens">
+                <li><a href="tabelainternet.html">INTERNET</a></li>
+                <li><a href="tabelaclarotv.html">CLARO TV BOX</a></li>
+                <li><a href="tabelamovel.html">MÓVEL</a></li>
+                <li><a href="tabelafixo.html">FIXO</a></li>
+                <li><a onclick="return false;" href="tabelacheck.html">CHECKLIST</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    
+    <Main>
+        <div class="checklist-container" id="claroFixoTab">
+
+          
+          <!-- PRIMEIRO ITEM -->
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Repassar os dados do cliente (nome completo, cpf, rg, data de nascimento, nome da mãe)
+                </button>
+              </h2>
+
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Só repassando os dados novamente aqui do titular do contrato, seu nome completo é ( ), CPF ( ), RG ( ), Data de nascimento ( ) e o nome da sua mãe é ( ). </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- SEGUNDO ITEM -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Passar o valor do produto completo (caso for internet, falar o donwload e upload)
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Voce adquiriu conosco o produto (...) por R$00,00</p>
+                </div>
+              </div>
+            </div>
+
+             <!-- TERCEIRO ITEM -->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingThree">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+      Fidelidade de 12 meses e valor da multa de cada item
+    </button>
+  </h2>
+  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+      <table class="center">
+        <thead>
+          <tr>
+            <th>Produtos</th>
+            <th>Fidelidade</th>
+            <th>Multa</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th> INTERNET</th>
+            <td>12 meses</td>
+            <td>R$300,00</td>
+          </tr>
+          <tr>
+            <th> TV CLARO BOX</th>
+            <td>12 meses</td>
+            <td>R$500,00</td>
+          </tr>
+          <tr>
+            <th> MÓVEL</th>
+            <td>12 meses</td>
+            <td>R$140,00</td>
+          </tr>
+          <tr>
+            <th> PÓS PAGO</th>
+            <td>12 meses</td>
+            <td>R$480,00</td>
+          </tr>
+          <tr>
+            <th> PÓS PAGO DEPENDENTE</th>
+            <td>12 meses</td>
+            <td>R$240,00</td>
+          </tr>
+          <tr>
+            <th> FIXO</th>
+            <td>12 meses</td>
+            <td>R$200,00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+            
+            
+            <!-- QUARTO ITEM -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Passar os benefícios do plano
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <table class="center">
+                    <thead>
+                      <tr>
+                        <th>Produtos</th>
+                        <th>Link direto</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th> INTERNET</th>
+                        <td class="direct1"><a class="direct" href="https://www.claro.com.br/internet/banda-larga" target="_blank">Clique aqui pra acessar os beneficios da INTERNET</a></td>
+                      </tr>
+                      <tr>
+                        <th> TV CLARO BOX</th>
+                        <td class="direct1"><a class="direct" href="https://www.claro.com.br/claro-tv-mais" target="_blank"> Clique aqui para acessar os beneficios da TV CLARO BOX</a></td>
+                      </tr>
+                      <tr>
+                        <th> MÓVEL</th>
+                        <td class="direct1"><a class="direct" href="https://www.claro.com.br/celular/controle" target="_blank">Clique aqui para acessar os beneficios do PLANO CONTROLE</a></td>
+                      </tr>
+                      <tr>
+                        <th> PÓS PAGO</th>
+                        <td class="direct1"><a class="direct" href="https://www.claro.com.br/celular/pos" target="_blank">Clique aqui para acessar os beneficios do PÓS PAGO</a></td>
+                      </tr>
+                      <tr>
+                        <th> FIXO</th>
+                        <td class="direct1"><a class="direct" href="https://www.claro.com.br/fone" target="_blank"> Clique aqui para acesar os beneficios do TELEFONE FIXO</a></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">Tabela é apenas caso o cliente queira alguma informação mais especifica. Recomendo passar os beneficios quando falar o preço do produto, download e upload.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            
+            <!-- QUINTO ITEM -->
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Informar que a primeira fatura não vai vir o valor integral, mas sim o proporcional. Calculadora disponível ao clicar na mensagem
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="calculator">
+                  <label for="startDate">Data de Instalação:</label>
+                  <input type="date" id="startDate" required>
+
+                  <label for="dueDate">Data de Vencimento:</label>
+                  <input type="date" id="dueDate" required>
+
+                  <label for="productValue">Valor do Produto:</label>
+                  <input type="number" id="productValue" placeholder="Digite o valor" required>
+
+                  <button onclick="calculateProportional()">Calcular Proporcional</button>
+
+                  <div id="result"></div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- SEXTO ITEM -->
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  Informar o vencimento e a forma de pagamento novamente
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>A forma de pagamento ficou em (...) e o vencimento para (...)</p>
+                </div>
+              </div>
+            </div>
+
+             <!-- SÉTIMO ITEM -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                  Informar aqui após 12 meses tem reajuste anual
+                </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Após os 12 meses, pode ou não haver o reajuste do IGPM do governo sob o plano contratado, mas é só ligar 1 mês antes que alteramos o valor</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- OITAVO ITEM -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingEight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                  Informar que ele deve acessar o aplicativo e baixá-lo no celular para ter acesso às informações do contrato data de instalação
+                </button>
+              </h2>
+              <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Não se esqueça de baixar nossos aplicativos, <strong>minha claro Claro residencial</strong> e <strong>Minha claro móvel</strong>, onde lá você vai acompanhar todo passo a passo da instalação, como também vai encontrar as outras aplicações que vêm junto ao seu plano.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- NONO ITEM -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingNine">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                  Informar que todo o contrato e informações passadas vão chegar pra ele (a) junto com protocolo em até 24 horas por email e SMS. E que o mesmo poderá receber uma ligação pra confirmar os dados e contrato finalizado da central técnica (backoffice).
+                </button>
+              </h2>
+              <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Peço que fique acompanhando seu <strong>E-mail</strong> e <strong>SMS</strong>, pois toda informação passada vai chegar junto ao protocolo em até 24 horas. E você também pode receber uma ligação da nossa central técnica para confirmar os dados novamente.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- DÉCIMO ITEM -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTen">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                  Informar data da instalação, informar que é preciso ter alguém +18 pra receber o técnico, portando identidade ou CNH e um comprovante de residência (se possível, mas não é obrigatório)
+                </button>
+              </h2>
+              <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Firmando novamente, a data para instalação ficou para o dia (...), é preciso ter alguém +18 pra receber o técnico, portando identidade ou CNH, e se possível um comprovante de residência.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- DÉCIMO PRIMEIRO ITEM -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingEleven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                  Depois disso é só confirmar com ele se ele aceita a adesão do plano com sim ou não e daí você fecha o contrato e tabula tudo no EVA antes da ligação cair.
+                </button>
+              </h2>
+              <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Poderia me confirmar com <strong>SIM</strong> ou <strong>NÃO</strong>, se você aceita a adesão do plano ofertado, para deixar aqui registrado? Por favor. Vai gerar um número do contrato, peço que aguarde pois irei te falar.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- DÉCIMO SEGUNDO ITEM -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwelve">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                  Perguntar ao cliente se ele aceita continuar recebendo ofertas e promoções em seu nome
+                </button>
+              </h2>
+              <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Pra finalizarmos aqui senhor (a), você aceita continuar ainda recebendo ofertas como essa que repassamos pra você? Pelos nossos canais de comunicação.</p>
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+    </Main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="estilosJS/checklist.js"></script>
+    
+</body>
+</html>

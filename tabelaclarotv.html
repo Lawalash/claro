@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClaroTV + </title>
+    <link rel="stylesheet" href="estilos/tabela-tvbox.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+</head>
+<body>
+    <header>
+        <div class="menu-content">
+            <div class="menu-toggle"></div>
+            <a href="home.html" class="logo">TABELA DE PREÇO</a>
+            
+            <nav class="header-menu">
+                <ul class="list-itens">
+                    <li><a href="tabelainternet.html">INTERNET</a></li>
+                    <li><a href="tabelaclarotv.html" onclick="return false;">CLARO TV BOX</a></li>
+                    <li><a href="tabelamovel.html">MÓVEL</a></li>
+                    <li><a href="tabelafixo.html">FIXO</a></li>
+                    <li><a href="calculadora.html">MONTE SEU PLANO</a></li>
+                    <li><a href="tabelacheck.html">CHECKLIST</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="table-container" id="claroTvBoxTable">
+
+            <div class="container mt-5">
+                <table class="table table-bordered table-controle">
+                    <thead class="thead-dark" id="center1">
+                        <tr>
+                            <th colspan="7">CLARO TV BOX</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Produtos</th>
+                            <th scope="col">No boleto</th>
+                            <th scope="col">No débito automático</th>
+                            <th scope="col">Ponto adicional</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th id="center">TV - BOX CLARO TV+</th>
+                            <td>R$114,90</td>
+                            <td>R$109,90</td>
+                            <td>BOX R$59,90</td>
+                            
+                        <tr class="plano hidden">
+                            <th colspan="1" id="centerrent">(Cliente recebe R$30,00 de desconto durante 2 meses) Com desconto:</th>
+                            <td>R$84,90</td>
+                            <td>R$79,90</td>
+                            <td>BOX R$59,90</td>
+                        </tr>
+                        <tr class="plano hidden">
+                            <th>Nomenclatura:</th>
+                            <td colspan="3">CLARO STREAMING HD TOP RENT G+N AN FID DESC R$30,00 2M</td>
+                        </tr>
+
+
+                        
+                        <tr>
+                            <th id="center">TV - 4K CLARO TV+</th>
+                            <td>R$144,90</td>
+                            <td>R$139,90</td>
+                            <td>4K R$59,90 | HD R$49,90</td>
+                        </tr>
+                        
+                       
+                        <tr class="plano hidden">
+                            <th th colspan="1" id="centerrent">(Cliente recebe R$30,00 de desconto durante 2 meses) Com desconto:</th>
+                            <td>R$114,90</td>
+                            <td>R$109,90</td>
+                            <td>4K R$59,90 | HD R$49,90</td>
+                        </tr>
+                        <tr class="plano hidden">
+                            <th>Nomenclatura:</th>
+                            <td colspan="3">CTV+ TOP HD 4K RENT GPLAY+NTFX AN FID DESC R$30,00 2M</td>
+                        </tr>
+
+
+                        <tr>
+                            <th class="center" id="center">SOUNDBOX - CLARO TV + (Cabo)</th>
+                            <td>R$154,90</td>
+                            <td>R$149,90</td>
+                            <td>SOUNDBOX R$89,90</td>
+                        </tr>
+                        <tr>
+                            <th class="center" id="center">APP CLARO TV+</th>
+                            <td>R$74,90</td>
+                            <td colspan="2" style="text-align: center;">R$69,90</td>
+                        </tr>
+
+                        <tr class="plano hidden">
+                            <th th colspan="1" id="centerrent">DESCONTO NOS 2 PRIMEIROS MESES</th>
+                            <td>R$39.95</td>
+                            <td colspan="2" style="text-align: center;">R$34,95</td>
+                        </tr>
+
+
+                        <tr style="text-align: center;">
+                            <th colspan="6"><button id="toggleButton" class="buttonth">Mostrar Oferta</button></th>
+                        </tr>
+
+                        <tr style="text-align: center; vertical-align: middle;">
+                            <th>
+                                <a href="pdf-residencial/tv.pdf">
+                                    <img id="iconpdf" src="imagens/icon-pdf.png" alt="pdf">
+                                    <p>Claro TV BOX</p>
+                                </a>
+                                
+                            </th>
+                            <td>
+                                <a href="pdf-residencial/rentabilidade.pdf">
+                                    <img id="iconpdf" src="imagens/icon-pdf.png" alt="pdf">
+                                    <p><strong>Rentabilidade</strong></p>
+                                </a>
+                            </td>
+                            
+
+                            <td colspan="5">Em caso de duvidas, consulte o PDF (atualizado 12/03/2024) - basta clicar em cima pra acessar.</td>
+
+    
+
+                        <tr>
+                            <td colspan="6" style="text-align: center;">OBS: OFERTA RENT  VÁLIDA APENAS PARA CLIENTE DA BASE RESIDENCIAL E UPGRADE DE TV</td>
+                        </tr>  
+                        <tr>
+                            <td colspan="6" style="text-align: center;">OBS: Todo serviço de TV box vem com o GLOBOPLAY + NETFLIX (PADRÃO COM ANUNCIO) gratuito + CANAIS AO VIVO</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="text-align: center;">OBS: OFERTAR APLICATIVO APENAS NO MULTI: APP + INTERNET, APP + MÓVEL, APP + FONE</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="estilosJS/clarotvbox.js"></script>
+</body>
+</html>

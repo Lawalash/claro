@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROTEIRO DE VENDAS</title>
+    <link rel="stylesheet" href="roteirodevendas.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="../home.html">
+            <div class="centerclaro"><img src="imagens/qualidade.png" alt="imagemclaro"></div>
+        </a>
+        <nav>
+            <a href="qualidade.html">HOME</a>
+            <a href="roteirovendas.html">ROTEIRO DE VENDAS</a>
+            <a href="#">TABULAÇÃO</a>
+            <a href="#">ARGUMENTAÇÃO</a>
+            <a href="materiaisdeapoio.html">MATERIAIS DE APOIO</a>
+
+        </nav>
+    </header>
+
+    <main>
+    
+
+        <div class="imagem-container">
+            <img id="roteirovendas" src="imagens/roteiro-vendas.png" alt="qualidade-portal">
+        </div>
+
+
+
+        <div class="itens-container">
+            <div class="item" onclick="toggleTexto(1)">ABORDAGEM</div>
+            <div class="item" onclick="toggleTexto(2)">SONDAGEM</div>
+            <div class="item" onclick="toggleTexto(3)">APRESENTAÇÃO DOS PLANOS</div>
+            <div class="item" onclick="toggleTexto(4)">BENEFÍCIOS</div>
+            <div class="item" onclick="toggleTexto(5)">CONTORNO DE OBJEÇÃO</div>
+            <div class="item" onclick="toggleTexto(6)">DCC + FATURA DIGITAL</div>
+            <!-- Repita esse padrão para os outros itens -->
+        </div>
+
+        <section>
+            <div class="texto-container" id="texto-container-1">
+                <h2 id="h2">CADA CAMPANHA (MAILING) HÁ UMA ABORDAGEM CORRETA PARA SER UTILIZADA, VEJA:</h2>
+                <UL>
+                    <li><strong>FACILITA (INDICAÇÃO):</strong> Olá bom dia, eu sou o XXXXXX consultor de vendas da Claro
+                        Net. Recebemos uma indicação através da ligação que Sr.º(ª) realizou com a nossa central de
+                        atendimento. Estou entrando em contato para apresentar os nossos produtos. O Sr.º(ª) tem algum
+                        produto da Claro Net?</li>
+                </UL>
+
+                <p><strong>SE SIM:</strong> Solicite o CPF do cliente/</p>
+
+                <p><strong>SE NÃO:</strong> Solicite o CEP para verificar disponibilidade;</p>
+
+                <ul>
+                    <li><strong>CARRINHO ABANDONADO (PF E PJ):</strong> Olá! Meu nome é XXXX sou consultor da Net e
+                        Claro, verifiquei aqui que você estava realizando um processo de compra no site da NET Claro.
+                        Estamos entrando em contato para te ajudar a finalizar o seu pedido. Qual o seu CEP para
+                        verificar as ofertas na sua região? Qual são os produtos que você estava solicitando?</li>
+
+                    <li><strong>LEADS AFILIADOS – CLIENTE QUE FEZ O CADASTRO NA INTERNET:</strong> Olá! Meu nome é XXXX
+                        sou consultor da Net e Claro, verifiquei que você solicitou nosso contato para realizar a compra
+                        de um Combo na Claro/NET. Me informe seu CEP para verificar as ofertas da sua região.</li>
+
+                    <li><strong>MIND – REJEITADO:</strong> Olá! Meu nome é Bruno sou consultor da Claro Net, estou
+                        entrando em contato pois o seu pedido feito pelo site deu uma pendencia de _INFORMAR PENDENIA
+                        CORINGA 02_ , por isso estou ligando para corrigir e concluir a sua solicitação.</li>
+                </ul>
+
+                <ul style="margin-top: 40px;">
+                    <li><strong>MIND – PME:</strong> Olá! Meu nome é Bruno sou consultor da Claro Net, estou entrando em
+                        contato pois foi realizado um pedido no site para a sua empresa, mas deu uma pendencia de
+                        _INFORMAR PENDENIA CORINGA 02_, quem é o responsável pela contratação desses serviços?</li>
+
+                    <li><strong>PROPOSTA/BL RESTRIÇÃO:</strong> Olá! Meu nome é Bruno sou consultor da Net e Claro.
+                        Identificamos que você iniciou um pedido com a gente, mas ainda estamos com a sua proposta
+                        pendente, por isso estou entrando em contato para concluir o seu pedido? Seu cep é o _INFORMAR O
+                        CEP, CONFORME EVAMIND_.</li>
+                </ul>
+                <h2 id="h2contorn">CONTORNO DE OBJEÇÃO</h2>
+
+                <p><strong>CLIENTE NÃO DESEJA OUVIR A OFERTA NO INÍCIO DO ATENDIMENTO: “_NOME DO CLIENTE_,
+                    </strong>escute as ofertas você pode se interessar e fazer um bom negócio, nossos planos são muito
+                    bons e com valores ainda melhores. É sem compromisso, eu vou te apresentar os planos que temos e
+                    você avalia, se quiser, eu posso até retornar o contato depois. ”</p>
+        </section>
+        </div>
+
+
+        <section>
+            <div class="texto-container" id="texto-container-2">
+                <p>
+                    <strong>OPERADOR:</strong> Enquanto eu verifico a disponibilidade dos nossos serviços para o seu
+                    endereço, quais serviços você tem na sua residência e qual operadora?
+                </p>
+
+                <ul>
+
+                <p><strong>SE O CLIENTE TIVER ALGUM PRODUTO RESIDENCIAL, SONDE:</strong></p>
+
+                    <li><strong>Internet:</strong> “Na Internet aí na sua casa: quanto (R$) você paga por mês e qual a velocidade que
+                        você tem aí?”</li>
+
+                    <li><strong>TV:</strong> “Quanto (R$) você paga pra assistir os canais aí na sua Televisão? E quais canais você mais
+                    gosta ou tem vontade de assistir aí na sua casa?”</li>
+
+                    <li><strong>Celular:</strong> “E seu celular você faz recarga, ou paga um boleto todo mês? E quanto (R$) você
+                    recarrega/paga por mês? Quantos Giga você tem no pacote de Celular?”</li>
+
+                    <li><strong>Fone:</strong> “Em relação ao telefone fixo, quanto você paga por mês? Qual o tipo de ligação você faz,
+                        local ou longa distância? Liga para telefone fixo, ou celular?”</li>
+                </ul>
+
+                <h2 class="h2edit">SONDAGEM DE PERFIL</h2>
+
+                <p><strong>SE O CLIENTE NÃO TIVER PRODUTO RESIDÊNCIAL:</strong></p>
+
+                <ul>
+                    <li>
+                        <strong>TV:</strong> Já teve alguma TV por assinatura? / O que mais gosta de assistir? / Tem criança em casa? / Tem
+                        quantas televisões em casa?
+                    </li>
+                    <li>
+                        <strong>INTERNET:</strong> Qual a sua frequência de uso? / Usa Wi-fi? / O que mais acessa? / Assiste muito netflix? /
+                        Joga online? / Estuda? / Está em home office?
+                    </li>
+                    <li>
+                        <strong>FONE:</strong> Você fica muito em casa? / Qual o tipo de ligação que você mais faz, local ou longa distância? /
+                        Tem algum parente ou conhecido que mora em outro país?
+                    </li>
+                    <li>
+                        <strong>CELULAR:</strong> Qual o tipo de ligação que você mais faz? / Qual a frequência que você usa a internet? / Você
+                        trabalha fora?
+                    </li>
+
+                    <li><strong>OUTRAS OPÇÕES DE SONDAGEM:</strong> Quantos pontos de TV / Quantas pessoas moram com você? / Quantos dias você
+                    fica em casa? / Alguém está estudando em casa? / Tem alguém trabalhando em home office? / Tem crianças
+                    em casas? / Você consegue utilizar a internet em todos os cômodos da sua casa? / Qual aplicativo você
+                    mais utiliza em seu celular? / A sua franquia dura para o mês todo? / Você tem a assinatura da Netflix,
+                    Disney plus ou Amazon prime?
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="texto-container" id="texto-container-3">
+            
+                <h2 class="h2edit">TV</h2>
+            
+                <p>O pacote de TV <strong>_NOME DO PLANO_</strong> com _QUANTIDADE DE CANAIS_ canais, valor da mensalidade de _VALOR DA MENSALIDADE_ (incluindo pacotes a la carte, filmes e futebol, e pontos opcionais se houver) _______ , sendo o valor promocional de __________ da 1º a ________ mensalidade.</p>
+
+                <p>(se houver a contratação de Pontos Opcionais, confirmar a quantidade), (Informar taxa de adesão e instalação, se houver).</p>
+
+                <p><strong>Regra de ouro: Informar os canais que tem no plano de acordo com o perfil do cliente, exemplo, se cliente informa que assiste futebol, então ao apresentar o plano dê ênfase neste canal.</strong></p>
+
+            <h2 class="h2edit">INTERNET</h2>
+
+            <p>O pacote Internet Vírtua com ____ de velocidade, __________ de Download e _________de upload.</p>
+
+            <p>O valor da mensalidade é_______ , sendo o valor promocional de __________ da 1º a ________ mensalidade.</p>
+
+            <p>(Informar taxa de adesão e instalação, se houver);</p>
+
+            <p><strong>Regra de ouro: Sempre citar qual o tipo de navegação que o cliente pode fazer de acordo com o perfil, exemplo, “Como você me informou que navega muito em redes sociais, neste plano você poderá utilizar, à vontade, na velocidade de _XX_”</strong></p>
+
+            <h2 class="h2edit">FONE</h2>
+
+            <p>O plano de Fone Fixo _NOME DO PLANO_O valor da mensalidade é_______ , sendo o valor promocional de __________ da 1º a ________ mensalidade/ Grátis em casos de COMBO MULTI.</p>
+
+            <p>Para ligações fora da cidade, para que não ocorram cobranças adicionais, utilizar o código 21.</p>
+
+            <p>(Informar taxa de adesão e instalação, se houver).</p>
+
+            <p><strong>Sempre dar ênfase de acordo com o perfil do cliente, exemplo, “Neste plano você poderá ligar para aquele parente que informou que mora em outro país, sem cobrança adicional.”</strong></p>
+
+            <h2 class="h2edit">CELULAR</h2>
+
+            <p>O plano de Celular ____ , franquia e minutos _INFORMAR O PACOTE DE DADOS E LIGAÇÕES_</p>
+
+            <p>O valor da mensalidade é______ , sendo o valor promocional de __________ da 1º a ________ mensalidade/ Grátis em casos de COMBO MULTI.</p>
+
+            
+
+            <p><strong>Sempre dar ênfase de acordo com o perfil do cliente, exemplo, “Como você informou que faz muitas ligações de trabalho, com este plano as chamadas são ilimitadas para qualquer lugar do Brasil usando o código 21.”</strong></p>
+
+            <h2 class="h2edit">CONTORNO DE OBJEÇÃO</h2>
+
+            <p><strong>CLIENTE ACHA O VALOR CARO:</strong> Faça o cálculo com o cliente, do quanto ele pagará por dia, pelo produto, exemplo:</p>
+
+            <p>O plano de internet de 70MB sai no valor de R$69,90, por dia ele sai a R2,30, mostre ao cliente que por menos de R$3,00 / dia ele terá internet durante todo o mês;</p>
+
+            <p>Já o plano de internet individual de 240MB sai no valor de R$120,00 sai a R$4,00 por dia.</p>
+
+            <p><strong>CLIENTE INFORMA QUE PAGA MAIS BARATO EM OUTRA OPERADORA: </strong>Reforce as qualidades dos planos Claro net: Melhor rede e cobertura / Técnicos para melhor atende-lo / Foi premiada como a melhor internet do Brasil / informe os canais em caso de TV, a velocidade em casos de plano de internet / se a cidade for gpon reforçar sobre a fibra ótica.</p>
+
+            <p>É importante neste momento reforçar os benefícios do plano, o que ele tem de melhor!</p>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="texto-container" id="texto-container-4">
+                
+        <h2 class="h2edit">TV:</h2>
+
+        <ul>
+            <li class="lih1">App Claro tv+</li>
+            <li>- Assista onde e quando quiser</li>
+            <li>- 2 streamings simultâneos</li>
+            <li>- Recomece a programação ao vivo ou volte em até 7 dias</li>
+            <li>- Download de conteúdo para assistir offline</li>
+            <li>- Globoplay incluso</li>
+            <li>- mais de 100 canais em HD</li>
+
+            <li class="lih1">Box Claro tv+</li>
+            <li>- Entrega rápida e auto instalação <a href="https://www.claro.com.br/claro-tv-mais/box#saiba-como-instalar" target="_blank">(saiba como clicando aqui)</a></li>
+            <li>- Seus apps de streaming favoritos integrados</li>
+            <li>- Encontre seus conteúdos com comando de voz</li>
+            <li>- Conexão Wi-Fi: leve sua BOX para onde quiser</li>
+           <li><strong>- Box Claro tv+ também conta com o globoplay ja incluso, para demais informações clique na imagem a baixo:</strong></li>
+
+            <div class="imagem-container" onclick="expandirImagem()">
+                <img src="imagens/plano-pequeno.jpeg" alt="Imagem Pequena">
+            </div>
+        
+            <div class="overlay" id="overlay" onclick="contrairImagem()">
+                <div class="imagem-expandida">
+                    <img src="imagens/plano-grande.jpeg" alt="Imagem Grande">
+                    <span class="fechar" onclick="contrairImagem()">&times;</span>
+                </div>
+            </div>
+
+
+            <li class="lih1">4k Claro tv+</li>
+            <li>Imagem em alta definição 4k</li>
+            <li>Seus apps de streaming favoritos integrados</li>
+            <li>Instalação com técnico e assistência</li>
+            <li>Comando de voz com Alexa Integrada</li>
+            <li>- Box Claro tv+ também conta com o globoplay ja incluso, para demais informações clique na imagem a cima:</li>
+
+            <li class="lih1">Soundbox Claro tv+</li>
+
+            <li>- A Soundbox Claro tv+ transforma a sua TV em smart com qualidade de imagem 4K HDR e som Dolby Atmos desenvolvido pela Bang & Olufsen.</li>
+            
+            <li>- E tenha Globoplay incluso para assistir aos seus conteúdos com uma imersão incrível em cada cena</li>
+            
+            <li>- use os comandos de voz da Alexa no controle e leve o Claro música ilimitado gratuitamente para aproveitar o seu aparelho ao máximo.</li>
+            
+            <li>- E você ainda pode adquirir até 2 pontos adicionais ao seu plano!</li>
+
+        </ul>
+            
+
+            
+            
+
+        <h2 class="h2edit">VIRTUA:</h2>
+
+        <ul>
+            <li>Estabilidade na conexão;</li>
+            <li>Suporte 24h por dia, 7 dias da semana pelo número 10621;</li>
+            <li>Wi-Fi Público;</li>
+            <li>Possibilidade de agregar a assinatura da NetFlix e pagamento na mesma fatura, a partir da velocidade (250 megas);</li>
+            <li>Contratação dos serviços adicionais à parte como: Wi-Fi Plus (Dual Band ) e Proteção Digital.</li>
+        </ul>
+
+        <h2 class="h2edit">FONE:</h2>
+
+        <ul>
+            <li>Chamadas ilimitadas para fixos e celulares do Brasil usando o 021;</li>
+            <li>Serviços inteligentes inclusos:</li>
+            <li>Siga-me;</li>
+            <li>Chamada em espera;</li>
+            <li>Conferência a três;</li>
+            <li>Bloqueio de ligações;</li>
+            <li>Busca automática- Exclusivo para Empresa.</li>
+        </ul>
+
+        <h2 class="h2edit">MÓVEL:</h2>
+
+        <ul>
+            <li>Ligações ilimitadas para qualquer operadora do Brasil utilizando o 021;</li>
+            <li>4G mais rápido do Brasil;</li>
+            <li>APPS para navegar ilimitado sem descontar da franquia (conferir regulamento do plano ofertado no FL);</li>
+            <li>SMS ilimitado;</li>
+            <li>Extra Play (com franquia adicional, para utilizar no You Tube, Netflix e Claro Vídeo).</li>
+        </ul>
+
+        <p style="font-style: italic;">Os benefícios dos produtos sempre devem estar de acordo com as informações obtidas na SONDAGEM.</p>
+
+        <h2 id="h2contorn">Caminho do Fique Ligado: Acesso rápido > tabela de serviços > Claro/Net > Claro Residencial.</h2>
+
+
+            </div>
+        </section>
+
+
+
+
+        
+        <section>
+            <div class="texto-container" id="texto-container-5">
+
+        <h2 class="h2edit">Contorno de objeções do cliente: </h2>
+
+       
+            <li>Não quero ouvir ofertas, estou ocupado (a): Normalmente essa é a objeção inicial após o cliente ser abordado, uma forma de chamar a atenção do cliente e permitir que o vendedor (a) prossiga com a  sondagem e apresentação da ofertas:</li>
+
+            <p><strong>Sugestão de script:</strong> Entendo Sr. estou entrando em contato pois estamos com ofertas exclusivas, vou te apresentar e prometo não tomar muito seu tempo, tudo bem?</p>
+
+            <li>Gostei da oferta, mas preciso falar com minha esposa! Esse tipo de objeção indica que o cliente tem interesse, mas para ele a opinião da outra pessoa é importante.</li>
+
+            <p><strong>Sugestão de script:</strong> Entendo, ela está em casa? Posso passar todos os benefícios para ela também.</p>
+            <p><strong>Sugestão de script:</strong> Qual a sua opinião? Concorda que é uma ótima oferta? O que está faltando para fecharmos essa proposta e o Sr. garantir todos esses benefícios?</p>
+
+
+            <li>Tinha o serviço da Claro/Net e Cancelei: Entenda o motivo pelo qual o cliente cancelou:</li>
+
+            <p><strong>Redução de custos:</strong> Entendi, nesse caso, o Sr. pode aproveitar as novas ofertas exclusivas para ter os benefícios novamente.</p>
+            <p><strong>Problemas técnicos:</strong> A Claro/Net está sempre trabalhando para melhoria dos nossos produtos e proporcionar uma melhor experiência para nosso clientes.</p>
+
+            <li><strong>Insatisfação com atendimento anterior:</strong> Compreendo a sua insatisfação e peço desculpa pelo ocorrido em nome da Operadora, mas atualmente estamos com ofertas exclusivas. Vamos conhecer nossas ofertas?</li>
+            <li><strong>É muito caro:</strong> Quando o cliente acha caro, não significa necessariamente que ele não pode pagar.</li>
+
+            <p><strong>Sugestão de script:</strong> Vamos avaliar o custo benefício do serviço: caso o Sr. invista o valor xxx, terá xxx de benefícios ( citar no mínimo 3)</p>
+            <p><strong>Sugestão de script:</strong> Podemos encontrar uma solução para a questão do preço, para o plano no valor xxx, consigo um preço exclusivo para o Sr. no valor xxx com os benefícios xxx.</p>
+            <li><strong>A concorrente me oferece mais barato!</strong> Nesse cenário mostre o diferencial da Claro/Net em relação a concorrente.</li>
+            <p><strong>Sugestão de script:</strong> Quais benefícios foram ofertados ao senhor?</p>
+            <p><strong>Sugestão de script:</strong> Certo, o Sr. já é nosso cliente e conhece a qualidade dos nossos serviços, com a outra operadora o Sr. não tem essa garantia.</p>
+            <p><strong>Sugestão de script:</strong> Entendo, mas adquirindo comigo, o Sr. terá benefícios nos produtos que já possui, além dos benefícios que o plano oferece:</p>
+    
+
+
+            </div>
+        </section>
+
+        <section>
+            <div class="texto-container" id="texto-container-6">
+
+            <p>_NOME DO CLIENTE_ Qual banco você possui conta corrente e qual o seu e-mail ativo?  Optando pelo pagamento em débito automático e o recebimento da fatura por e-mail você terá um desconto fixo de _VALOR DO DESCONTO_.</p>
+
+             <p>Além disso não vai precisar sair de casa, ou pegar fila para pagamento e o melhor, evita atraso e cobrança de multa.</p>
+            </div>
+        </section>
+
+        
+
+        <!-- Repita esse padrão para os outros textos -->
+    </main>
+
+    <script>
+        function toggleTexto(item) {
+            var items = document.querySelectorAll('.item');
+            var textos = document.querySelectorAll('.texto-container');
+
+            items.forEach(function (el, index) {
+                if (index + 1 == item) {
+                    el.classList.toggle('expandido');
+                    textos[index].style.maxHeight = el.classList.contains('expandido') ? textos[index].scrollHeight + 'px' : '0';
+                } else {
+                    el.classList.remove('expandido');
+                    textos[index].style.maxHeight = '0';
+                }
+            });
+        }
+    </script>
+
+    <script>
+                function expandirImagem() {
+            document.getElementById('overlay').style.display = 'flex';
+        }
+
+        function contrairImagem() {
+            document.getElementById('overlay').style.display = 'none';
+        }
+
+    </script>
+</body>
+
+
+</html>

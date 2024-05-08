@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+   
+  }
+
+:root{
+    --cor0:white;
+    --cor1:black;
+    --cor2:#1E73BE;
+    --cor3:#A961D7;
+    --cor4:#DA291C;
+
+}
+
+img[src*="https://www.000webhost.com/static/default.000webhost.com/images/powered-by-000webhost.png"] {
+  display: none;
+}
+ 
+header {
+    background-color:var(--cor2);
+    padding: 20px;
+    text-align: left;
+  }
+main{
+    background-color: var(--cor0);
+    max-width:1280px ;
+    margin: auto;
+    margin-bottom: 30px;
+
+}
+#portalqualid{
+    max-width: 87%;
+    display: block;
+    padding-top: 10px;
+    margin: auto;
+}
+  
+  .centerclaro > img {
+    max-width: 130px;
+    height: auto;
+    display: block;
+    float: left; 
+    margin-right: 20px;
+    margin-left: 30px;
+
+  }
+  nav {
+    margin-top: 10px;
+    margin-bottom: 17px;
+    padding-right: 10px;
+    text-align: right;
+  }
+  nav > a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9em;
+    padding: 1.1rem;
+    transform: 2ms ease-in;
+    position: relative;
+}
+
+nav > a:before {
+    content: ' ';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 2px;
+    background-color: var(--cor0);
+    transition: all 1.7s ease; 
+}
+
+nav > a:hover:before{
+    width: 100%;
+
+}
+
+
+/* Contêiner da imagem */
+.imagem-container {
+  text-align: center; /* Centraliza a imagem */
+  margin-bottom: 20px; /* Espaço entre a imagem e as curiosidades */
+}
+
+/* Seção de curiosidades e conteúdo à esquerda */
+.curiosidades-container {
+  display: flex;
+  margin-left: 80px;
+  flex-direction: column; /* Exibe as curiosidades em uma coluna */
+}
+
+/* Estilo de cada curiosidade */
+.curiosidade {
+  display: flex;
+  max-width: 1100px;
+  margin-bottom: 20px; /* Espaço entre as curiosidades */
+  background-color: var(--cor0);
+    border-left: 3px solid var(--cor3); /* Adiciona uma borda à esquerda */
+    border-bottom: 3px solid var(--cor2); /* Adiciona uma borda inferior */
+    padding: 10px;
+    border-radius: 8px;
+    
+}
+
+/* Imagem da curiosidade */
+.imgcurioso{
+  max-width: 100%;
+  max-height: 100px; /* Defina a altura máxima desejada */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Conteúdo da curiosidade */
+.conteudo {
+  margin-left: 10px;
+  flex: 1; /* Ocupa todo o espaço disponível */
+  margin-right: 20px; /* Espaço entre a imagem e o texto */
+  font-size: 0.9em;
+  color: var(--cor1);}
+
+/* Título da curiosidade */
+
+/* Data da curiosidade */
+.conteudo time {
+  display: block;
+  color: rgba(169, 169, 169, 0.692);
+  margin-bottom: 5px;
+  font-size: 0.8em;
+}
+
+/* Texto da curiosidade */
+.conteudo p {
+  font-size: 0.9em;
+}

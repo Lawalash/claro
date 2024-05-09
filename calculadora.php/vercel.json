@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "builds": [
+    { "buildCommand": "php calculadora.php", "publish": true }
+  ]
+}

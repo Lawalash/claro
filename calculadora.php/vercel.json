@@ -1,6 +1,13 @@
 {
   "version": 2,
+  "routes": [
+    {
+      "src": "/calculadora.php/**",
+      "dest": "/calculadora.php",
+      "headers": { "Content-Type": "text/html" }
+    }
+  ],
   "builds": [
-    { "buildCommand": "php calculadora.php", "publish": true }
+    { "src": "calculadora.php", "use": "@vercel/build-php", "config": { "expose": ["public"] }, "publish": true }
   ]
 }

@@ -246,6 +246,9 @@ th,td {
 .hidden {
     display: none;
 }
+.tabela-escondida{
+    display: none;
+}
 
 
 .buttonth {
@@ -273,3 +276,140 @@ th,td {
 #iconpdf{
     max-width:34px;
 }
+
+/* MODAL */
+
+/* MODAL PARA AS CIDADES */
+
+
+#headercidade {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 5px 20px;
+    z-index: 2;
+   
+}
+#headercidade:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 60px;
+    background-color: rgba(169, 169, 169, 0.596);
+}
+
+#maincidade {
+    overflow-x: auto; /* Adicionar rolagem lateral apenas ao conteúdo principal */
+    padding: 10px;
+    max-height: 60vh; /* Definir uma altura máxima para o conteúdo */
+}
+.modal2 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: hidden; /* Remover a rolagem vertical no modal */
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.modal2-content {
+    background-color: #fff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow: hidden; /* Remover a rolagem vertical */
+    margin-bottom: 20px;
+}
+
+
+.close2 {
+    color: #333;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.close2:hover,
+.close2:focus {
+    color: #555;
+}
+
+#pesquisarCidade {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#confirmarCidade {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#confirmarCidade:hover {
+    background-color: #0056b3;
+}
+
+.list-cidades {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-cidades li {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.list-cidades li:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+
+
+.fade-in {
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Garante que o elemento fique sempre em cima */
+#respostaOferta {
+    z-index: 9999; /* Valor alto para ficar em cima de outros elementos */
+}
+
+
+.tabela-escondida {
+    display: none;
+}
+/* FIM DO MODAL PARA CIDADES*/
+
+
+
+/* CSS FIXA PARA AS PROMOÇÕES */

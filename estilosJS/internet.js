@@ -43,44 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
-
-
-
-
-//=====================================================================================
-document.addEventListener('DOMContentLoaded', function () {
-    // Botão OF-750
-    var toggleButton1 = document.getElementById('oferta1');
-    var ofertaRentabilidade1 = document.querySelectorAll('.oferta1');
-
-    toggleButton1.addEventListener('click', function () {
-        ofertaRentabilidade1.forEach(function (linha) {
-            linha.classList.toggle('hidden');
-        });
-    });
-
-    // Botão OF-500
-    var toggleButton2 = document.getElementById('oferta2');
-    var ofertaRentabilidade2 = document.querySelectorAll('.oferta2');
-
-    toggleButton2.addEventListener('click', function () {
-        ofertaRentabilidade2.forEach(function (linha) {
-            linha.classList.toggle('hidden');
-        });
-    });
-
-    // Botão OF-350
-    var toggleButton3 = document.getElementById('oferta3');
-    var ofertaRentabilidade3 = document.querySelectorAll('.oferta3');
-
-    toggleButton3.addEventListener('click', function () {
-        ofertaRentabilidade3.forEach(function (linha) {
-            linha.classList.toggle('hidden');
-        });
-    });
-});
-
+//==============================================================
 
 // PLANO 1 GIGA
 // Função para abrir o modal ao passar o mouse e clicar na tabela
@@ -497,10 +460,149 @@ function mostrarTabelaDoGrupo(cidadeDigitada) {
   'Dourados-MS': 'ESPECIAL+ COM PROMO 3M',
   'Rondonopolis-MT': 'ESPECIAL+ COM PROMO 3M',
   'Caruaru-PE': 'ESPECIAL+ COM PROMO 3M',
-  'Vitoria Da Conquista-BA': 'ESPECIAL+ COM PROMO 3M'
+  'Vitoria Da Conquista-BA': 'ESPECIAL+ COM PROMO 3M',
+  'Capivari-SP': 'ESPECIAL',
+  'Carapicuiba-SP': 'ESPECIAL',
+  'Embu Das Artes-SP': 'ESPECIAL',
+  'Mogi Guacu-SP': 'ESPECIAL',
+  'Sao Carlos-SP': 'ESPECIAL',
+  'Vinhedo-SP': 'ESPECIAL',
+  'Votorantim-SP': 'ESPECIAL',
+  'Varzea Grande-MT': 'ESPECIAL',
+  'Apucarana-PR': 'ESPECIAL',
+  'Cambe-PR': 'ESPECIAL',
+  'Guaramirim-SC': 'ESPECIAL',
+  'Jaragua Do Sul-SC': 'ESPECIAL',
+  'Rolandia-PR': 'ESPECIAL',
+  'Alvorada-RS': 'ESPECIAL',
+  'Arapongas-PR': 'ESPECIAL',
+  'Cachoeirinha-RS': 'ESPECIAL',
+  'Gravatai-RS': 'ESPECIAL',
+  'Novo Hamburgo-RS': 'ESPECIAL',
+  'Palhoca-SC': 'ESPECIAL',
+  'Viamao-RS': 'ESPECIAL',
+  'Araraquara-SP': 'ESPECIAL',
+  'Bauru-SP': 'ESPECIAL',
+  'Cacapava-SP': 'ESPECIAL',
+  'Cariacica-ES': 'ESPECIAL',
+  'Cosmopolis-SP': 'ESPECIAL',
+  'Franca-SP': 'ESPECIAL',
+  'Guaruja-SP': 'ESPECIAL',
+  'Indaiatuba-SP': 'ESPECIAL',
+  'Jacarei-SP': 'ESPECIAL',
+  'Maua-SP': 'ESPECIAL',
+  'Mogi Das Cruzes-SP': 'ESPECIAL',
+  'Paulinia-SP': 'ESPECIAL',
+  'Praia Grande-SP': 'ESPECIAL',
+  'Ribeirao Preto-SP': 'ESPECIAL',
+  'Santos-SP': 'ESPECIAL',
+  'Sao Jose Do Rio Preto-SP': 'ESPECIAL',
+  'Sao Jose Dos Campos-SP': 'ESPECIAL',
+  'Sao Vicente-SP': 'ESPECIAL',
+  'Serra-ES': 'ESPECIAL',
+  'Sorocaba-SP': 'ESPECIAL',
+  'Taubate-SP': 'ESPECIAL',
+  'Valinhos-SP': 'ESPECIAL',
+  'Vila Velha-ES': 'ESPECIAL',
+  'Vitoria-ES': 'ESPECIAL',
+  'Campo Grande-MS': 'ESPECIAL',
+  'Cuiaba-MT': 'ESPECIAL',
+  'Ananindeua-PA': 'ESPECIAL',
+  'Belem-PA': 'ESPECIAL',
+  'Palmas-TO': 'ESPECIAL',
+  'Porto Velho-RO': 'ESPECIAL',
+  'Rio Branco-AC': 'ESPECIAL',
+  'Jaboatao Dos Guararapes-PE': 'ESPECIAL',
+  'Olinda-PE': 'ESPECIAL',
+  'Paulista-PE': 'ESPECIAL',
+  'Recife-PE': 'ESPECIAL',
+  'Sao Luis-MA': 'ESPECIAL',
+
+  'Curitiba-PR':'ESPECIAL SEM 125M',
+
+  'Itapecerica Da Serra-SP': 'ESPECIAL+',
+  'Mesquita-RJ': 'ESPECIAL+',
+  'Biguacu-SC': 'ESPECIAL+',
+  'Aluminio-SP': 'ESPECIAL+',
+  'Caraguatatuba-SP': 'ESPECIAL+',
+  'Itanhaem-SP': 'ESPECIAL+',
+  'Itatiba-SP': 'ESPECIAL+',
+  'Jaguariuna-SP': 'ESPECIAL+',
+  'Mirassol-SP': 'ESPECIAL+',
+  'Mongagua-SP': 'ESPECIAL+',
+  'Morungaba-SP': 'ESPECIAL+',
+  'Sao Sebastiao-SP': 'ESPECIAL+',
+  'Ubatuba-SP': 'ESPECIAL+',
+  'Santana-AP': 'ESPECIAL+',
+  'Maringa-PR': 'ESPECIAL+',
+  'Pelotas-RS': 'ESPECIAL+',
+  'Jau-SP': 'ESPECIAL+',
+  'Niteroi-RJ': 'ESPECIAL+',
+  'Aracaju-SE': 'ESPECIAL+ COM PROMO 3MM',
+  'Aparecida De Goiania-GO': 'ESPECIAL+ COM OFERTA E PROMO 3M',
+  'Goiania-GO': 'ESPECIAL+ COM OFERTA E PROMO 3M',
+  'Fortaleza-CE': 'ESPECIAL+ COM OFERTA E PROMO 3M',
+  'Teresina-PI': 'ESPECIAL+ COM OFERTA E PROMO 3M',
+  'Cabedelo-PB': 'ESPECIAL COM OFERTA',
+  'Joao Pessoa-PB': 'ESPECIAL COM OFERTA',
+  'Maceio-AL': 'ESPECIAL COM OFERTA',
+  'Natal-RN': 'ESPECIAL COM OFERTA',
+  'Parnamirim-RN': 'ESPECIAL COM OFERTA',
+  'Campina Grande do Sul-PR':'ESPECIAL+ REDES NEUTRAS',
+  'Campo Mourao-PR': 'ESPECIAL+ REDES NEUTRAS',
+  'Castro-PR': 'ESPECIAL+ REDES NEUTRAS',
+  'Cornelio Procopio-PR': 'ESPECIAL+ REDES NEUTRAS',
+  'Fazenda Rio Grande-PR': 'ESPECIAL+ REDES NEUTRAS',
+  'Foz Do Iguacu-PR': 'ESPECIAL+ REDES NEUTRAS',
+  'Francisco Beltrao-PR': 'ESPECIAL+ REDES NEUTRAS',
+  'Guaratuba-PR': 'ESPECIAL+ REDES NEUTRAS',
+  'Ibipora-PR': 'ESPECIAL+ REDES NEUTRAS',
+  'Ijui-RS': 'ESPECIAL+ REDES NEUTRAS',
+  'Marechal Candido Rondon-PR': 'ESPECIAL+ REDES NEUTRAS',
+  'Matinhos-PR': 'ESPECIAL+ REDES NEUTRAS',
+  'Medianieira-PR': 'ESPECIAL+ REDES NEUTRAS',
+  'Paicandu-PR': 'ESPECIAL+ REDES NEUTRAS',
+  'Palmas-PR': 'ESPECIAL+ REDES NEUTRAS',
+  'Pato Branco-PR': 'ESPECIAL+ REDES NEUTRAS',
+  'Piraquara-PR': 'ESPECIAL+ REDES NEUTRAS',
+  'Quatro Barras-PR': 'ESPECIAL+ REDES NEUTRAS',
+  'Sarandi-PR': 'ESPECIAL+ REDES NEUTRAS',
+  'Telemaco Borba-PR': 'ESPECIAL+ REDES NEUTRAS',
+  'Toledo-PR': 'ESPECIAL+ REDES NEUTRAS',
+  'Umuarama-PR': 'ESPECIAL+ REDES NEUTRAS',
+  'Uniao Da Vitoria-PR': 'ESPECIAL+ REDES NEUTRAS',
+  'Alfenas-MG': 'ESPECIAL+ REDES NEUTRAS',
+  'Arcos-MG': 'ESPECIAL+ REDES NEUTRAS',
+  'Carmelo-MG': 'ESPECIAL+ REDES NEUTRAS',
+  'Formiga-MG': 'ESPECIAL+ REDES NEUTRAS',
+  'Guaxupe-MG': 'ESPECIAL+ REDES NEUTRAS',
+  'Joao Monlevade-MG': 'ESPECIAL+ REDES NEUTRAS',
+  'Lagoa da Prata-MG': 'ESPECIAL+ REDES NEUTRAS',
+  'Leopoldina-MG': 'ESPECIAL+ REDES NEUTRAS',
+  'Mariana-MG': 'ESPECIAL+ REDES NEUTRAS',
+  'Matozinhos-MG': 'ESPECIAL+ REDES NEUTRAS',
+  'Monte Carmelo-MG': 'ESPECIAL+ REDES NEUTRAS',
+  'Muriae-MG': 'ESPECIAL+ REDES NEUTRAS',
+  'Nova Serrana-MG': 'ESPECIAL+ REDES NEUTRAS',
+  'Ouro Preto-MG': 'ESPECIAL+ REDES NEUTRAS',
+  'Patrocinio-MG': 'ESPECIAL+ REDES NEUTRAS',
+  'Pedro Leopoldo-MG': 'ESPECIAL+ REDES NEUTRAS',
+  'Piumhi-MG': 'ESPECIAL+ REDES NEUTRAS',
+  'Ponte Nova-MG': 'ESPECIAL+ REDES NEUTRAS',
+  'Sacramento-MG': 'ESPECIAL+ REDES NEUTRAS',
+  'Santa Cruz de Minas-MG': 'ESPECIAL+ REDES NEUTRAS',
+  'Santa Rita Do Sapucai-MG': 'ESPECIAL+ REDES NEUTRAS',
+  'Sao Sebastiao do Paraiso-MG': 'ESPECIAL+ REDES NEUTRAS',
+  'Santa Maria-DF':'EXCLUSIVO NODE',
+  'Planaltina-DF':'EXCLUSIVO NODE',
+  
+
+
+
+
+
 
     };
-
     // Verifica se a cidade está no mapeamento
     if (cidadeGrupoMap.hasOwnProperty(cidadeDigitada)) {
         const grupoCidade = cidadeGrupoMap[cidadeDigitada];
@@ -510,6 +612,8 @@ function mostrarTabelaDoGrupo(cidadeDigitada) {
         respostaOferta.style.display = 'block';
     }
 }
+
+
 
 // Função para mostrar a tabela do grupo selecionado
 function mostrarTabela(grupo) {

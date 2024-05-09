@@ -60,7 +60,28 @@ header {
     text-decoration: none; /* Remove o sublinhado ao passar o mouse */
     color: white; /* Mantém a cor padrão do texto */
 }
-
+#maes{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #b32218;
+    background:  linear-gradient(rgba(22, 22, 22, 0.164), rgba(20, 20, 20, 0.212)), url(../imagens/maes.png);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+}
+#mae{
+    background-color: #f85fb0b4;
+    font-weight: bolder;
+    color: white;
+    padding-top: 40px;
+}
+#mae2{
+    background-color: #f85fb0b4;
+    font-weight: bolder;
+    color: white;
+    padding-left: 20px;
+    padding-top: 60px;
+}
 .menu-content .list-itens {
     margin-right: 10px;
     display: flex;
@@ -141,7 +162,7 @@ th {
 
 th, td {
     border: 1px solid black;
-    padding: 10px;
+    padding-top: 10px;
 }
 
 .h1corpo {
@@ -211,19 +232,43 @@ th, td {
 
 
 
-.modal {
+* MODAL PARA AS CIDADES */
+
+
+#headercidade {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 5px 20px;
+    z-index: 2;
+   
+}
+#headercidade:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 60px;
+    background-color: rgba(169, 169, 169, 0.596);
+}
+
+#maincidade {
+    overflow-x: auto; /* Adicionar rolagem lateral apenas ao conteúdo principal */
+    padding: 10px;
+    max-height: 60vh; /* Definir uma altura máxima para o conteúdo */
+}
+.modal2 {
     display: none;
     position: fixed;
     z-index: 1;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
+    overflow: hidden; /* Remover a rolagem vertical no modal */
     background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
 }
 
-.modal-content {
+.modal2-content {
     background-color: #fff;
     position: fixed;
     left: 50%;
@@ -235,11 +280,12 @@ th, td {
     width: 90%;
     max-width: 600px;
     max-height: 80vh;
-    overflow-y: auto;
+    overflow: hidden; /* Remover a rolagem vertical */
     margin-bottom: 20px;
 }
 
-.close {
+
+.close2 {
     color: #333;
     float: right;
     font-size: 24px;
@@ -248,8 +294,8 @@ th, td {
     padding: 5px;
 }
 
-.close:hover,
-.close:focus {
+.close2:hover,
+.close2:focus {
     color: #555;
 }
 
@@ -266,6 +312,7 @@ th, td {
     background-color: #007bff;
     color: #fff;
     border: none;
+    width: 100%;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
@@ -310,3 +357,8 @@ th, td {
     z-index: 9999; /* Valor alto para ficar em cima de outros elementos */
 }
 
+
+.tabela-escondida {
+    display: none;
+}
+/* FIM DO MODAL PARA CIDADES*/

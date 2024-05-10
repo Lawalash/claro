@@ -1,29 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Internet</title>
-    <link rel="stylesheet" href="estilos/tabela-internet.css">
+    <title>ClaroTV + </title>
+    <link rel="stylesheet" href="estilos/tabela-tvbox.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+    
 </head>
-
 <body>
     <header>
         <div class="menu-content">
-            <div class="menu-toggle">
-
-            </div>
+            <div class="menu-toggle"></div>
             <a href="home.html" class="logo">TABELA DE PREÇO</a>
-
-
+            
             <nav class="header-menu">
                 <ul class="list-itens">
-                    <li><a href="#">INTERNET</a></li>
-                    <li><a href="tabelaclarotv.html">CLARO TV BOX</a></li>
+                    <li><a href="tabelainternet.html">INTERNET</a></li>
+                    <li><a href="tabelaclarotv.html" onclick="return false;">CLARO TV BOX</a></li>
                     <li><a href="tabelamovel.html">MÓVEL</a></li>
                     <li><a href="tabelafixo.html">FIXO</a></li>
                     <li><a href="calculadora.html">MONTE SEU PLANO</a></li>
@@ -32,19 +26,15 @@
             </nav>
         </div>
     </header>
-
-
-
+    
     <main>
-
-        <p id="respostaOferta" class="fade-in" style="display: none; position: fixed; top: 0; left: 50%; transform: translateX(-50%); background-color: #f0f0f0; padding: 10px; border-bottom: 1px solid #ccc;"></p>
-        <div class="table-container" id="internetTable">
+        <div class="table-container" id="claroTvBoxTable">
 
             <div class="container mt-5">
                 <table class="table table-bordered table-controle">
                     <thead class="thead-dark" id="center1">
                         <tr>
-                            <th colspan="8">INTERNET RESIDENCIAL</th>
+                            <th style="font-size: 1.3em;" colspan="7">CLARO TV BOX</th>
                         </tr>
 
                         <tr style="background-color: rgba(223, 221, 221, 0.39);">
@@ -56,232 +46,75 @@
 
                         <tr>
                             <th scope="col">Produtos</th>
-                            <th scope="col">MegaBytes</th>
-                            <th scope="col">Download</th>
-                            <th scope="col">Upload</th>
                             <th scope="col">No boleto</th>
-                            <th scope="col" colspan="2">No débito automático</th>
+                            <th scope="col">No débito automático</th>
+                            <th scope="col">Ponto adicional</th>
                         </tr>
-
                     </thead>
                     <tbody>
-                        <tr id="plan1" class="cursor-pointer1">
-                            <th rowspan="8" id="center">INTERNET</th>
-                            <td>1 GIGA (Globoplay) SINGLE (COM FONE OU APP)</td>
-                            <td>até 1 GIGA</td>
-                            <td>100 Mega</td>
-                            <td>R$299,90</td>
-                            <td colspan="2">R$299,90</td>
-                        </tr>
-
-
-
-                        <tr id="plan750Mega" class="cursor-pointer">
-                            <td>750 Mega (Globoplay) SINGLE (COM FONE OU APP)</td>
-                            <td>até 750 Mega</td>
-                            <td>50 Mega</td>
-                            <td>R$154,90</td>
-                            <td colspan="2">R$149,90</td>
-                        </tr>
                         
-                        <!-- OF750 -->
-                        <tr id="plano" class="plano of750 hidden">
-                            <td>750 Mega (Globoplay) ACOMPANHADO COM TV OU MÓVEL</td>
-                            <td>até 750 Mega</td>
-                            <td>50 Mega</td>
+                            <tr>
+                                <th id="center">TV - BOX CLARO TV+</th>
+                                <td>R$114,90</td>
+                                <td>R$109,90</td>
+                                <td>BOX R$59,90</td>
+                            </tr>
+                            
+                        <tr class="plano hidden">
+                            <th colspan="1" id="centerrent">(Cliente recebe R$30,00 de desconto durante 2 meses) Com desconto:</th>
+                            <td>R$84,90</td>
+                            <td>R$79,90</td>
+                            <td>BOX R$59,90</td>
+                        </tr>
+                        <tr class="plano hidden">
+                            <th>Nomenclatura:</th>
+                            <td colspan="3">CLARO STREAMING HD TOP RENT G+N AN FID DESC R$30,00 2M</td>
+                        </tr>
+
+
+                        
+                        <tr>
+                            <th id="center">TV - 4K CLARO TV+</th>
                             <td>R$144,90</td>
-                            <td colspan="2">R$139,90</td>
+                            <td>R$139,90</td>
+                            <td>4K R$59,90 | HD R$49,90</td>
                         </tr>
-
-                        <tr id="plano" class="plano of750 hidden">
-                            <td>750 Mega (Globoplay) ACOMPANHADO COM TV E MÓVEL</td>
-                            <td>até 750 Mega</td>
-                            <td>50 Mega</td>
-                            <td>R$134,90</td>
-                            <td colspan="2">R$129,90</td>
-                        </tr>
-
-                        <!-- FIM OF750 -->
                         
-                        <tr id="plan500Mega" class="cursor-pointer">
-                            <td>500 Mega (Globoplay)  SINGLE (COM FONE OU APP)</td>
-                            <td>até 500 Mega</td>
-                            <td>50 Mega</td>
-                            <td>R$124,90</td>
-                            <td colspan="2">R$119,90</td>
-                        </tr>
-
-                        <!-- OF500 -->
-                        <tr id="plano" class="plano of500 hidden">
-                            <td>500 Mega (Globoplay)  ACOMPANHADO COM TV OU MÓVEL</td>
-                            <td>até 500 Mega</td>
-                            <td>50 Mega</td>
-                            <td>R$114,90</td>
-                            <td colspan="2">R$109,90</td>
-                        </tr>
-
-                        <tr id="plano" class="plano of500 hidden">
-                            <td>500 Mega (Globoplay)  ACOMPANHADO COM TV E MÓVEL</td>
-                            <td>até 500 Mega</td>
-                            <td>50 Mega</td>
-                            <td>R$104,90</td>
-                            <td colspan="2">R$99,90 </td>
-                        </tr>
-
-                        <!-- FIM OF500 -->
-                        
-                        <tr id="plan350Mega" class="cursor-pointer">
-                            <td>350 Mega (Globoplay) SINGLE (COM FONE OU APP)</td>
-                            <td> até 350 Mega </td>
-                            <td>35 Mega </td>
-                            <td>R$104,90</td>
-                            <td colspan="2">R$99,90</td>
-                        </tr>
-
-
-                        <!-- OF350 -->
-                        <tr id="plano" class="plano of350 hidden">
-                            <td>350 Mega (Globoplay)  ACOMPANHADO COM TV OU MÓVEL</td>
-                            <td>até 350 Mega </td>
-                            <td>35 Mega </td>
-                            <td>R$104,90</td>
-                            <td colspan="2">R$99,90</td>
-
-                        <tr id="plano" class="plano of350 hidden">
-                            <td>350 Mega (Globoplay)  ACOMPANHADO COM TV E MÓVEL</td>
-                            <td>até 350 Mega </td>
-                            <td>35 Mega </td>
-                            <td>R$99,90</td>
-                            <td colspan="2">R$94,90</td>
-                        </tr>
-
-                        <tr id="plano1" class="plano of350 hidden">
-                            <td>350 Mega (Globoplay) OFERTA RENT</td>
-                            <td>até 350 Mega </td>
-                            <td>35 Mega </td>
-                            <td>R$94,90</td>
-                            <td colspan="2">R$89,90</td>
-                        </tr>
-
-                        <!-- FIM OF350 -->
-                        
-                    
-
-                           
-    
-                        <tr style="text-align: center;">
-                            <div class="container mt-5">
-                                <td colspan="2"> <button id="of750Button" type="button" class="btn btn-primary mr-2">OF-750</button> </td>
-
-                                <td colspan="2"><button id="of500Button" type="button" class="btn btn-secondary mr-2">OF-500</button></td>
-
-                                <td colspan="2"><button id="of350Button" type="button" class="btn btn-success mr-2">OF-350</button></td>
-                            </div>
-                        </tr>
-                           
-                             
-
                        
-
-
-
-                        <tr style="text-align: center; vertical-align: middle;">
-                            <th colspan="2">
-                                <a href="pdf-residencial/pdf-geral.pdf">
-                                    <img id="iconpdf" src="imagens/icon-pdf.png" alt="pdf">
-                                    <p>PDF GERAL</p>
-                                </a>
-
-                            </th>
-                            
-
-                            
-
-                            <td colspan="5">Em caso de duvidas, consulte o PDF (atualizado 03/05/2024) - basta clicar em cima pra acessar.</td>
+                        <tr class="plano hidden">
+                            <th th colspan="1" id="centerrent">(Cliente recebe R$30,00 de desconto durante 2 meses) Com desconto:</th>
+                            <td>R$114,90</td>
+                            <td>R$109,90</td>
+                            <td>4K R$59,90 | HD R$49,90</td>
                         </tr>
-                
-                    </tbody>
-                </table>
-
-            </div>
-            <!-- ESPECIAL+ COM PROMO 3M-->
-
-            <div id="ESPECIAL+ COM PROMO 3M" class="container mt-5 tabela-escondida">
-                <table class="table table-bordered table-controle">
-                    <thead class="thead-dark" id="center1">
-                        <tr>
-                            <th colspan="8">INTERNET RESIDENCIAL</th>
+                        <tr class="plano hidden">
+                            <th>Nomenclatura:</th>
+                            <td colspan="3">CTV+ TOP HD 4K RENT GPLAY+NTFX AN FID DESC R$30,00 2M</td>
                         </tr>
+
 
                         <tr>
-                            <th scope="col">Produtos</th>
-                            <th scope="col">MegaBytes</th>
-                            <th scope="col">Download</th>
-                            <th scope="col">Upload</th>
-                            <th scope="col">No boleto</th>
-                            <th scope="col" colspan="2">No débito automático</th>
+                            <th class="center" id="center">SOUNDBOX - CLARO TV + (Cabo)</th>
+                            <td>R$154,90</td>
+                            <td>R$149,90</td>
+                            <td>SOUNDBOX R$89,90</td>
                         </tr>
-
-                    </thead>
-                    <tbody>
-                        <tr id="plan1" class="cursor-pointer1">
-                            <th rowspan="8" id="center">INTERNET</th>
-                            <td>1 GIGA (Globoplay) SINGLE OU MULTI</td>
-                            <td>até 1 GIGA</td>
-                            <td>100 Mega</td>
-                            <td>R$199,90</td>
-                            <td colspan="2">R$199,90</td>
-                        </tr>
-
-
-
-                        <tr id="plan750Mega" class="cursor-pointer">
-                            <td>750 Mega (Globoplay) SINGLE OU MULTI</td>
-                            <td>até 750 Mega</td>
-                            <td>50 Mega</td>
-                            <td>R$134,90</td>
-                            <td colspan="2">R$129,90</td>
-                        </tr>
-                        
-                        <tr id="plan500Mega" style="cursor: pointer; color: white; background-color: rgb(56, 56, 56);">
-                            <td>500 Mega (Globoplay) SINGLE OU MULTI PROMO R$ 59,90 POR 3 MESES</td>
-                            <td>até 500 Mega</td>
-                            <td>50 Mega</td>
-                            <td>R$104,90</td>
-                            <td colspan="2">R$99,90</td>
-                        
-                        </tr>
-                        <tr id="plan350Mega" class="cursor-pointer">
-                            <td>350 Mega (Globoplay) SINGLE OU MULTI</td>
-                            <td> até 350 Mega </td>
-                            <td>35 Mega </td>
-                            <td>R$94,90</td>
-                            <td colspan="2">R$89,90</td>
-                        </tr>
-                        
-                        <tr id="plan500Mega" class="cursor-pointer">
-                            <td>250 Mega SINGLE OU MULTI</td>
-                            <td>até 250 Mega</td>
-                            <td>25 Mega</td>
-                            <td>R$84,90</td>
-                            <td colspan="2">R$79,90</td>
-                        
-                        </tr>
-
-                        <tr id="plan500Mega" class="cursor-pointer">
-                            <td>125 Mega SINGLE OU MULTI</td>
-                            <td>até 125 Mega</td>
-                            <td>15 Mega</td>
+                        <tr>
+                            <th class="center" id="center">APP CLARO TV+</th>
                             <td>R$74,90</td>
-                            <td colspan="2">R$69,90</td>
-                        
+                            <td colspan="2" style="text-align: center;">R$69,90</td>
+                        </tr>
+
+                        <tr class="plano hidden">
+                            <th th colspan="1" id="centerrent">DESCONTO NOS 2 PRIMEIROS MESES</th>
+                            <td>R$39.95</td>
+                            <td colspan="2" style="text-align: center;">R$34,95</td>
                         </tr>
 
 
-
-                        
-
-
+                        <tr style="text-align: center;">
+                            <th colspan="6"><button id="toggleButton" class="buttonth">Mostrar Oferta</button></th>
+                        </tr>
 
                         <tr style="text-align: center; vertical-align: middle;">
                             <th colspan="2">
@@ -292,84 +125,58 @@
 
                             </th>
                             
+
+                            
+
                             <td colspan="5">Em caso de duvidas, consulte o PDF (atualizado 03/05/2024) - basta clicar em cima pra acessar.</td>
                         </tr>
-                
+                            <td colspan="6" style="text-align: center;">OBS: OFERTA RENT  VÁLIDA APENAS PARA CLIENTE DA BASE RESIDENCIAL E UPGRADE DE TV</td>
+                        </tr>  
+                        <tr>
+                            <td colspan="6" style="text-align: center;">OBS: Todo serviço de TV box vem com o GLOBOPLAY + NETFLIX (PADRÃO COM ANUNCIO) gratuito + CANAIS AO VIVO</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="text-align: center;">OBS: OFERTAR APLICATIVO APENAS NO MULTI: APP + INTERNET, APP + MÓVEL, APP + FONE</td>
+                        </tr>
                     </tbody>
                 </table>
 
-            </div>
+                <!--OFERTA CIDADES-->
 
-            <!--ESPECIAL-->
-
-            <div id="ESPECIAL" class="container mt-5 tabela-escondida">
-                <table class="table table-bordered table-controle">
+                <table id="PROMOBOX" class="table table-bordered table-controle tabela-escondida">
                     <thead class="thead-dark" id="center1">
                         <tr>
-                            <th colspan="8">INTERNET RESIDENCIAL</th>
+                            <th style="font-size: 1.3em;" colspan="7">CLARO TV BOX ESPECIAL DIA DAS MÃES</th>
                         </tr>
 
                         <tr>
                             <th scope="col">Produtos</th>
-                            <th scope="col">MegaBytes</th>
-                            <th scope="col">Download</th>
-                            <th scope="col">Upload</th>
                             <th scope="col">No boleto</th>
-                            <th scope="col" colspan="2">No débito automático</th>
+                            <th scope="col">No débito automático</th>
+                            <th scope="col">Ponto adicional</th>
                         </tr>
-
                     </thead>
                     <tbody>
-                        <tr id="plan1" class="cursor-pointer1">
-                            <th rowspan="8" id="center">INTERNET</th>
-                            <td>1 GIGA (Globoplay) SINGLE OU MULTI</td>
-                            <td>até 1 GIGA</td>
-                            <td>100 Mega</td>
-                            <td>R$199,90</td>
-                            <td colspan="2">R$199,90</td>
-                        </tr>
-
-
-
-                        <tr class="cursor-pointer">
-                            <td>750 Mega (Globoplay) ACOMPANHADO NO MULTI</td>
-                            <td>até 750 Mega</td>
-                            <td>50 Mega</td>
-                            <td>R$134,90</td>
-                            <td colspan="2">R$129,90</td>
-                        </tr>
                         
-                        <tr class="cursor-pointer">
-                            <td>500 Mega (Globoplay) ACOMPANHADO NO MULTI</td>
-                            <td>até 500 Mega</td>
-                            <td>50 Mega</td>
-                            <td>R$104,90</td>
-                            <td colspan="2">R$99,90</td>
-                        </tr>
-                        <tr class="cursor-pointer">
-                            <td>350 Mega (Globoplay) SINGLE</td>
-                            <td> até 350 Mega </td>
-                            <td>35 Mega </td>
-                            <td>R$104,90</td>
-                            <td colspan="2">R$99,90</td>
-                        </tr>
-                        
-
-                        <tr  class="cursor-pointer">
-                            <td>125 Mega SINGLE OU MULTI</td>
-                            <td>até 125 Mega</td>
-                            <td>15 Mega</td>
-                            <td>R$79,90</td>
-                            <td colspan="2">R$69,90</td>
-                        
-                        </tr>
-
-
-
-                        
-
-
-
+                            <tr>
+                                <th id="center">TV - BOX CLARO TV+ C / NETFLIX ANUNCIO 2P</th>
+                                <td>R$104,90</td>
+                                <td>R$99,90</td>
+                                <td>BOX R$59,90</td>
+                            </tr>
+                            <tr>
+                                <th id="center">TV - BOX CLARO TV+ C / NETFLIX PADRÃO 2P</th>
+                                <td>R$134,90</td>
+                                <td>R$130,90</td>
+                                <td>BOX R$59,90</td>
+                            </tr>
+                            <tr>
+                                <th id="center">TV - BOX CLARO TV+ C / NETFLIX PREMIUM 2P</th>
+                                <td>R$151,90</td>
+                                <td>R$146,90</td>
+                                <td>BOX R$59,90</td>
+                            </tr>
+                            
                         <tr style="text-align: center; vertical-align: middle;">
                             <th colspan="2">
                                 <a href="pdf-residencial/pdf-geral.pdf">
@@ -379,1290 +186,278 @@
 
                             </th>
                             
-                            <td colspan="5">Em caso de duvidas, consulte o PDF (atualizado 03/05/2024) - basta clicar em cima pra acessar.</td>
-                        </tr>
-                
-                    </tbody>
-                </table>
 
-            </div>
-
-            <!--ESPECIAL SEM 125M -->
-
-            <div id="ESPECIAL SEM 125M" class="container mt-5 tabela-escondida">
-                <table class="table table-bordered table-controle">
-                    <thead class="thead-dark" id="center1">
-                        <tr>
-                            <th colspan="8">INTERNET RESIDENCIAL</th>
-                        </tr>
-
-                        <tr>
-                            <th scope="col">Produtos</th>
-                            <th scope="col">MegaBytes</th>
-                            <th scope="col">Download</th>
-                            <th scope="col">Upload</th>
-                            <th scope="col">No boleto</th>
-                            <th scope="col" colspan="2">No débito automático</th>
-                        </tr>
-
-                    </thead>
-                    <tbody>
-                        <tr id="plan1" class="cursor-pointer1">
-                            <th rowspan="8" id="center">INTERNET</th>
-                            <td>1 GIGA (Globoplay) SINGLE OU MULTI</td>
-                            <td>até 1 GIGA</td>
-                            <td>100 Mega</td>
-                            <td>R$199,90</td>
-                            <td colspan="2">R$199,90</td>
-                        </tr>
-
-
-
-                        <tr  class="cursor-pointer">
-                            <td>750 Mega (Globoplay) SINGLE OU MULTI</td>
-                            <td>até 750 Mega</td>
-                            <td>50 Mega</td>
-                            <td>R$134,90</td>
-                            <td colspan="2">R$129,90</td>
-                        </tr>
-                        
-                        <tr class="cursor-pointer">
-                            <td>500 Mega (Globoplay) SINGLE OU MULTI</td>
-                            <td>até 500 Mega</td>
-                            <td>50 Mega</td>
-                            <td>R$104,90</td>
-                            <td colspan="2">R$99,90</td>
-                        </tr>
-                        <tr  class="cursor-pointer">
-                            <td>350 Mega (Globoplay) SINGLE OU MULTI</td>
-                            <td> até 350 Mega </td>
-                            <td>35 Mega </td>
-                            <td>R$104,90</td>
-                            <td colspan="2">R$99,90</td>
-                        </tr>
-
-
-
-                        
-
-
-
-                        <tr style="text-align: center; vertical-align: middle;">
-                            <th colspan="2">
-                                <a href="pdf-residencial/pdf-geral.pdf">
-                                    <img id="iconpdf" src="imagens/icon-pdf.png" alt="pdf">
-                                    <p>PDF GERAL</p>
-                                </a>
-
-                            </th>
                             
+
                             <td colspan="5">Em caso de duvidas, consulte o PDF (atualizado 03/05/2024) - basta clicar em cima pra acessar.</td>
                         </tr>
-                
+                            <td colspan="6" style="text-align: center;">OBS: OFERTA RENT  VÁLIDA APENAS PARA CLIENTE DA BASE RESIDENCIAL E UPGRADE DE TV</td>
+                        </tr>  
+                        <tr>
+                            <td colspan="6" style="text-align: center;">OBS: Todo serviço de TV box vem com o GLOBOPLAY + NETFLIX (PADRÃO COM ANUNCIO) gratuito + CANAIS AO VIVO</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="text-align: center;">OBS: OFERTAR APLICATIVO APENAS NO MULTI: APP + INTERNET, APP + MÓVEL, APP + FONE</td>
+                        </tr>
                     </tbody>
                 </table>
-
             </div>
-
-            <!--ESPECIAL+-->
-
-            <div id="ESPECIAL+" class="container mt-5 tabela-escondida">
-                <table class="table table-bordered table-controle">
-                    <thead class="thead-dark" id="center1">
-                        <tr>
-                            <th colspan="8">INTERNET RESIDENCIAL</th>
-                        </tr>
-
-                        <tr>
-                            <th scope="col">Produtos</th>
-                            <th scope="col">MegaBytes</th>
-                            <th scope="col">Download</th>
-                            <th scope="col">Upload</th>
-                            <th scope="col">No boleto</th>
-                            <th scope="col" colspan="2">No débito automático</th>
-                        </tr>
-
-                    </thead>
-                    <tbody>
-                        <tr id="plan1" class="cursor-pointer1">
-                            <th rowspan="8" id="center">INTERNET</th>
-                            <td>1 GIGA (Globoplay) SINGLE OU MULTI</td>
-                            <td>até 1 GIGA</td>
-                            <td>100 Mega</td>
-                            <td>R$199,90</td>
-                            <td colspan="2">R$199,90</td>
-                        </tr>
-
-
-
-                        <tr class="cursor-pointer">
-                            <td>750 Mega (Globoplay) SINGLE OU MULTI</td>
-                            <td>até 750 Mega</td>
-                            <td>50 Mega</td>
-                            <td>R$134,90</td>
-                            <td colspan="2">R$129,90</td>
-                        </tr>
-                        
-                        <tr  class="cursor-pointer">
-                            <td>500 Mega (Globoplay) SINGLE OU MULTI</td>
-                            <td>até 500 Mega</td>
-                            <td>50 Mega</td>
-                            <td>R$104,90</td>
-                            <td colspan="2">R$99,90</td>
-                        </tr>
-                        <tr  class="cursor-pointer">
-                            <td>350 Mega (Globoplay) SINGLE OU MULTI</td>
-                            <td> até 350 Mega </td>
-                            <td>35 Mega </td>
-                            <td>R$94,90</td>
-                            <td colspan="2">R$89,90</td>
-                        </tr>
-                        <tr class="cursor-pointer">
-                            <td>250 Mega (Globoplay) SINGLE OU MULTI</td>
-                            <td> até 250 Mega </td>
-                            <td>35 Mega </td>
-                            <td>R$84,90</td>
-                            <td colspan="2">R$79,90</td>
-                        </tr>
-                        
-
-                        <tr class="cursor-pointer">
-                            <td>125 Mega SINGLE OU MULTI</td>
-                            <td>até 125 Mega</td>
-                            <td>15 Mega</td>
-                            <td>R$79,90</td>
-                            <td colspan="2">R$69,90</td>
-                        
-                        </tr>
-
-
-
-
-                        <tr style="text-align: center; vertical-align: middle;">
-                            <th colspan="2">
-                                <a href="pdf-residencial/pdf-geral.pdf">
-                                    <img id="iconpdf" src="imagens/icon-pdf.png" alt="pdf">
-                                    <p>PDF GERAL</p>
-                                </a>
-
-                            </th>
-                            
-                            <td colspan="5">Em caso de duvidas, consulte o PDF (atualizado 03/05/2024) - basta clicar em cima pra acessar.</td>
-                        </tr>
-                
-                    </tbody>
-                </table>
-
-            </div>
-
-            <!--ESPECIAL+ COM PROMO 3MM-->
-
-            <div id="ESPECIAL+ COM PROMO 3MM" class="container mt-5 tabela-escondida">
-                <table class="table table-bordered table-controle">
-                    <thead class="thead-dark" id="center1">
-                        <tr>
-                            <th colspan="8">INTERNET RESIDENCIAL</th>
-                        </tr>
-
-                        <tr>
-                            <th scope="col">Produtos</th>
-                            <th scope="col">MegaBytes</th>
-                            <th scope="col">Download</th>
-                            <th scope="col">Upload</th>
-                            <th scope="col">No boleto</th>
-                            <th scope="col" colspan="2">No débito automático</th>
-                        </tr>
-
-                    </thead>
-                    <tbody>
-                        <tr id="plan1" class="cursor-pointer1">
-                            <th rowspan="8" id="center">INTERNET</th>
-                            <td>1 GIGA (Globoplay) SINGLE OU MULTI</td>
-                            <td>até 1 GIGA</td>
-                            <td>100 Mega</td>
-                            <td>R$199,90</td>
-                            <td colspan="2">R$199,90</td>
-                        </tr>
-
-
-
-                        <tr class="cursor-pointer">
-                            <td>750 Mega (Globoplay) SINGLE OU MULTI</td>
-                            <td>até 750 Mega</td>
-                            <td>50 Mega</td>
-                            <td>R$134,90</td>
-                            <td colspan="2">R$129,90</td>
-                        </tr>
-                        
-                        <tr class="cursor-pointer" id="plan500Mega" style="cursor: pointer; color: white; background-color: rgb(56, 56, 56);">
-                            <td>500 Mega (Globoplay) SINGLE OU MULTI PROMO R$ 59,90 POR 3 MESES</td>
-                            <td>até 500 Mega</td>
-                            <td>50 Mega</td>
-                            <td>R$104,90</td>
-                            <td colspan="2">R$99,90</td>
-                        </tr>
-                        <tr class="cursor-pointer">
-                            <td>350 Mega (Globoplay) SINGLE OU MULTI</td>
-                            <td> até 350 Mega </td>
-                            <td>35 Mega </td>
-                            <td>R$104,90</td>
-                            <td colspan="2">R$99,90</td>
-                        </tr>
-                        
-
-                        <tr  class="cursor-pointer">
-                            <td>125 Mega SINGLE OU MULTI</td>
-                            <td>até 125 Mega</td>
-                            <td>15 Mega</td>
-                            <td>R$79,90</td>
-                            <td colspan="2">R$69,90</td>
-                        
-                        </tr>
-
-
-
-                        
-
-
-
-                        <tr style="text-align: center; vertical-align: middle;">
-                            <th colspan="2">
-                                <a href="pdf-residencial/pdf-geral.pdf">
-                                    <img id="iconpdf" src="imagens/icon-pdf.png" alt="pdf">
-                                    <p>PDF GERAL</p>
-                                </a>
-
-                            </th>
-                            
-                            <td colspan="5">Em caso de duvidas, consulte o PDF (atualizado 03/05/2024) - basta clicar em cima pra acessar.</td>
-                        </tr>
-                
-                    </tbody>
-                </table>
-
-            </div>
-
-            <!-- ESPECIAL+ COM OFERTA E PROMO 3M-->
-
-            <div id="ESPECIAL+ COM OFERTA E PROMO 3M" class="container mt-5 tabela-escondida">
-                <table class="table table-bordered table-controle">
-                    <thead class="thead-dark" id="center1">
-                        <tr>
-                            <th colspan="8">INTERNET RESIDENCIAL</th>
-                        </tr>
-
-                        <tr>
-                            <th scope="col">Produtos</th>
-                            <th scope="col">MegaBytes</th>
-                            <th scope="col">Download</th>
-                            <th scope="col">Upload</th>
-                            <th scope="col">No boleto</th>
-                            <th scope="col" colspan="2">No débito automático</th>
-                        </tr>
-
-                    </thead>
-                    <tbody>
-                        <tr id="plan1" class="cursor-pointer1">
-                            <th rowspan="8" id="center">INTERNET</th>
-                            <td>1 GIGA (Globoplay) SINGLE OU MULTI</td>
-                            <td>até 1 GIGA</td>
-                            <td>100 Mega</td>
-                            <td>R$199,90</td>
-                            <td colspan="2">R$199,90</td>
-                        </tr>
-
-
-
-                        <tr id="plan750Mega" class="cursor-pointer">
-                            <td>750 Mega (Globoplay) SINGLE OU MULTI</td>
-                            <td>até 750 Mega</td>
-                            <td>50 Mega</td>
-                            <td>R$134,90</td>
-                            <td colspan="2">R$129,90</td>
-                        </tr>
-                        
-                        <tr id="plan500Mega" style="cursor: pointer; color: white; background-color: rgb(56, 56, 56);">
-                            <td>500 Mega (Globoplay) SINGLE OU MULTI PROMO R$ 59,90 POR 3 MESES</td>
-                            <td>até 500 Mega</td>
-                            <td>50 Mega</td>
-                            <td>R$104,90</td>
-                            <td colspan="2">R$99,90</td>
-                        
-                        </tr>
-                        <tr id="plan350Mega" class="cursor-pointer">
-                            <td>350 Mega (Globoplay) SINGLE OU MULTI</td>
-                            <td> até 350 Mega </td>
-                            <td>35 Mega </td>
-                            <td>R$94,90</td>
-                            <td colspan="2">R$89,90</td>
-                        </tr>
-                        
-                        <tr id="plan500Mega" class="cursor-pointer">
-                            <td>250 Mega SINGLE OU MULTI</td>
-                            <td>até 250 Mega</td>
-                            <td>25 Mega</td>
-                            <td>R$84,90</td>
-                            <td colspan="2">R$79,90</td>
-                        
-                        </tr>
-
-                        <tr id="plan500Mega" class="cursor-pointer">
-                            <td>125 Mega SINGLE OU MULTI</td>
-                            <td>até 125 Mega</td>
-                            <td>15 Mega</td>
-                            <td>R$74,90</td>
-                            <td colspan="2">R$69,90</td>
-                        
-                        </tr>
-
-
-
-                        
-
-
-
-                        <tr style="text-align: center; vertical-align: middle;">
-                            <th colspan="2">
-                                <a href="pdf-residencial/pdf-geral.pdf">
-                                    <img id="iconpdf" src="imagens/icon-pdf.png" alt="pdf">
-                                    <p>PDF GERAL</p>
-                                </a>
-
-                            </th>
-                            
-                            <td colspan="5">Em caso de duvidas, consulte o PDF (atualizado 03/05/2024) - basta clicar em cima pra acessar.</td>
-                        </tr>
-                
-                    </tbody>
-                </table>
-
-            </div>
-
-            <!--ESPECIAL COM OFERTA-->
-
-            <div id="ESPECIAL COM OFERTA" class="container mt-5 tabela-escondida">
-                <table class="table table-bordered table-controle">
-                    <thead class="thead-dark" id="center1">
-                        <tr>
-                            <th colspan="8">INTERNET RESIDENCIAL</th>
-                        </tr>
-
-                        <tr>
-                            <th scope="col">Produtos</th>
-                            <th scope="col">MegaBytes</th>
-                            <th scope="col">Download</th>
-                            <th scope="col">Upload</th>
-                            <th scope="col">No boleto</th>
-                            <th scope="col" colspan="2">No débito automático</th>
-                        </tr>
-
-                    </thead>
-                    <tbody>
-                        <tr id="plan1" class="cursor-pointer1">
-                            <th rowspan="8" id="center">INTERNET</th>
-                            <td>1 GIGA (Globoplay) SINGLE OU MULTI</td>
-                            <td>até 1 GIGA</td>
-                            <td>100 Mega</td>
-                            <td>R$199,90</td>
-                            <td colspan="2">R$199,90</td>
-                        </tr>
-
-
-
-                        <tr class="cursor-pointer">
-                            <td>750 Mega (Globoplay) SINGLE OU MULTI</td>
-                            <td>até 750 Mega</td>
-                            <td>50 Mega</td>
-                            <td>R$134,90</td>
-                            <td colspan="2">R$129,90</td>
-                        </tr>
-                        
-                        <tr  class="cursor-pointer">
-                            <td>500 Mega (Globoplay) SINGLE OU MULTI</td>
-                            <td>até 500 Mega</td>
-                            <td>50 Mega</td>
-                            <td>R$104,90</td>
-                            <td colspan="2">R$99,90</td>
-                        </tr>
-                        <tr  class="cursor-pointer">
-                            <td>350 Mega (Globoplay) SINGLE OU MULTI</td>
-                            <td> até 350 Mega </td>
-                            <td>35 Mega </td>
-                            <td>R$94,90</td>
-                            <td colspan="2">R$89,90</td>
-                        </tr>
-                        <tr class="cursor-pointer">
-                            <td>250 Mega (Globoplay) SINGLE OU MULTI</td>
-                            <td> até 250 Mega </td>
-                            <td>35 Mega </td>
-                            <td>R$84,90</td>
-                            <td colspan="2">R$79,90</td>
-                        </tr>
-                        
-
-                        <tr class="cursor-pointer">
-                            <td>125 Mega SINGLE OU MULTI</td>
-                            <td>até 125 Mega</td>
-                            <td>15 Mega</td>
-                            <td>R$79,90</td>
-                            <td colspan="2">R$69,90</td>
-                        
-                        </tr>
-
-
-
-
-                        <tr style="text-align: center; vertical-align: middle;">
-                            <th colspan="2">
-                                <a href="pdf-residencial/pdf-geral.pdf">
-                                    <img id="iconpdf" src="imagens/icon-pdf.png" alt="pdf">
-                                    <p>PDF GERAL</p>
-                                </a>
-
-                            </th>
-                            
-                            <td colspan="5">Em caso de duvidas, consulte o PDF (atualizado 03/05/2024) - basta clicar em cima pra acessar.</td>
-                        </tr>
-                
-                    </tbody>
-                </table>
-
-            </div>
-        <!--ESPECIAL+ REDES NEUTRAS-->
-            <div id="ESPECIAL+ REDES NEUTRAS" class="container mt-5 tabela-escondida">
-                <table class="table table-bordered table-controle">
-                    <thead class="thead-dark" id="center1">
-                        <tr>
-                            <th colspan="8">INTERNET RESIDENCIAL</th>
-                        </tr>
-
-                        <tr>
-                            <th scope="col">Produtos</th>
-                            <th scope="col">MegaBytes</th>
-                            <th scope="col">Download</th>
-                            <th scope="col">Upload</th>
-                            <th scope="col">No boleto</th>
-                            <th scope="col" colspan="2">No débito automático</th>
-                        </tr>
-
-                    </thead>
-                    <tbody>
-                        <th rowspan="4" id="center">INTERNET</th>
-                        <tr style="cursor: pointer; color: white; background-color: rgb(56, 56, 56);">
-
-                            <td>500 Mega (Globoplay) SINGLE OU MULTI PROMO R$ 59,90 POR 3 MESES</td>
-                            <td>até 500 Mega</td>
-                            <td>50 Mega</td>
-                            <td>R$104,90</td>
-                            <td colspan="2">R$99,90</td>
-                        </tr>
-
-                        <tr class="cursor-pointer">
-                            <td>350 Mega (Globoplay) SINGLE OU MULTI</td>
-                            <td> até 350 Mega </td>
-                            <td>35 Mega </td>
-                            <td>R$94,90</td>
-                            <td colspan="2">R$89,90</td>
-                        </tr>
-                        
-                        
-
-            
-
-
-
-                        
-
-
-
-                        <tr style="text-align: center; vertical-align: middle;">
-                            <th colspan="2">
-                                <a href="pdf-residencial/pdf-geral.pdf">
-                                    <img id="iconpdf" src="imagens/icon-pdf.png" alt="pdf">
-                                    <p>PDF GERAL</p>
-                                </a>
-
-                            </th>
-                            
-                            <td colspan="5">Em caso de duvidas, consulte o PDF (atualizado 03/05/2024) - basta clicar em cima pra acessar.</td>
-                        </tr>
-                
-                    </tbody>
-                </table>
-
-            </div>
-
-
-            <!--EXCLUSIVO NODE-->
-            <div id="EXCLUSIVO NODE" class="container mt-5 tabela-escondida">
-                <table class="table table-bordered table-controle">
-                    <thead class="thead-dark" id="center1">
-                        <tr>
-                            <th colspan="8">INTERNET RESIDENCIAL</th>
-                        </tr>
-
-                        <tr>
-                            <th scope="col">Produtos</th>
-                            <th scope="col">MegaBytes</th>
-                            <th scope="col">Download</th>
-                            <th scope="col">Upload</th>
-                            <th scope="col">No boleto</th>
-                            <th scope="col" colspan="2">No débito automático</th>
-                        </tr>
-
-                    </thead>
-                    <tbody>
-                        <th rowspan="4" id="center">INTERNET</th>
-                        <tr style="cursor: pointer; color: white; background-color: rgb(56, 56, 56);">
-
-                            <td>500 Mega (Globoplay) SINGLE OU MULTI PROMO R$ 59,90 POR 3 MESES</td>
-                            <td>até 500 Mega</td>
-                            <td>50 Mega</td>
-                            <td>R$104,90</td>
-                            <td colspan="2">R$99,90</td>
-                        </tr>
-
-                        <tr class="cursor-pointer">
-                            <td>350 Mega (Globoplay) SINGLE OU MULTI</td>
-                            <td> até 350 Mega </td>
-                            <td>35 Mega </td>
-                            <td>R$94,90</td>
-                            <td colspan="2">R$89,90</td>
-                        </tr>
-                        
-                        
-
-            
-
-
-
-                        
-
-
-
-                        <tr style="text-align: center; vertical-align: middle;">
-                            <th colspan="2">
-                                <a href="pdf-residencial/pdf-geral.pdf">
-                                    <img id="iconpdf" src="imagens/icon-pdf.png" alt="pdf">
-                                    <p>PDF GERAL</p>
-                                </a>
-
-                            </th>
-                            
-                            <td colspan="5">Em caso de duvidas, consulte o PDF (atualizado 03/05/2024) - basta clicar em cima pra acessar.</td>
-                        </tr>
-                
-                    </tbody>
-                </table>
-
-            </div>
-
-            <!-- Janela modal PLANO 1 GIGA -->
-        <div id="janelaModal1" class="modal">
-
-        <div class="modal-content">
-
-            <header id="headermodal">
-                <h1>Detalhes do plano de 1 GIGA</h1>
-                <span class="close">&times;</span> <!-- Botão de fechar -->
-            </header>
-
-            
-             <!-- Ícones de aplicativos personalizados -->
-        <div class="app-icons">
-
-            <img  style="max-width: 60px;" src="imagens/icones/icon-globoplay.png" alt="Globoplay" title="Globoplay">
-            <img  style="max-width: 60px;" src="imagens/icones/claro-video.png" alt="Claro Video" title="Claro Video">
-            <img  style="max-width: 80px;" src="imagens/icones/ponto-ultra.png" alt="Ponto Ultra" title="Ponto Ultra">
-            <img  style="max-width: 60px;" src="imagens/icones/skeelo.png" alt="Skeelo" title="Skeelo">
-            <img  style="max-width: 60px;" src="imagens/icones/cna-library.png" alt="CNA Library" title="CNA Library">
-            <img  style="max-width: 60px;" src="imagens/icones/busuu.png" alt="Busuu" title="Busuu">
-
         </div>
-
-            <main id="mainmodal">
-                <h2><i class="fas fa-wifi wifi-icon"></i>Wi-Fi grátis</h2>
-                    <p>para sua casa e wi-fi também fora de casa com a rede #NET-CLARO-WIFI</p>
-
-                <h2><i class="fas fa-download download-icon"></i>Download</h2>
-                    <p>até 1000 Mbps</p>
-                <h2><i class="fas fa-upload upload-icon"></i>Upload</h2>
-                    <p>até 100 Mbps</p>
-
-                <h2><i class="fas fa-play play-icon"></i>Globoplay incluso</h2>
-                    <p>plataforma de streaming com os conteúdos da Globo. Novelas, filmes, séries, especiais, esportes, BBB, podcasts, canais ao vivo e shows fazem parte do acervo.</p>
-
-                <h2 class="clarotv-title"><i class="fas fa-tv tv-icon"></i>Conteúdo Claro Vídeo - App Claro tv+</h2>
-                    <p>gratuito para todos os clientes Claro. São muitos filmes, séries, documentários, shows, conteúdos infantis, e muito mais. Para acessar o conteúdo Claro Vídeo, baixe o app Claro TV+ ou acesse www.clarotvmais.com.br. Não disponíveis os canais ao vivo.</p>
-
-                <h2><i class="fas fa-wifi wifi-icon"></i>Novo modem Wi-Fi 6</h2>
-                    <p>oferece mais alcance, estabilidade e velocidade de navegação no Wi-Fi para dispositivos compatíveis com a tecnologia. *Consulte a disponibilidade dos planos de internet com roteador Wi-Fi 6 em sua região.</p>
-
-                <h2><i class="fas fa-plug plug-icon"></i>Ponto Ultra incluso</h2>
-                    <p>Conexão via cabo de rede que leva o sinal da internet banda larga da Claro até o dispositivo que você precisa de mais velocidade e estabilidade.</p>
-            </main>
-
-        </div>
-    </div>
-
-    <!-- Janela modal PLANO 750 Mega -->
-    <div id="janelaModal750Mega" class="modal">
-
-        <div class="modal-content">
-
-            <header id="headermodal">
-                <h1>Detalhes do plano de 750 Mega</h1>
-                <span class="close">&times;</span> <!-- Botão de fechar -->
-            </header>
-
-        <!-- Ícones de aplicativos personalizados -->
-        <div class="app-icons">
-
-            <img  style="max-width: 60px;" src="imagens/icones/icon-globoplay.png" alt="Globoplay" title="Globoplay">
-            <img  style="max-width: 60px;" src="imagens/icones/claro-video.png" alt="Claro Video" title="Claro Video">
-            <img  style="max-width: 60px;" src="imagens/icones/mc-afee.jpeg" alt="Claro Video" title="mcafee">
-            <img  style="max-width: 60px;" src="imagens/icones/skeelo.png" alt="Skeelo" title="Skeelo">
-            <img  style="max-width: 60px;" src="imagens/icones/cna-library.png" alt="CNA Library" title="CNA Library">
-
-        </div>
-
-
-
-
-            <main id="mainmodal">
-                <h2><i class="fas fa-wifi wifi-icon"></i>Wi-Fi grátis</h2>
-                    <p>para sua casa e wi-fi também fora de casa com a rede #NET-CLARO-WIFI</p>
-
-                <h2><i class="fas fa-download download-icon"></i>Download</h2>
-                    <p>até 750 Mbps</p>
-
-                <h2><i class="fas fa-upload upload-icon"></i>Upload</h2>
-                    <p>até 50 Mbps</p>
-
-                <h2><i class="fas fa-play play-icon"></i>Globoplay incluso</h2>
-                    <p>plataforma de streaming com os conteúdos da Globo. Novelas, filmes, séries, especiais, esportes, BBB, podcasts, canais ao vivo e shows fazem parte do acervo.</p>
-
-                <h2 class="clarotv-title"><i class="fas fa-tv tv-icon"></i>Conteúdo Claro Vídeo - App Claro tv+</h2>
-                    <p>gratuito para todos os clientes Claro. São muitos filmes, séries, documentários, shows, conteúdos infantis, e muito mais. Para acessar o conteúdo Claro Vídeo, baixe o app Claro TV+ ou acesse www.clarotvmais.com.br. Não disponíveis os canais ao vivo.</p>
-
-                <h2><i class="fas fa-wifi wifi-icon"></i>Novo modem Wi-Fi 6</h2>
-                    <p>oferece mais alcance, estabilidade e velocidade de navegação no Wi-Fi para dispositivos compatíveis com a tecnologia. *Consulte a disponibilidade dos planos de internet com roteador Wi-Fi 6 em sua região.</p>
-
-            </main>
-
-        </div>
-    </div>
-
-
-    <!-- Janela modal PLANO 500 Mega -->
-    <div id="janelaModal500Mega" class="modal">
-
-        <div class="modal-content">
-
-            <header id="headermodal">
-                <h1>Detalhes do plano de 500 Mega</h1>
-                <span class="close">&times;</span> <!-- Botão de fechar -->
-            </header>
-        <!-- Ícones de aplicativos personalizados -->
-        <div class="app-icons">
-
-            <img  style="max-width: 60px;" src="imagens/icones/icon-globoplay.png" alt="Globoplay" title="Globoplay">
-            <img  style="max-width: 60px;" src="imagens/icones/claro-video.png" alt="Claro Video" title="Claro Video">
-            <img  style="max-width: 60px;" src="imagens/icones/mc-afee.jpeg" alt="Claro Video" title="mcafee">
-            <img  style="max-width: 60px;" src="imagens/icones/skeelo.png" alt="Skeelo" title="Skeelo">
-
-        </div>
-            <main id="mainmodal">
-                <h2><i class="fas fa-wifi wifi-icon"></i>Wi-Fi grátis</h2>
-                    <p>para sua casa e wi-fi também fora de casa com a rede #NET-CLARO-WIFI</p>
-
-                <h2><i class="fas fa-download download-icon"></i>Download</h2>
-                    <p>até 500 Mbps</p>
-
-                <h2><i class="fas fa-upload upload-icon"></i>Upload</h2>
-                    <p>até 50 Mbps</p>
-
-                <h2><i class="fas fa-play play-icon"></i>Globoplay incluso</h2>
-                    <p>plataforma de streaming com os conteúdos da Globo. Novelas, filmes, séries, especiais, esportes, BBB, podcasts, canais ao vivo e shows fazem parte do acervo.</p>
-
-                <h2 class="clarotv-title"><i class="fas fa-tv tv-icon"></i>Conteúdo Claro Vídeo - App Claro tv+</h2>
-                    <p>gratuito para todos os clientes Claro. São muitos filmes, séries, documentários, shows, conteúdos infantis, e muito mais. Para acessar o conteúdo Claro Vídeo, baixe o app Claro TV+ ou acesse www.clarotvmais.com.br. Não disponíveis os canais ao vivo.</p>
-
-            
-
-            </main>
-
-        </div>
-    </div>
-
-        <!-- Janela modal PLANO 350 Mega -->
-        <div id="janelaModal350Mega" class="modal">
-
-            <div class="modal-content">
-
-                <header id="headermodal">
-                    <h1>Detalhes do plano de 350 Mega</h1>
-                    <span class="close">&times;</span> <!-- Botão de fechar -->
-                </header>
-            <!-- Ícones de aplicativos personalizados -->
-            <div class="app-icons">
-
-                <img  style="max-width: 60px;" src="imagens/icones/icon-globoplay.png" alt="Globoplay" title="Globoplay">
-                <img  style="max-width: 60px;" src="imagens/icones/claro-video.png" alt="Claro Video" title="Claro Video">
-                <img  style="max-width: 60px;" src="imagens/icones/mc-afee.jpeg" alt="Claro Video" title="mcafee">
-                <img  style="max-width: 60px;" src="imagens/icones/skeelo.png" alt="Skeelo" title="Skeelo">
-
-            </div>
-
-                <main id="mainmodal">
-                    <h2><i class="fas fa-wifi wifi-icon"></i>Wi-Fi grátis</h2>
-                        <p>para sua casa e wi-fi também fora de casa com a rede #NET-CLARO-WIFI</p>
-
-                    <h2><i class="fas fa-download download-icon"></i>Download</h2>
-                        <p>até 350 Mbps</p>
-
-                    <h2><i class="fas fa-upload upload-icon"></i>Upload</h2>
-                        <p>até 35 Mbps</p>
-                    
-                     <h2><i class="fas fa-play play-icon"></i>Globoplay incluso</h2>
-                    <p>plataforma de streaming com os conteúdos da Globo. Novelas, filmes, séries, especiais, esportes, BBB, podcasts, canais ao vivo e shows fazem parte do acervo.</p>
-                    
-                    <h2 class="clarotv-title"><i class="fas fa-tv tv-icon"></i>Conteúdo Claro Vídeo - App Claro tv+</h2>
-                        <p>gratuito para todos os clientes Claro. São muitos filmes, séries, documentários, shows, conteúdos infantis, e muito mais. Para acessar o conteúdo Claro Vídeo, baixe o app Claro TV+ ou acesse www.clarotvmais.com.br. Não disponíveis os canais ao vivo.</p>
-
-
-            </main>
-
-        </div>
-    </div>
-
-    <!-- Janela modal PLANO 250 Mega -->
-    <div id="janelaModal250Mega" class="modal">
-
-        <div class="modal-content">
-
-            <header id="headermodal">
-                <h1>Detalhes do plano de 250 Mega</h1>
-                <span class="close">&times;</span> <!-- Botão de fechar -->
-            </header>
-        <!-- Ícones de aplicativos personalizados -->
-        <div class="app-icons">
-            <img  style="max-width: 60px;" src="imagens/icones/mc-afee.jpeg" alt="Claro Video" title="mcafee">
-            <img  style="max-width: 60px;" src="imagens/icones/skeelo.png" alt="Skeelo" title="Skeelo">
-        </div>
-
-
-            <main id="mainmodal">
-                <h2><i class="fas fa-wifi wifi-icon"></i>Wi-Fi grátis</h2>
-                    <p>para sua casa e wi-fi também fora de casa com a rede #NET-CLARO-WIFI</p>
-
-                <h2><i class="fas fa-download download-icon"></i>Download</h2>
-                    <p>até 250 Mbps</p>
-
-                <h2><i class="fas fa-upload upload-icon"></i>Upload</h2>
-                    <p>até 25 Mbps</p>
-
-                <h2 class="clarotv-title"><i class="fas fa-tv tv-icon"></i>Conteúdo Claro Vídeo - App Claro tv+</h2>
-                    <p>gratuito para todos os clientes Claro. São muitos filmes, séries, documentários, shows, conteúdos infantis, e muito mais. Para acessar o conteúdo Claro Vídeo, baixe o app Claro TV+ ou acesse www.clarotvmais.com.br. Não disponíveis os canais ao vivo.</p>
-
-           
-
-        </main>
-
-    </div>
-</div>
-
         
-        <!-- Janela modal -->
-        <div id="janelaModal" class="modal2" style="display: none;">
+    </main>
 
-        <div class="modal2-content">
+            <!-- Janela modal -->
+         <div id="janelaModal" class="modal2" style="display: none;">
 
-        <hedaer id="headercidade">
+                <div class="modal2-content">
 
-            <span class="close2">&times;</span>
-            <h2 class="text-center">Selecione a cidade</h2>
-            <input type="text" id="pesquisarCidade" placeholder="Pesquisar cidade...">
-            <button id="confirmarCidade">Confirmar</button>
-            
-        </hedaer>
+                <hedaer id="headercidade">
 
-        <main id="maincidade">
-            <ul id="listaCidadesModal" class="list-cidades">
-                        <!-- ESPECIAL+ COM PROMO 3M -->
-                        <li>Cascavel-PR</li>
-                        <li>Cianorte-PR</li>
-                        <li>Estancia Velha-RS</li>
-                        <li>Navegantes-SC</li>
-                        <li>Sapiranga-RS</li>
-                        <li>Xangri-La-RS</li>
-                        <li>Aparecida-SP</li>
-                        <li>Belford Roxo-RJ</li>
-                        <li>Betim-MG</li>
-                        <li>Botucatu-SP</li>
-                        <li>Campos Dos Goytacazes-RJ</li>
-                        <li>Duque De Caxias-RJ</li>
-                        <li>Nova Odessa-SP</li>
-                        <li>Potim-SP</li>
-                        <li>Presidente Prudente-SP</li>
-                        <li>Rio Das Ostras-RJ</li>
-                        <li>Sao Joao De Meriti-RJ</li>
-                        <li>Teofilo Otoni-MG</li>
-                        <li>Teresopolis-RJ</li>
-                        <li>Campina Grande-PB</li>
-                        <li>Alegrete-RS</li>
-                        <li>Ararangua-SC</li>
-                        <li>Arroio Do Meio-RS</li>
-                        <li>Cacador-SC</li>
-                        <li>Cachoeira Do Sul-RS</li>
-                        <li>Camaqua-RS</li>
-                        <li>Camboriu-SC</li>
-                        <li>Canela-RS</li>
-                        <li>Carazinho-RS</li>
-                        <li>Carlos Barbosa-RS</li>
-                        <li>Charqueadas-RS</li>
-                        <li>Concordia-SC</li>
-                        <li>Dois Irmaos-RS</li>
-                        <li>Eldorado Do Sul-RS</li>
-                        <li>Encantado-RS</li>
-                        <li>Estrela-RS</li>
-                        <li>Fraiburgo-SC</li>
-                        <li>Frederico Westphalen-RS</li>
-                        <li>Garibaldi-RS</li>
-                        <li>Gaspar-SC</li>
-                        <li>Gramado-RS</li>
-                        <li>Guaiba-RS</li>
-                        <li>Herval DOeste-SC</li>
-                        <li>Icara-SC</li>
-                        <li>Igrejinha-RS</li>
-                        <li>Imbe-RS</li>
-                        <li>Indaial-SC</li>
-                        <li>Itaqui-RS</li>
-                        <li>Ivoti-RS</li>
-                        <li>Joacaba-SC</li>
-                        <li>Lages-SC</li>
-                        <li>Mafra-SC</li>
-                        <li>Marau-RS</li>
-                        <li>Montenegro-RS</li>
-                        <li>Nova Petropolis-RS</li>
-                        <li>Osorio-RS</li>
-                        <li>Palmeira Das Missoes-RS</li>
-                        <li>Panambi-RS</li>
-                        <li>Paranagua-PR</li>
-                        <li>Parobe-RS</li>
-                        <li>Rio Do Sul-SC</li>
-                        <li>Rio Negrinho-SC</li>
-                        <li>Rio Pardo-RS</li>
-                        <li>Rosario Do Sul-RS</li>
-                        <li>Santa Rosa-RS</li>
-                        <li>Santana Do Livramento-RS</li>
-                        <li>Santo Angelo-RS</li>
-                        <li>Sao Bento Do Sul-SC</li>
-                        <li>Sao Borja-RS</li>
-                        <li>Sao Francisco Do Sul-SC</li>
-                        <li>Sao Gabriel-RS</li>
-                        <li>Sao Lourenco Do Sul-RS</li>
-                        <li>Sao Luiz Gonzaga-RS</li>
-                        <li>Taquara-RS</li>
-                        <li>Teutonia-RS</li>
-                        <li>Timbo-SC</li>
-                        <li>Torres-RS</li>
-                        <li>Tramandai-RS</li>
-                        <li>Tres Coroas-RS</li>
-                        <li>Tubarao-SC</li>
-                        <li>Vacaria-RS</li>
-                        <li>Venancio Aires-RS</li>
-                        <li>Vera Cruz-RS</li>
-                        <li>Veranopolis-RS</li>
-                        <li>Videira-SC</li>
-                        <li>Xanxere-SC</li>
-                        <li>Xaxim-SC</li>
-                        <li>Adamantina-SP</li>
-                        <li>Agudos-SP</li>
-                        <li>Alvares Machado-SP</li>
-                        <li>Americo Brasiliense-SP</li>
-                        <li>Amparo-SP</li>
-                        <li>Andradina-SP</li>
-                        <li>Aracruz-ES</li>
-                        <li>Araguari-MG</li>
-                        <li>Araxa-MG</li>
-                        <li>Armacao Dos Buzios-RJ</li>
-                        <li>Avare-SP</li>
-                        <li>Bady Bassitt-SP</li>
-                        <li>Barbacena-MG</li>
-                        <li>Barretos-SP</li>
-                        <li>Barrinha-SP</li>
-                        <li>Batatais-SP</li>
-                        <li>Bebedouro-SP</li>
-                        <li>Birigui-SP</li>
-                        <li>Boituva-SP</li>
-                        <li>Cabo Frio-RJ</li>
-                        <li>Cabreuva-SP</li>
-                        <li>Cajamar-SP</li>
-                        <li>Campo Limpo Paulista-SP</li>
-                        <li>Campos Do Jordao-SP</li>
-                        <li>Casa Branca-SP</li>
-                        <li>Cataguases-MG</li>
-                        <li>Catanduva-SP</li>
-                        <li>Cerquilho-SP</li>
-                        <li>Colatina-ES</li>
-                        <li>Conselheiro Lafaiete-MG</li>
-                        <li>Cordeiropolis-SP</li>
-                        <li>Coronel Fabriciano-MG</li>
-                        <li>Cravinhos-SP</li>
-                        <li>Descalvado-SP</li>
-                        <li>Divinopolis-MG</li>
-                        <li>Dracena-SP</li>
-                        <li>Espirito Santo Do Pinhal-SP</li>
-            
-                        <li>Fernandopolis-SP</li>
-                        <li>Garca-SP</li>
-                        <li>Guaira-SP</li>
-                        <li>Guapiacu-SP</li>
-                        <li>Guararapes-SP</li>
-                        <li>Ibate-SP</li>
-                        <li>Ibiuna-SP</li>
-                        <li>Ipero-SP</li>
-                        <li>Itabira-MG</li>
-                        <li>Itaguai-RJ</li>
-                        <li>Itajuba-MG</li>
-                        <li>Itapeva-SP</li>
-                        <li>Itapira-SP</li>
-                        <li>Itaquaquecetuba-SP</li>
-                        <li>Itauna-MG</li>
-                        <li>Ituiutaba-MG</li>
-                        <li>Ituverava-SP</li>
-                        <li>Jaboticabal-SP</li>
-                        <li>Jales-SP</li>
-                        <li>Jardinopolis-SP</li>
-                        <li>Jarinu-SP</li>
-                        <li>Jose Bonifacio-SP</li>
-                        <li>Lagoa Santa-MG</li>
-                        <li>Laranjal Paulista-SP</li>
-                        <li>Lavras-MG</li>
-                        <li>Leme-SP</li>
-                        <li>Lencois Paulista-SP</li>
-                        <li>Lins-SP</li>
-                        <li>Louveira-SP</li>
-                        <li>Manhuacu-MG</li>
-                        <li>Matao-SP</li>
-                        <li>Miguel Pereira-RJ</li>
-                        <li>Mirandopolis-SP</li>
-                        <li>Mococa-SP</li>
-                        <li>Monte Alto-SP</li>
-                        <li>Montes Claros-MG</li>
-                        <li>Nova Friburgo-RJ</li>
-                        <li>Olimpia-SP</li>
-                        <li>Orlandia-SP</li>
-                        <li>Ourinhos-SP</li>
-                        <li>Para De Minas-MG</li>
-                        <li>Paraiba Do Sul-RJ</li>
-                        <li>Passos-MG</li>
-                        <li>Patos De Minas-MG</li>
-                        <li>Pedreira-SP</li>
-                        <li>Penapolis-SP</li>
-                        <li>Piedade-SP</li>
-                        <li>Piracaia-SP</li>
-                        <li>Pirassununga-SP</li>
-                        <li>Pocos De Caldas-MG</li>
-                        <li>Pontal-SP</li>
-                        <li>Porto Ferreira-SP</li>
-                        <li>Potirendaba-SP</li>
-                        <li>Pouso Alegre-MG</li>
-                        <li>Presidente Bernardes-SP</li>
-                        <li>Promissao-SP</li>
-                        <li>Registro-SP</li>
-                        <li>Santa Cruz das Palmeiras-SP</li>
-                        <li>Santa Cruz Do Rio Pardo-SP</li>
-                        <li>Santa Gertrudes-SP</li>
-                        <li>Santa Isabel-SP</li>
-                        <li>Santa Luzia-MG</li>
-                        <li>Santa Rosa De Viterbo-SP</li>
-                        <li>Sao Joao Da Boa Vista-SP</li>
-                        <li>Sao Joao Del Rei-MG</li>
-                        <li>Sao Joaquim Da Barra-SP</li>
-                        <li>Sao Jose Do Rio Pardo-SP</li>
-                        <li>Sao Pedro Da Aldeia-RJ</li>
-                        <li>Serra Negra-SP</li>
-                        <li>Serrana-SP</li>
-                        <li>Tambau-SP</li>
-                        <li>Tatui-SP</li>
-                        <li>Timoteo-MG</li>
-                        <li>Tremembe-SP</li>
-                        <li>Tres Coracoes-MG</li>
-                        <li>Tres Rios-RJ</li>
-                        <li>Uba-MG</li>
-                        <li>Valenca-RJ</li>
-                        <li>Valparaiso-SP</li>
-                        <li>Varzea Paulista-SP</li>
-                        <li>Vassouras-RJ</li>
-                        <li>Vespasiano-MG</li>
-                        <li>Vicosa-MG</li>
-                        <li>Votuporanga-SP</li>
-                        <li>Caldas Novas-GO</li>
-                        <li>Formosa-GO</li>
-                        <li>Itumbiara-GO</li>
-                        <li>Jatai-GO</li>
-                        <li>Lucas Do Rio Verde-MT</li>
-                        <li>Navirai-MS</li>
-                        <li>Nova Mutum-MT</li>
-                        <li>Ponta Pora-MS</li>
-                        <li>Rio Verde-GO</li>
-                        <li>Santa Helena De Goias-GO</li>
-                        <li>Senador Canedo-GO</li>
-                        <li>Sinop-MT</li>
-                        <li>Sorriso-MT</li>
-                        <li>Tres Lagoas-MS</li>
-                        <li>Trindade-GO</li>
-                        <li>Valparaiso De Goias-GO</li>
-                        <li>Araguaina-TO</li>
-                        <li>Ariquemes-RO</li>
-                        <li>Cacoal-RO</li>
-                        <li>Castanhal-PA</li>
-                        <li>Gurupi-TO</li>
-                        <li>Ji-Parana-RO</li>
-                        <li>Macapa-AP</li>
-                        <li>Maraba-PA</li>
-                        <li>Paragominas-PA</li>
-                        <li>Paraiso Do Tocantins-TO</li>
-                        <li>Parauapebas-PA</li>
-                        <li>Vilhena-RO</li>
-                        <li>Alagoinhas-BA</li>
-                        <li>Aquiraz-CE</li>
-                        <li>Arapiraca-AL</li>
-                        <li>Barreiras-BA</li>
-                        <li>Caxias-MA</li>
-                        <li>Eunapolis-BA</li>
-                        <li>Eusebio-CE</li>
-                        <li>Feira De Santana-BA</li>
-                        <li>Ilheus-BA</li>
-                        <li>Imperatriz-MA</li>
-                        <li>Itabuna-BA</li>
-                        <li>Jequie-BA</li>
-                        <li>Juazeiro Do Norte-CE</li>
-                        <li>Juazeiro-BA</li>
-                        <li>Mossoro-RN</li>
-                        <li>Parnaiba-PI</li>
-                        <li>Petrolina-PE</li>
-                        <li>Porto Seguro-BA</li>
-                        <li>Sobral-CE</li>
-                        <li>Teixeira De Freitas-BA</li>
-                        <li>Timon-MA</li>
-                        <li>Bage-RS</li>
-                        <li>Balneario Camboriu-SC</li>
-                        <li>Bento Goncalves-RS</li>
-                        <li>Blumenau-SC</li>
-                        <li>Brusque-SC</li>
-                        <li>Campo Bom-RS</li>
-                        <li>Capao Da Canoa-RS</li>
-                        <li>Chapeco-SC</li>
-                        <li>Criciuma-SC</li>
-                        <li>Cruz Alta-RS</li>
-                        <li>Erechim-RS</li>
-                        <li>Guarapuava-PR</li>
-                        <li>Itajai-SC</li>
-                        <li>Itapema-SC</li>
-                        <li>Lajeado-RS</li>
-                        <li>Passo Fundo-RS</li>
-                        <li>Ponta Grossa-PR</li>
-                        <li>Santa Cruz Do Sul-RS</li>
-                        <li>Santa Maria-RS</li>
-                        <li>Sao Leopoldo-RS</li>
-                        <li>Uruguaiana-RS</li>
-                        <li>Aracatuba-SP</li>
-                        <li>Artur Nogueira-SP</li>
-                        <li>Barra Mansa-RJ</li>
-                        <li>Bertioga-SP</li>
-                        <li>Cachoeira Paulista-SP</li>
-                        <li>Cachoeiro De Itapemirim-ES</li>
-                        <li>Cruzeiro-SP</li>
-                        <li>Governador Valadares-MG</li>
-                        <li>Guaratingueta-SP</li>
-                        <li>Hortolandia-SP</li>
-                        <li>Ipatinga-MG</li>
-                        <li>Itapetininga-SP</li>
-                        <li>Juiz De Fora-MG</li>
-                        <li>Limeira-SP</li>
-                        <li>Lorena-SP</li>
-                        <li>Macae-RJ</li>
-                        <li>Marilia-SP</li>
-                        <li>Nilopolis-RJ</li>
-                        <li>Nova Iguacu-RJ</li>
-                        <li>Nova Lima-MG</li>
-                        <li>Petropolis-RJ</li>
-                        <li>Pindamonhangaba-SP</li>
-                        <li>Resende-RJ</li>
-                        <li>Sete Lagoas-MG</li>
-                        <li>Sumare-SP</li>
-                        <li>Uberaba-MG</li>
-                        <li>Uberlandia-MG</li>
-                        <li>Varginha-MG</li>
-                        <li>Volta Redonda-RJ</li>
-                        <li>Anapolis-GO</li>
-                        <li>Dourados-MS</li>
-                        <li>Rondonopolis-MT</li>
-                        <li>Caruaru-PE</li>
-                        <li>Vitoria Da Conquista-BA</li>
-                        <!-- ESPECIAL -->
-                        <li>Capivari-SP</li>
-                        <li>Carapicuiba-SP</li>
-                        <li>Embu Das Artes-SP</li>
-                        <li>Mogi Guacu-SP</li>
-                        <li>Sao Carlos-SP</li>
-                        <li>Vinhedo-SP</li>
-                        <li>Votorantim-SP</li>
-                        <li>Varzea Grande-MT</li>
-                        <li>Apucarana-PR</li>
-                        <li>Cambe-PR</li>
-                        <li>Guaramirim-SC</li>
-                        <li>Jaragua Do Sul-SC</li>
-                        <li>Rolandia-PR</li>
-                        <li>Alvorada-RS</li>
-                        <li>Arapongas-PR</li>
-                        <li>Cachoeirinha-RS</li>
-                        <li>Gravatai-RS</li>
-                        <li>Novo Hamburgo-RS</li>
-                        <li>Palhoca-SC</li>
-                        <li>Viamao-RS</li>
-                        <li>Araraquara-SP</li>
-                        <li>Bauru-SP</li>
-                        <li>Cacapava-SP</li>
-                        <li>Cariacica-ES</li>
-                        <li>Cosmopolis-SP</li>
-                        <li>Franca-SP</li>
-                        <li>Guaruja-SP</li>
-                        <li>Indaiatuba-SP</li>
-                        <li>Jacarei-SP</li>
-                        <li>Maua-SP</li>
-                        <li>Mogi Das Cruzes-SP</li>
-                        <li>Paulinia-SP</li>
-                        <li>Praia Grande-SP</li>
-                        <li>Ribeirao Preto-SP</li>
-                        <li>Santos-SP</li>
-                        <li>Sao Jose Do Rio Preto-SP</li>
-                        <li>Sao Jose Dos Campos-SP</li>
-                        <li>Sao Vicente-SP</li>
-                        <li>Serra-ES</li>
-                        <li>Sorocaba-SP</li>
-                        <li>Taubate-SP</li>
-                        <li>Valinhos-SP</li>
-                        <li>Vila Velha-ES</li>
-                        <li>Vitoria-ES</li>
-                        <li>Campo Grande-MS</li>
-                        <li>Cuiaba-MT</li>
-                        <li>Ananindeua-PA</li>
-                        <li>Belem-PA</li>
-                        <li>Palmas-TO</li>
-                        <li>Porto Velho-RO</li>
-                        <li>Rio Branco-AC</li>
-                        <li>Jaboatao Dos Guararapes-PE</li>
-                        <li>Olinda-PE</li>
-                        <li>Paulista-PE</li>
-                        <li>Recife-PE</li>
-                        <li>Sao Luis-MA</li>
-                        <!-- ESPECIAL SEM 125M -->
-                        <li> Curitiba-PR</li>
+                    <span class="close2">&times;</span>
+                    <h2 class="text-center">Selecione a cidade</h2>
+                    <input type="text" id="pesquisarCidade" placeholder="Pesquisar cidade...">
+                    <button id="confirmarCidade">Confirmar</button>
+                    
+                </hedaer>
 
-                        <!-- ESPECIAL+ -->
-                        <li>Itapecerica Da Serra-SP</li>
-                        <li>Mesquita-RJ</li>
-                        <li>Biguacu-SC</li>
-                        <li>Aluminio-SP</li>
-                        <li>Caraguatatuba-SP</li>
-                        <li>Itanhaem-SP</li>
-                        <li>Itatiba-SP</li>
-                        <li>Jaguariuna-SP</li>
-                        <li>Mirassol-SP</li>
-                        <li>Mongagua-SP</li>
-                        <li>Morungaba-SP</li>
-                        <li>Sao Sebastiao-SP</li>
-                        <li>Ubatuba-SP</li>
-                        <li>Santana-AP</li>
-                        <li>Maringa-PR</li>
-                        <li>Pelotas-RS</li>
-                        <li>Jau-SP</li>
-                        <li>Niteroi-RJ</li>
-                        <!-- ESPECIAL+ COM PROMO 3MM -->
-                        <li>Aracaju-SE</li>
-                        <!-- ESPECIAL+ COM OFERTA E PROMO 3M -->
-                        <li>Aparecida De Goiania-GO</li>
-                        <li>Goiania-GO</li>
-                        <li>Fortaleza-CE</li>
-                        <li>Teresina-PI</li>
-                        <!-- ESPECIAL COM OFERTA -->
-                        <li>Cabedelo-PB</li>
-                        <li>Joao Pessoa-PB</li>
-                        <li>Maceio-AL</li>
-                        <li>Natal-RN</li>
-                        <li>Parnamirim-RN</li>
-                        <!--ESPECIAL+ REDES NEUTRAS -->
-                        <li>Campina Grande do Sul-PR</li>
-                        <li>Campo Mourao-PR</li>
-                        <li>Castro-PR</li>
-                        <li>Cornelio Procopio-PR</li>
-                        <li>Fazenda Rio Grande-PR</li>
-                        <li>Foz Do Iguacu-PR</li>
-                        <li>Francisco Beltrao-PR</li>
-                        <li>Guaratuba-PR</li>
-                        <li>Ibipora-PR</li>
-                        <li>Ijui-RS</li>
-                        <li>Marechal Candido Rondon-PR</li>
-                        <li>Matinhos-PR</li>
-                        <li>Medianieira-PR</li>
-                        <li>Paicandu-PR</li>
-                        <li>Palmas-PR</li>
-                        <li>Pato Branco-PR</li>
-                        <li>Piraquara-PR</li>
-                        <li>Quatro Barras-PR</li>
-                        <li>Sarandi-PR</li>
-                        <li>Telemaco Borba-PR</li>
-                        <li>Toledo-PR</li>
-                        <li>Umuarama-PR</li>
-                        <li>Uniao Da Vitoria-PR</li>
-                        <li>Alfenas-MG</li>
-                        <li>Arcos-MG</li>
-                        <li>Carmelo-MG</li>
-                        <li>Formiga-MG</li>
-                        <li>Guaxupe-MG</li>
-                        <li>Joao Monlevade-MG</li>
-                        <li>Lagoa da Prata-MG</li>
-                        <li>Leopoldina-MG</li>
-                        <li>Mariana-MG</li>
-                        <li>Matozinhos-MG</li>
-                        <li>Monte Carmelo-MG</li>
-                        <li>Muriae-MG</li>
-                        <li>Nova Serrana-MG</li>
-                        <li>Ouro Preto-MG</li>
-                        <li>Patrocinio-MG</li>
-                        <li>Pedro Leopoldo-MG</li>
-                        <li>Piumhi-MG</li>
-                        <li>Ponte Nova-MG</li>
-                        <li>Sacramento-MG</li>
-                        <li>Santa Cruz de Minas-MG</li>
-                        <li>Santa Rita Do Sapucai-MG</li>
-                        <li>Sao Sebastiao do Paraiso-MG</li>
-                        <!--EXCLUSIVO NODE-->
-                        <li>Santa Maria-DF</li>
-                        <li>Planaltina-DF</li>
+             <main id="maincidade">
+                    <ul id="listaCidadesModal" class="list-cidades">
+                                <!-- PROMOBOX -->
+                                <li>Almirante Tamandare-PR</li>
+    <li>Araucaria-PR</li>
+    <li>Cascavel-PR</li>
+    <li>Cianorte-PR</li>
+    <li>Colombo-PR</li>
+    <li>Estancia Velha-RS</li>
+    <li>Navegantes-SC</li>
+    <li>Pinhais-PR</li>
+    <li>Sao Jose Dos Pinhais-PR</li>
+    <li>Sapiranga-RS</li>
+    <li>Xangri-La-RS</li>
+    <li>Aparecida-SP</li>
+    <li>Barueri-SP</li>
+    <li>Belford Roxo-RJ</li>
+    <li>Betim-MG</li>
+    <li>Botucatu-SP</li>
+    <li>Campos Dos Goytacazes-RJ</li>
+    <li>Capivari-SP</li>
+    <li>Carapicuiba-SP</li>
+    <li>Cubatao-SP</li>
+    <li>Duque De Caxias-RJ</li>
+    <li>Embu Das Artes-SP</li>
+    <li>Itapecerica Da Serra-SP</li>
+    <li>Itapevi-SP</li>
+    <li>Jandira-SP</li>
+    <li>Mesquita-RJ</li>
+    <li>Mogi Guacu-SP</li>
+    <li>Monte Mor-SP</li>
+    <li>Nova Odessa-SP</li>
+    <li>Porto Feliz-SP</li>
+    <li>Potim-SP</li>
+    <li>Presidente Prudente-SP</li>
+    <li>Rafard-SP</li>
+    <li>Rio Das Ostras-RJ</li>
+    <li>Sabara-MG</li>
+
+    <!-- SUL -->
+    <li>Alvorada-RS</li>
+    <li>Arapongas-PR</li>
+    <li>Bage-RS</li>
+    <li>Balneario Camboriu-SC</li>
+    <li>Bento Goncalves-RS</li>
+    <li>Blumenau-SC</li>
+    <li>Brusque-SC</li>
+    <li>Cachoeirinha-RS</li>
+    <li>Campo Bom-RS</li>
+    <li>Campo Largo-PR</li>
+    <li>Canoas-RS</li>
+    <li>Capao Da Canoa-RS</li>
+    <li>Caxias Do Sul-RS</li>
+    <li>Chapeco-SC</li>
+    <li>Criciuma-SC</li>
+    <li>Cruz Alta-RS</li>
+    <li>Curitiba-PR</li>
+    <li>Erechim-RS</li>
+    <li>Esteio-RS</li>
+    <li>Farroupilha-RS</li>
+    <li>Florianopolis-SC</li>
+    <li>Gravatai-RS</li>
+    <li>Guarapuava-PR</li>
+    <li>Itajai-SC</li>
+    <li>Itapema-SC</li>
+    <li>Joinville-SC</li>
+    <li>Lajeado-RS</li>
+
+    <!-- CENTRO-OESTE -->
+    <li>Varzea Grande-MT</li>
+
+    <!-- NORDESTE -->
+    <li>Cabedelo-PB</li>
+    <li>Campina Grande-PB</li>
+
+    <!-- CABO/FIBRA -->
+    <li>Salto-SP</li>
+    <li>Sao Carlos-SP</li>
+    <li>Sao Joao De Meriti-RJ</li>
+    <li>Sertaozinho-SP</li>
+    <li>Taboao Da Serra-SP</li>
+    <li>Teofilo Otoni-MG</li>
+    <li>Teresopolis-RJ</li>
+    <li>Tiete-SP</li>
+    <li>Vargem Grande Paulista-SP</li>
+    <li>Vinhedo-SP</li>
+    <li>Votorantim-SP</li>
+
+    <li>Londrina-PR</li>
+    <li>Maringa-PR</li>
+    <li>Novo Hamburgo-RS</li>
+    <li>Palhoca-SC</li>
+    <li>Passo Fundo-RS</li>
+    <li>Pelotas-RS</li>
+    <li>Ponta Grossa-PR</li>
+    <li>Porto Alegre-RS</li>
+    <li>Rio Grande-RS</li>
+    <li>Santa Cruz Do Sul-RS</li>
+    <li>Santa Maria-RS</li>
+    <li>Sao Jose-SC</li>
+    <li>Sao Leopoldo-RS</li>
+    <li>Sapucaia Do Sul-RS</li>
+    <li>Uruguaiana-RS</li>
+    <li>Viamao-RS</li>
+
+    <!-- SUDESTE -->
+    <li>Americana-SP</li>
+    <li>Aracatuba-SP</li>
+    <li>Araraquara-SP</li>
+    <li>Araras-SP</li>
+    <li>Artur Nogueira-SP</li>
+    <li>Atibaia-SP</li>
+    <li>Barra Mansa-RJ</li>
+    <li>Bauru-SP</li>
+    <li>Belo Horizonte-MG</li>
+    <li>Bertioga-SP</li>
+    <li>Braganca Paulista-SP</li>
+    <li>Cacapava-SP</li>
+    <li>Cachoeira Paulista-SP</li>
+    <li>Cachoeiro De Itapemirim-ES</li>
+    <li>Campinas-SP</li>
+    <li>Cariacica-ES</li>
+    <li>Contagem-MG</li>
+    <li>Cosmopolis-SP</li>
+    <li>Cotia-SP</li>
+    <li>Cruzeiro-SP</li>
+    <li>Diadema-SP</li>
+    <li>Elias Fausto-SP</li>
+    <li>Franca-SP</li>
+    <li>Governador Valadares-MG</li>
+    <li>Guaratingueta-SP</li>
+    <li>Guaruja-SP</li>
+    <li>Guarulhos-SP</li>
+    <li>Hortolandia-SP</li>
+    <li>Indaiatuba-SP</li>
+    <li>Ipatinga-MG</li>
+    <li>Itapetininga-SP</li>
+    <li>Itu-SP</li>
+    <li>Jacarei-SP</li>
+    <li>Jau-SP</li>
+    <li>Juiz De Fora-MG</li>
+    <li>Jundiai-SP</li>
+    <li>Limeira-SP</li>
+    <li>Lorena-SP</li>
+    <li>Macae-RJ</li>
+    <li>Marilia-SP</li>
+    <li>Maua-SP</li>
+    <li>Mogi Das Cruzes-SP</li>
+    <li>Mogi Mirim-SP</li>
+    <li>Nilopolis-RJ</li>
+    <li>Niteroi-RJ</li>
+    <li>Nova Iguacu-RJ</li>
+    <li>Nova Lima-MG</li>
+    <li>Osasco-SP</li>
+    <li>Paulinia-SP</li>
+    <li>Petropolis-RJ</li>
+
+     <!-- SUDESTE -->
+     <li>Pindamonhangaba-SP</li>
+     <li>Piracicaba-SP</li>
+     <li>Poa-SP</li>
+     <li>Praia Grande-SP</li>
+     <li>Resende-RJ</li>
+     <li>Ribeirao Preto-SP</li>
+     <li>Rio Claro-SP</li>
+     <li>Rio De Janeiro-RJ</li>
+     <li>Santa Barbara D'Oeste-SP</li>
+     <li>Santana De Parnaiba-SP</li>
+     <li>Santo Andre-SP</li>
+     <li>Santos-SP</li>
+     <li>Sao Bernardo Do Campo-SP</li>
+     <li>Sao Caetano Do Sul-SP</li>
+     <li>Sao Goncalo-RJ</li>
+     <li>Sao Jose Do Rio Preto-SP</li>
+     <li>Sao Jose Dos Campos-SP</li>
+     <li>Sao Paulo-SP</li>
+     <li>Sao Vicente-SP</li>
+     <li>Serra-ES</li>
+     <li>Sete Lagoas-MG</li>
+     <li>Sorocaba-SP</li>
+     <li>Sumare-SP</li>
+     <li>Suzano-SP</li>
+     <li>Taubate-SP</li>
+     <li>Uberaba-MG</li>
+     <li>Uberlandia-MG</li>
+     <li>Valinhos-SP</li>
+     <li>Varginha-MG</li>
+     <li>Vila Velha-ES</li>
+     <li>Vitoria-ES</li>
+     <li>Volta Redonda-RJ</li>
+ 
+     <!-- CENTRO-OESTE -->
+     <li>Anapolis-GO</li>
+     <li>Aparecida De Goiania-GO</li>
+     <li>Brasilia-DF</li>
+     <li>Campo Grande-MS</li>
+     <li>Cuiaba-MT</li>
+     <li>Dourados-MS</li>
+     <li>Goiania-GO</li>
+     <li>Rondonopolis-MT</li>
+ 
+     <!-- NORTE -->
+     <li>Ananindeua-PA</li>
+     <li>Belem-PA</li>
+     <li>Manaus-AM</li>
+     <li>Palmas-TO</li>
+     <li>Porto Velho-RO</li>
+     <li>Rio Branco-AC</li>
+ 
+     <!-- NORDESTE -->
+     <li>Aracaju-SE</li>
+     <li>Caruaru-PE</li>
+     <li>Fortaleza-CE</li>
+     <li>Jaboatao Dos Guararapes-PE</li>
+     <li>Joao Pessoa-PB</li>
+     <li>Lauro De Freitas-BA</li>
+     <li>Maceio-AL</li>
+     <li>Natal-RN</li>
+     <li>Olinda-PE</li>
+     <li>Parnamirim-RN</li>
+     <li>Paulista-PE</li>
+     <li>Recife-PE</li>
+     <li>Salvador-BA</li>
+     <li>Sao Luis-MA</li>
+     <li>Teresina-PI</li>
+     <li>Vitoria Da Conquista-BA</li>
 
 
-
-                        <!-- Adicione outras cidades conforme necessário -->
+                        
+                                <!-- Adicione outras cidades conforme necessário -->
                     </ul>
-        </main>
+              </main>
             </div>
         </div>
 
-
-
-
-
-
-
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="estilosJS/internet.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="estilosJS/clarotvbox.js"></script>
 </body>
 </html>

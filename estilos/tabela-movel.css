@@ -112,6 +112,49 @@ header {
 .menu-content .list-itens a:hover:before {
     width: 100%;
 }
+@media screen and (max-width: 1170px) {
+    .menu-content .list-itens {
+        flex-wrap: nowrap; /* Evita quebrar para a próxima linha */
+    }
+    
+    .menu-content .list-itens a {
+        font-size: 1em; /* Utiliza unidade relativa para a fonte */
+        flex: 0 0 auto; /* Permite que os itens do menu tenham largura automática */
+        margin-right: 10px; /* Espaçamento entre os itens */
+    }
+
+    .logo {
+        font-size: 1rem;
+        letter-spacing: 0.4rem;
+        cursor: pointer;
+        text-decoration: none; /* Remove o sublinhado */
+        color: white; /* Mantém a cor padrão do texto */
+    
+    }
+
+}
+
+@media screen and (max-width: 1080px) {
+    .menu-content .list-itens {
+        flex-wrap: nowrap; /* Evita quebrar para a próxima linha */
+    }
+    
+    .menu-content .list-itens a {
+        font-size: 0.9em; /* Utiliza unidade relativa para a fonte */
+        flex: 0 0 auto; /* Permite que os itens do menu tenham largura automática */
+        margin-right: 10px; /* Espaçamento entre os itens */
+    }
+
+    .logo {
+        font-size: 0.8rem;
+        letter-spacing: 0.4rem;
+        cursor: pointer;
+        text-decoration: none; /* Remove o sublinhado */
+        color: white; /* Mantém a cor padrão do texto */
+    
+    }
+
+}
 
 main {
     min-width: 300px;

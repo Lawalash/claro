@@ -1,68 +1,370 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/3df637a2f2.js" crossorigin="anonymous"></script>
-    <title>Claro Ativo</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-   <link rel="stylesheet" href="./estilos/inicio.css">
-</head>
-<body>
-    <header>
-        <div class="menu-content">
-            <div class="menu-toggle">
-                
-            </div>
-            <h1 class="logo">CLARO ATIVO</h1>
+/* style.css */
 
-            
-            <nav >
-                <ul class="list-itens">
-                    <li><a href="home.html">Inicio</a></li>
-                    <li><a href="qualidade/qualidade.html">Claro Qualidade</a></li>
-                    <li><a href="tabelainternet.html">Tabela de preço</a></li>
-                    <li><a href="tabelacheck.html">Checklist</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+@charset "UTF-8";
 
-    <main>
-        <div id="center-container">
-            <p id="click-to-show">MOSTRAR SITES</p>
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
-            <div id="sites-container">
+:root{
+    --cor0:white;
+    --cor1:black;
+    --cor2:#1E73BE;
+    --cor3:#A961D7;
+    --cor4:#DA291C;
+    --cor5:#b32218;
 
-                <div class="btns">
-                    <a target="_blank" href="https://www.claro.com.br/"><button id="btns" class="buttonclaro">SITE DA CLARO</button></a>
+}
 
-                    <a target="_blank" href="https://buscacepinter.correios.com.br/app/endereco/index.php"><button id="btns" class="buttoncorreios">SITE CORREIOS</button></a>
+/* Zerando CSS */
 
-                    <a target="_blank" href="https://servicos.receita.fazenda.gov.br/servicos/cpf/consultasituacao/consultapublica.asp"><button id="btns" class="buttoncpf">CONSULTAR CPF</button></a>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-                    <a target="_blank" href="https://solucoes.receita.fazenda.gov.br/Servicos/cnpjreva/cnpjreva_Solicitacao.asp"><button id="btns" class="buttoncnpj">CONSULTAR CNPJ</button></a>
+/* Fundo-tela */
 
-                    <a target="_blank" href="https://claro.negociafacil.com.br/"><button id="btns" class="buttonnegocia">CLARO NEGOCIA FACIL</button></a>
+html {
+  width: 100vw;
+  height: 100vh;
+  font-size: 62.5%;
+  
+  font-family: 'Lato', sans-serif;
+}
 
-                    <a target="_blank" href="https://forms.office.com/r/fYvBQnNFHU"><button id="btns" class="buttonforms"> Formuário de feedback</button></a>
+img[src*="https://www.000webhost.com/static/default.000webhost.com/images/powered-by-000webhost.png"] {
+  display: none;
+}
+
+body {
+  background: linear-gradient(rgba(112, 112, 112, 0.384), rgba(20, 20, 20, 1)), url(../imagens/claro.jpeg);
+  background-position: center center;
+  background-size: cover;
+  background-position-y: 0px;
+  background-repeat: no-repeat;
+  overflow: hidden; /* Adicione esta linha para ocultar barras de rolagem */
+
+}
 
 
-                </div>
-            </div>
-        </div>
-    </main>
-    <script>
-        // Seu script JavaScript existente
-        document.addEventListener('DOMContentLoaded', function () {
-            var clickToShow = document.getElementById('click-to-show');
-            var sitesContainer = document.getElementById('sites-container');
+/* Menu - Header - NavBar */
 
-            clickToShow.addEventListener('click', function () {
-                sitesContainer.classList.toggle('show-sites');
-            });
-        });
-    </script>
-</body>
-</html>
+header {
+  width: 100%;
+  height: 10vh;
+  background-color: rgba(22, 22, 22, 0.2);
+}
+
+.menu-content {
+  text-transform: uppercase;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.8rem;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 2rem;
+  letter-spacing: 0.4rem;
+  cursor: pointer;
+  color: white;
+  
+}
+
+.menu-content .menu-toggle {
+  display: none;
+}
+
+.menu-content .list-itens {
+  margin-right: 10px;
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+.menu-content .list-itens a {
+  text-decoration: none;
+  color: white;
+  padding: 1.7rem;
+  transform: 2ms ease-in;
+  position: relative;
+}
+
+.menu-content .list-itens a:before {
+  content: ' ';
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 0px;
+  height: 3px;
+  background-color: var(--cor4);
+  transition: all 1.5s ease; 
+}
+
+.menu-content .list-itens a:hover:before {
+  width: 100%;
+}
+
+/* Centro - Conteudo Principal */
+
+/* Conteudo central */
+main {
+  height: 93vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#center-container {
+  text-align: center;
+}
+
+#click-to-show {
+  font-size: 2rem;
+  letter-spacing: 0.4rem;
+  cursor: pointer;
+  color: white;
+}
+#sites-container {
+  max-width: 1200px;
+  display: none;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+#sites-container.show-sites {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.btns {
+  display: flex;
+  flex-wrap: wrap; /* Adiciona esta linha para quebrar a linha quando não houver espaço */
+  justify-content: center;
+  gap: 20px;
+}
+.btns img{
+  max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do botão */
+  max-height: 100%; /* Garante que a imagem não ultrapasse o tamanho do botão */
+}
+.buttonclaro:hover{
+  color: #DA291C;
+  font-size: 1.6em;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.buttoncorreios:hover{
+  color: #FBBC30;
+  font-size: 1.6em;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.buttoncpf:hover{
+  color: #1659BF;
+  font-size: 1.6em;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.buttoncnpj:hover{
+  color: #0F4098;
+  font-size: 1.6em;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.buttonnegocia:hover{
+  color: #E41F2C;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.buttonforms:hover{
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.btns button {
+  width: 250px;
+  height: 60px;
+  cursor: pointer;
+  border: 1px solid white;
+  color: white;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  border-radius: 20px;
+  position: relative;
+  transition: 1.}
+
+  .btns button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #eee5e552; /* Cor do efeito de transição */
+    border-radius: 20px;
+    transition: width 0.7s ease-out; /* Tempo e tipo de transição */
+    z-index: -1; /* Coloca o efeito por trás do texto do botão */
+  }
+  
+  .btns button:hover::before {
+    width: 100%;
+  }
+
+
+/* fim do conteúdo central */
+
+/* BTN UNVIERSE */
+
+.btn-17,
+.btn-17 *,
+.btn-17 :after,
+.btn-17 :before,
+.btn-17:after,
+.btn-17:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-17 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #1d1c1ca2;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#3f3e3ea2, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.btn-17:disabled {
+  cursor: default;
+}
+
+.btn-17:-moz-focusring {
+  outline: auto;
+}
+
+.btn-17 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn-17 [hidden] {
+  display: none;
+}
+
+.btn-17 {
+  border-radius: 99rem;
+  border-width: 2px;
+  padding: 0.8rem 3rem;
+  z-index: 0;
+}
+
+.btn-17,
+.btn-17 .text-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.btn-17 .text-container {
+  display: block;
+  mix-blend-mode: difference;
+}
+
+.btn-17 .text {
+  display: block;
+  position: relative;
+}
+
+.btn-17:hover .text {
+  -webkit-animation: move-up-alternate 0.3s forwards;
+  animation: move-up-alternate 0.3s forwards;
+}
+
+@-webkit-keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(80%);
+  }
+
+  51% {
+    transform: translateY(-80%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(80%);
+  }
+
+  51% {
+    transform: translateY(-80%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.btn-17:after,
+.btn-17:before {
+  --skew: 0.2;
+  background: #fff;
+  content: "";
+  display: block;
+  height: 102%;
+  left: calc(-50% - 50% * var(--skew));
+  pointer-events: none;
+  position: absolute;
+  top: -104%;
+  transform: skew(calc(150deg * var(--skew))) translateY(var(--progress, 0));
+  transition: transform 0.2s ease;
+  width: 100%;
+}
+
+.btn-17:after {
+  --progress: 0%;
+  left: calc(50% + 50% * var(--skew));
+  top: 102%;
+  z-index: -1;
+}
+
+.btn-17:hover:before {
+  --progress: 100%;
+}
+
+.btn-17:hover:after {
+  --progress: -102%;
+}

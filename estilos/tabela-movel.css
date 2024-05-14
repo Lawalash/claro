@@ -134,13 +134,13 @@ header {
 
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1060px) {
     .menu-content .list-itens {
         flex-wrap: nowrap; /* Evita quebrar para a próxima linha */
     }
     
     .menu-content .list-itens a {
-        font-size: 0.9em; /* Utiliza unidade relativa para a fonte */
+        font-size: 0.8em; /* Utiliza unidade relativa para a fonte */
         flex: 0 0 auto; /* Permite que os itens do menu tenham largura automática */
         margin-right: 10px; /* Espaçamento entre os itens */
     }

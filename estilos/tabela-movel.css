@@ -436,4 +436,44 @@ th, td {
       opacity: 0;
     }
   }
+
+  /* CSS BUTTONS UNIVERSE.IO (2) */
+
+  .svg-wrapper {
+    position: relative;
+    width: 190px;
+    height: 60px;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+  }
+  
+  .shape {
+    stroke-dasharray: 100 300;
+    stroke-dashoffset: -297;
+    fill: transparent;
+    stroke: #343a40;
+    stroke-width: 5px;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+  }
+  
+  .text {
+    font-size: 22px;
+    top: -52px;
+    position: relative;
+    font-weight: 600;
+    color: rgb(22, 22, 22);
+  }
+  
+  .svg-wrapper:hover .shape {
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+  }
+  
+  .svg-wrapper:hover {
+    background-color: #94c4f3;
+    transition: 1s;
+  }
+
   

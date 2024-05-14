@@ -251,31 +251,9 @@ th,td {
 }
 
 
-.buttonth {
-    font-size: 1.2em;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: transparent; /* Define o fundo como transparente */
-    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
-    outline: none; /* Remove o contorno ao focar no botão */
-    
-}
-.buttonth {
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
 
-.buttonth:hover {
-    background-color: #0056b3;
-}
 
-#iconpdf{
-    max-width:34px;
-}
+
 
 /* MODAL */
 
@@ -485,4 +463,90 @@ th,td {
       opacity: 0;
     }
   }
+
+  /* CSS BUTTONS UNIVERSE.IO(2) */
+
+.svg-wrapper {
+    position: relative;
+    width: 190px;
+    height: 60px;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+  }
+  
+  .shape {
+    stroke-dasharray: 100 300;
+    stroke-dashoffset: -297;
+    fill: transparent;
+    stroke: #343a40;
+    stroke-width: 5px;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+  }
+  
+  .text {
+    font-size: 22px;
+    top: -52px;
+    position: relative;
+    font-weight: 600;
+    color: rgb(22, 22, 22);
+  }
+  
+  .svg-wrapper:hover .shape {
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+  }
+  
+  .svg-wrapper:hover {
+    background-color: #94c4f3;
+    transition: 1s;
+  }
+
+  /* CSS BUTTONS UNIVERSE.IO(3) */
+
+.button {
+    font-weight: bolder;
+    display: inline-block;
+    position: relative;
+    border: 3px solid #fff;
+    padding: 15px 60px;
+    font-size: 16px;
+  }
+  
+  .button::after, .button::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    transition: .5s;
+  }
+  
+  button::after {
+    top: -3px;
+    left: -3px;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+  }
+  
+  button::before {
+    bottom: -3px;
+    right: -3px;
+    border-bottom: 3px solid transparent;
+    border-right: 3px solid transparent;
+  }
+  
+  button:hover {
+    color: #0668C9;
+    cursor: pointer;
+  }
+  
+  button:hover::after,
+  button:hover::before {
+    width: calc(50% + 3px);
+    height: calc(50% + 3px);
+    border-color: #343a40;
+  }
+  
+  
   

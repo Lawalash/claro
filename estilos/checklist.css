@@ -129,6 +129,7 @@ strong{
 .checklist-container {
     display: flex;
     flex-direction: column;
+    
   }
 
   .checklist-item {
@@ -279,7 +280,6 @@ td{
   background-color: #f4f4f4;
   color: black;
   padding: 10px;
-  border: 1px solid #ddd;
   border-radius: 5px;
   cursor: pointer;
 }

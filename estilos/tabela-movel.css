@@ -60,28 +60,7 @@ header {
     text-decoration: none; /* Remove o sublinhado ao passar o mouse */
     color: white; /* Mantém a cor padrão do texto */
 }
-#maes{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #b32218;
-    background:  linear-gradient(rgba(22, 22, 22, 0.164), rgba(20, 20, 20, 0.212)), url(../imagens/maes.png);
-    background-position: center center;
-    background-size: cover;
-    background-position-y: 0px;
-    background-repeat: no-repeat;
-}
-#mae{
-    background-color: #f85fb0b4;
-    font-weight: bolder;
-    color: white;
-    padding-top: 40px;
-}
-#mae2{
-    background-color: #f85fb0b4;
-    font-weight: bolder;
-    color: white;
-    padding-left: 20px;
-    padding-top: 60px;
-}
+
 .menu-content .list-itens {
     margin-right: 10px;
     display: flex;

@@ -343,10 +343,7 @@ th,td {
 }
 
 .app-icons img {
-    width: 80px; /* Defina a largura da imagem */
-
-    margin-left: 40px; /* Ajuste o espaçamento horizontal entre as imagens */
-    
+    margin-left: 20px; /* Ajuste o espaçamento horizontal entre as imagens */
     overflow: hidden; /* Garante que a parte fora do círculo não seja exibida */
     position: relative; /* Define a posição relativa para as imagens */
     transition: transform 0.1s ease-in-out; /* Adiciona uma transição suave ao passar o mouse */
@@ -372,6 +369,7 @@ th,td {
 
 
 #mainmodal {
+    margin-top: 30px;
     padding: 10px; /* Adicione um espaço interno para evitar que o conteúdo encoste nas bordas do modal */
     overflow-x: auto; /* Adiciona rolagem lateral apenas para o #mainmodal */
 }
@@ -744,4 +742,84 @@ button:hover::before {
     transition: 1s;
   }
   
+  /* CSS BUTTONS UNIVERSE.IO(4) */
+  .cardBox {
+    width: 750px;
+    height: 300px;
+    position: relative;
+    display: grid;
+    place-items: center;
+    margin: auto; /* Center the card box horizontally */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 / 3%) 0px 2px 10px 0px, rgb(0 0 0 / 50%) 0px 2px 10px 0px;
+  }
   
+  .card {
+    position: absolute;
+    width: 98%;
+    height: 95%;
+    background: #000814;
+    border-radius: 20px;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+    overflow: hidden; /* Clip content within the card */
+    padding: 20px;
+    cursor: pointer;}
+
+  
+  .card .h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: 800;
+    pointer-events: none;
+    opacity: .5;
+  }
+  
+  .card .content {
+    transform: translateY(100%);
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .card:hover .content {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .card:hover .h4 {
+    opacity: 0;
+  }
+  
+  .cardBox::before {
+    content: "";
+    position: absolute;
+    inset: 0; /* Stretch to all sides using inset */
+    border-radius: inherit; /* Inherit border-radius from cardBox */
+    /* Removed background for border animation */
+    /* Added animation properties */
+    animation: borderGlow 5s ease-in-out infinite;
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.3); /* Optional subtle white border */
+    /* Added !important for potential specificity issues */
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.3) !important;
+  }
+  
+  @keyframes borderGlow {
+    0% {
+      /* Start with a slight outward glow */
+      box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.5);
+    }
+  
+    100% {
+      /* Animate glow to shrink and pulsate */
+      box-shadow: 0 0 0 5px rgba(255, 255, 255, 0);
+    }
+  }

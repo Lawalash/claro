@@ -80,7 +80,7 @@ pesquisarCidadeInput.addEventListener('input', function () {
 function mostrarTabelaDoGrupo(cidadeDigitada) {
     // Mapeamento das cidades para grupos
     const cidadeGrupoMap = {
-        'RIO GRANDE DO SUL':'PROMOBOX',
+        'RIO GRANDE DO SUL':'PROMORS',
         'Almirante Tamandare-PR': 'PROMOBOX',
         'Araucaria-PR': 'PROMOBOX',
         'Cascavel-PR': 'PROMOBOX',

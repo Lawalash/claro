@@ -43,6 +43,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+//BOTÃO MONTE SEU COMBO
+document.addEventListener('DOMContentLoaded', function () {
+    var toggleButton = document.getElementById('monteseucombo'); // ID do botão
+    var ofertaRentabilidade = document.querySelectorAll('.montecombo'); // Classe das linhas
+    toggleButton.addEventListener('click', function () {
+        ofertaRentabilidade.forEach(function (linha) {
+            linha.classList.toggle('hidden');
+        });
+    });
+});
+
 //==============================================================
 
 // PLANO 1 GIGA

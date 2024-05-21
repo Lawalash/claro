@@ -15,6 +15,17 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+ // ===============================================================
+
+    document.getElementById('planBox').addEventListener('click', function() {
+        document.getElementById('janelaModalBox').style.display = 'block'; // Usando 'janelaModal750Mega' para o modal do plano 750 Mega
+    });
+    
+    // Função para fechar o modal ao clicar no botão de fechar dentro do modal do plano de 500 Mega
+    document.getElementById('janelaModalBox').getElementsByClassName('close')[0].addEventListener('click', function() {
+    document.getElementById('janelaModalBox').style.display = 'none'; // Usando 'janelaModal500Mega' para o modal do plano 500 Mega
+});
+
  
 
 // ===============================================================
@@ -619,4 +630,7 @@ function mostrarTabelaDoGrupo(cidadeDigitada) {
         }
 
 
+
+
+        
 });

@@ -5,16 +5,17 @@ function calcularValor() {
     const descontoValue = parseFloat(document.getElementById('desconto').value) || 0;
     const telefoneValue = parseFloat(document.getElementById('telefone').value) || 0;
     const pontoAdicionalValue = parseFloat(document.getElementById('pontoAdicional').value) || 0;
+    const movelValue = parseFloat(document.getElementById('movel').value) || 0; // Adicionando o valor do plano móvel
 
     let totalValue = 0;
     if (rentabilidadeValue > 0 && descontoValue > 0) {
-        totalValue = internetValue + rentabilidadeValue + descontoValue + tvValue + telefoneValue + pontoAdicionalValue;
+        totalValue = internetValue + rentabilidadeValue + descontoValue + tvValue + telefoneValue + pontoAdicionalValue + movelValue; // Incluindo o valor do plano móvel na soma total
     } else if (rentabilidadeValue > 0) {
-        totalValue = internetValue + rentabilidadeValue + tvValue + telefoneValue + pontoAdicionalValue;
+        totalValue = internetValue + rentabilidadeValue + tvValue + telefoneValue + pontoAdicionalValue + movelValue; // Incluindo o valor do plano móvel na soma total
     } else if (descontoValue > 0) {
-        totalValue = internetValue + descontoValue + tvValue + telefoneValue + pontoAdicionalValue;
+        totalValue = internetValue + descontoValue + tvValue + telefoneValue + pontoAdicionalValue + movelValue; // Incluindo o valor do plano móvel na soma total
     } else {
-        totalValue = internetValue + tvValue + telefoneValue + pontoAdicionalValue;
+        totalValue = internetValue + tvValue + telefoneValue + pontoAdicionalValue + movelValue; // Incluindo o valor do plano móvel na soma total
     }
 
     document.getElementById('resultado').innerText = `Valor Total: R$${totalValue.toFixed(2)}`;

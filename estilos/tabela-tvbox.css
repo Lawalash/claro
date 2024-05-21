@@ -221,69 +221,8 @@ th,td {
     font-size: 1.1em;
 }
 
-.modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
-    padding-top: 100px; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.9); 
-}
 
-.modal-imagem {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 920px;
-}
 
-.fechar {
-    color: #aaa;
-    float: right;
-    font-size: 50px;
-    font-weight: bold;
-    position: absolute; /* Adicionando uma posição absoluta para controlar o posicionamento */
-    top: 20px; /* Ajuste a distância do topo conforme necessário */
-    right: 50px; /* Ajuste a distância da direita conforme necessário */
-}
-
-.fechar:hover,
-.fechar:focus {
-    color: rgb(156, 4, 4);
-    text-decoration: none;
-    cursor: pointer;
-}
-.combo{
-    text-align: center;
-    font-size: 1.2em;
-}
-
-.seta-esquerda, .seta-direita {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.5);
-    color: #000;
-    font-size: 24px;
-    line-height: 40px;
-    text-align: center;
-    cursor: pointer;
-}
-
-.seta-esquerda {
-    left: 10px;
-}
-
-.seta-direita {
-    right: 10px;
-}
 
 .hidden {
     display: none;
@@ -590,5 +529,260 @@ th,td {
     border-color: #343a40;
   }
   
+  /* MODAL PARA AS PROMOÇÕES BOX */
+
+.cursor-pointer:hover {
+    cursor: pointer;
+    color:white;
+    background-color: rgb(169, 169, 169);
+}
+
+
+/* Estilo para remover o cursor pointer do th */
+.cursor-pointer th:hover {
+    cursor: auto;
+    color: black;
+}
+
+/* Estilos para o modal */
+.modal {
+    display: none; /* Inicia oculto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: hidden; /* Remova a rolagem vertical no modal */
+    background-color: rgba(0, 0, 0, 0.4); /* Fundo escuro */
+    border-radius: 10px 10px 10px 10px; /* Bordas arredondadas */
+    
+}
+
+.modal-content {
+    
+    margin: auto; /* Centraliza horizontalmente */
+    margin-top: 2%; /* Ajusta a margem superior para centralizar verticalmente */
+    padding: 0; /* Remova o padding padrão */
+    border: 1px solid #949494;
+    height: 90%;
+    width: 80%;
+    max-width: 800px; /* Largura máxima */
+    overflow-x: auto; /* Adiciona rolagem lateral apenas */
+    max-height: calc(100% - 50px); /* Altura máxima do modal */
+    position: relative; /* Garante que o cabeçalho fique dentro do modal */
+}
+
+
+#headermodal {
+    position: static; /* Mantém o cabeçalho fixo no topo dentro do modal */
+    top: 0;
+    background-color: white;
+    padding: 5px 20px; /* Adicione padding horizontal e vertical menor */
+    z-index: 2; /* Garante que o cabeçalho esteja acima do conteúdo rolando */
+    margin-top: 40px;
+    margin-bottom: 120px;
+    height: -20px; /* Altura desejada para o cabeçalho */
+   
+}
+#headermodal:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 60px;
+    background-color: rgba(169, 169, 169, 0.596);
+}
+
+#headermodal h1 {
+    font-size: 2em; /* Define o tamanho da fonte do h1 para 1.5em */
+    font-weight: bolder;
+}
+
+.app-icons img {
+    margin-left: 20px; /* Ajuste o espaçamento horizontal entre as imagens */
+    overflow: hidden; /* Garante que a parte fora do círculo não seja exibida */
+    position: relative; /* Define a posição relativa para as imagens */
+    transition: transform 0.1s ease-in-out; /* Adiciona uma transição suave ao passar o mouse */
+}
+
+
+
+.app-icons img:hover::after {
+    content: attr(title); /* Exibe o conteúdo do atributo 'title' como dica de ferramenta */
+    position: absolute; /* Define a posição absoluta para a dica de ferramenta */
+    bottom: -30px; /* Ajusta a distância da dica de ferramenta em relação à imagem */
+    left: 50%; /* Centraliza a dica de ferramenta horizontalmente */
+    transform: translateX(-50%); /* Centraliza a dica de ferramenta horizontalmente */
+    background-color: rgba(0, 0, 0, 0.8); /* Cor de fundo da dica de ferramenta */
+    color: white; /* Cor do texto da dica de ferramenta */
+    padding: 5px 10px; /* Espaçamento interno da dica de ferramenta */
+    border-radius: 5px; /* Bordas arredondadas da dica de ferramenta */
+    font-size: 20px; /* Tamanho da fonte da dica de ferramenta */
+    white-space: nowrap; /* Evita que o texto da dica de ferramenta quebre em várias linhas */
+    transition: none; /* Remove a transição para tornar a exibição instantânea */
+}
+
+
+
+#mainmodal {
+    margin-top: 30px;
+    padding: 10px; /* Adicione um espaço interno para evitar que o conteúdo encoste nas bordas do modal */
+    overflow-x: auto; /* Adiciona rolagem lateral apenas para o #mainmodal */
+}
+#mainmodal h2{
+    font-size: 1.1em;
+    font-weight: bolder;
+    padding-left: 40px;
+}
+#mainmodal p{
+    font-size: 1em;
+    padding-left: 40px;
+}
+
+/* Estilo para o botão de fechar */
+.close {
+    float: right;
+    cursor: pointer;
+    position: relative;
+    margin-left: 10px;
+    font-size: 20px; /* Tamanho do X */
+}
+
+/* Estilo para o círculo ao redor do botão de fechar */
+.close:before {
+    content: '';
+    display: block;
+    width: 30px; /* Tamanho do círculo */
+    height: 30px; /* Tamanho do círculo */
+    border-radius: 50%; /* Transforma em um círculo */
+    border: 2px solid black; /* Cor da borda do círculo */
+    position: absolute;
+    top: -5px; /* Ajusta a posição vertical */
+    right: -8px; /* Ajusta a posição horizontal */
+}
+
+/* SIMBOLOS */ 
+
+/* Estilo para o ícone de Wi-Fi */
+.wifi-icon {
+    font-size: 0.8em; /* Tamanho do ícone */
+    margin-right: 7px; /* Espaçamento entre o ícone e o texto */
+}
+
+/* Estilo para o ícone de upload */
+.download-icon {
+    font-size: 0.8em; /* Tamanho do ícone */
+    margin-right: 7px; /* Espaçamento entre o ícone e o texto */
+}
+
+/* Estilo para o ícone de upload */
+.upload-icon {
+    font-size: 0.8em; /* Tamanho do ícone */
+    margin-right: 7px; /* Espaçamento entre o ícone e o texto */
+}
+
+
+/* Estilo para o ícone de play */
+.play-icon {
+    font-size: 0.8em; /* Tamanho do ícone */
+    margin-right: 7px; /* Espaçamento entre o ícone e o texto */
+}
+
+/* Estilo para o ícone de TV */
+.tv-icon {
+    font-size: 0.8em; /* Tamanho do ícone */
+    margin-right: 7px; /* Espaçamento entre o íco#centerne e o texto */
+}
+
+/* Estilo para o ícone de modem */
+.modem-icon {
+    font-size: 1em; /* Tamanho do ícone */
+    margin-right: 7px; /* Espaçamento entre o ícone e o texto */
+}
+
+/* Estilo para o ícone de conector */
+.plug-icon {
+    font-size: 0.8em; /* Tamanho do ícone */
+    margin-right: 7px; /* Espaçamento entre o ícone e o texto */}
+
+/* CSS BUTTONS UNIVERSE.IO(4) */
+.cardBox {
+    width: 750px;
+    height: 300px;
+    position: relative;
+    display: grid;
+    place-items: center;
+    margin: auto; /* Center the card box horizontally */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 / 3%) 0px 2px 10px 0px, rgb(0 0 0 / 50%) 0px 2px 10px 0px;
+  }
   
+  .card {
+    position: absolute;
+    width: 98%;
+    height: 95%;
+    background: #000814;
+    border-radius: 20px;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+    overflow: hidden; /* Clip content within the card */
+    padding: 20px;
+    cursor: pointer;}
+
   
+  .card .h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: 800;
+    pointer-events: none;
+    opacity: .5;
+  }
+  
+  .card .content {
+    transform: translateY(100%);
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .card:hover .content {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .card:hover .h4 {
+    opacity: 0;
+  }
+  
+  .cardBox::before {
+    content: "";
+    position: absolute;
+    inset: 0; /* Stretch to all sides using inset */
+    border-radius: inherit; /* Inherit border-radius from cardBox */
+    /* Removed background for border animation */
+    /* Added animation properties */
+    animation: borderGlow 5s ease-in-out infinite;
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.3); /* Optional subtle white border */
+    /* Added !important for potential specificity issues */
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.3) !important;
+  }
+  
+  @keyframes borderGlow {
+    0% {
+      /* Start with a slight outward glow */
+      box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.5);
+    }
+  
+    100% {
+      /* Animate glow to shrink and pulsate */
+      box-shadow: 0 0 0 5px rgba(255, 255, 255, 0);
+    }
+  }
+

@@ -6,6 +6,7 @@
     <title>ClaroTV + </title>
     <link rel="stylesheet" href="estilos/tabela-tvbox.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     
 </head>
 <body>
@@ -20,7 +21,6 @@
                     <li><a href="tabelaclarotv.html" onclick="return false;">CLARO TV BOX</a></li>
                     <li><a href="tabelamovel.html">MÓVEL</a></li>
                     <li><a href="tabelafixo.html">FIXO</a></li>
-                    <li><a href="calculadora.html">MONTE SEU PLANO</a></li>
                     <li><a href="tabelacheck.html">CHECKLIST</a></li>
                 </ul>
             </nav>
@@ -59,7 +59,7 @@
                     </thead>
                     <tbody>
                         
-                            <tr>
+                            <tr id="planBox" class="cursor-pointer">
                                 <th id="center">TV - BOX CLARO TV+</th>
                                 <td>R$114,90</td>
                                 <td>R$109,90</td>
@@ -270,6 +270,60 @@
                 </tr>
             </tbody>
         </table>
+    </div>
+</div>
+
+
+ <!-- Janela modal PLANO 750 Mega -->
+ <div id="janelaModalBox" class="modal">
+
+    <div class="modal-content">
+
+        <header id="headermodal">
+            <h1>TV - BOX CLARO TV+</h1>
+            <span class="close">&times;</span> <!-- Botão de fechar -->
+        </header>
+
+    <!-- Ícones de aplicativos personalizados -->
+    <div class="cardBox">
+        <div class="card">
+           <div class="h4">APLICATIVOS GRATUITOS</div>
+         
+          <div class="content app-icons">
+
+            <img  style="max-width: 60px; border-radius: 40%;" src="https://verofibra.net.br/wp-content/uploads/icones/1/GloboPlay%20B%C3%A1sico.png
+            " alt="Globoplay" title="Globoplay">
+            <img  style="max-width: 60px; border-radius: 10px;" src="imagens/icones/claro-video.png" alt="Claro Video" title="Claro Video">
+            <img  style="max-width: 60px; border-radius: 20px;" src="imagens/icones/skeelo.png" alt="Skeelo" title="Skeelo">
+            <img  style="max-width: 60px; border-radius: 20px;" src="imagens/icones/cna-library.png" alt="CNA Library" title="CNA Library">
+          </div>
+        </div>
+      </div>
+
+
+
+
+        <main id="mainmodal">
+            <h2><i class="fas fa-wifi wifi-icon"></i>Wi-Fi grátis</h2>
+                <p>para sua casa e wi-fi também fora de casa com a rede #NET-CLARO-WIFI</p>
+
+            <h2><i class="fas fa-download download-icon"></i>Download</h2>
+                <p>até 750 Mbps</p>
+
+            <h2><i class="fas fa-upload upload-icon"></i>Upload</h2>
+                <p>até 50 Mbps</p>
+
+            <h2><i class="fas fa-play play-icon"></i>Globoplay incluso</h2>
+                <p>plataforma de streaming com os conteúdos da Globo. Novelas, filmes, séries, especiais, esportes, BBB, podcasts, canais ao vivo e shows fazem parte do acervo.</p>
+
+            <h2 class="clarotv-title"><i class="fas fa-tv tv-icon"></i>Conteúdo Claro Vídeo - App Claro tv+</h2>
+                <p>gratuito para todos os clientes Claro. São muitos filmes, séries, documentários, shows, conteúdos infantis, e muito mais. Para acessar o conteúdo Claro Vídeo, baixe o app Claro TV+ ou acesse www.clarotvmais.com.br. Não disponíveis os canais ao vivo.</p>
+
+            <h2><i class="fas fa-wifi wifi-icon"></i>Novo modem Wi-Fi 6</h2>
+                <p>oferece mais alcance, estabilidade e velocidade de navegação no Wi-Fi para dispositivos compatíveis com a tecnologia. *Consulte a disponibilidade dos planos de internet com roteador Wi-Fi 6 em sua região.</p>
+
+        </main>
+
     </div>
 </div>
         

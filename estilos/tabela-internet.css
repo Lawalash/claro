@@ -823,3 +823,20 @@ button:hover::before {
       box-shadow: 0 0 0 5px rgba(255, 255, 255, 0);
     }
   }
+
+
+   /* MONTE SEU COMBO*/
+
+#comboNET{
+    background-color: rgb(122, 122, 122);
+    color: white;
+    text-align: bolder; 
+    max-width: 800px;
+}
+#h1comb{
+    text-align: center;
+}
+
+#calc{
+    text-align: center;
+}

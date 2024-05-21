@@ -23,7 +23,6 @@
                     <li><a href="tabelaclarotv.html">CLARO TV BOX</a></li>
                     <li><a href="tabelamovel.html">MÓVEL</a></li>
                     <li><a href="tabelafixo.html">FIXO</a></li>
-                    <li><a href="calculadora.html">MONTE SEU PLANO</a></li>
                     <li><a href="tabelacheck.html">CHECKLIST</a></li>
                 </ul>
             </nav>
@@ -179,6 +178,137 @@
                                 <td colspan="2"> <button id="of350Button" class="button"> OFERTA-350  </button> </td>
                             </div>
                         </tr>
+                        
+
+                        <tr>
+                            <td colspan="5" style="text-align: center;"> <button id="monteseucombo" class="button"> MONTE SEU COMBO  </button> </td>
+                        </tr>
+
+                <tr id="comboNET" class="montecombo hidden">
+                    <td colspan="5">
+                        <div class="container">
+                            <h1 id="h1comb">Monte seu Combo</h1>
+                            <form id="comboForm">
+                                <div class="form-group">
+                                    <label for="internet">INTERNET RESIDENCIAL:</label>
+                                    <select class="form-control" id="internet" name="internet">
+                                        <option value="0">Nenhuma</option>
+                                        <option value="299.90">1 GIGA (Globoplay) - R$299.90</option>
+                                        <option value="154.90">750 Megas (Globoplay) - R$154.90</option>
+                                        <option value="124.90">500 Megas (Globoplay) - R$124.90</option>
+                                        <option value="104.90">350 Megas (Globoplay) - R$104.90</option>
+                                        <option value="84.90">250 Megas - R$84.90</option>
+                                    </select>
+                                </div>
+    
+                                <div class="form-group text-center">
+                                    <input type="checkbox" id="rentabilidadeCheckbox" onchange="mostrarRentabilidade()">
+                                    <label for="rentabilidadeCheckbox" class="centerbox">MOSTRAR COM OFERTA:</label>
+                                </div>
+    
+                                <div class="form-group" id="rentabilidadeDiv" style="display: none;">
+
+                                    <label for="rentabilidade">OFERTAS:</label>
+
+                                    <select class="form-control" id="rentabilidade" name="rentabilidade">
+                                        <option value="0">Nenhuma</option>
+                                        <option value="124.90">750 Megas (Globoplay) - R$124.90</option>
+                                        <option value="104.90">500 Megas (Globoplay) - R$104.90</option>
+                                        <option value="94.90">350 Megas (Globoplay) - R$94.90</option>
+                                    </select>
+                                    
+                                </div>
+    
+                                <div class="form-group">
+                                    <label for="tv">PLANO DE TV:</label>
+                                    <select class="form-control" id="tv" name="tv">
+                                        <option value="0">Nenhuma</option>
+                                        <option value="114.90">BOX CLARO TV+ - R$114.90</option>
+                                        <option value="144.90">4K CLARO TV+ - R$144.90</option>
+                                        <option value="154.90">SOUNDBOX CLARO TV+ - R$154.90</option>
+                                        <option value="74.90">APP CLARO TV+ - R$74.90</option>
+                                    </select>
+                                </div>
+    
+                                <div class="form-group text-center">
+                                    <input type="checkbox" id="boxCheckbox" onchange="mostrarDesconto()">
+                                    <label for="boxCheckbox" class="centerbox">MOSTRAR COM OFERTA:</label>
+                                </div>
+    
+                                <div class="form-group text-center">
+                                    <input type="checkbox" id="pontoAdicionalCheckbox" onchange="mostrarPontoAdicional()">
+                                    <label for="pontoAdicionalCheckbox" class="centerbox">Ponto Adicional:</label>
+                                </div>
+    
+                            
+                                <div class="form-group" id="descontoDiv" style="display: none;">
+                                    <label for="desconto">OFERTA:</label>
+                                    <select class="form-control" id="desconto" name="desconto">
+                                        <option value="0">Nenhum</option>
+                                        <option value="104.90">TV - BOX CLARO TV+: R$104,90</option>
+                                        <option value="134.90">TV - 4K CLARO TV+: R$134,90</option>
+                                        <option value="39.95">APP CLARO TV+: R$39.95</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group" id="pontoAdicionalDiv" style="display: none;">
+                                    <label for="pontoAdicional">PONTO ADICIONAL:</label>
+                                    <select class="form-control" id="pontoAdicional" name="pontoAdicional">
+                                        <option value="0">Nenhuma</option>
+                                        <option value="59.90">TV - BOX CLARO TV+: R$59.90</option>
+                                        <option value="59.90">TV - 4K CLARO TV+: R$59.90</option>
+                                        <option value="89.90">SOUNDBOX - CLARO TV+: R$89.90</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="movel">MÓVEL:</label>
+                                    <select class="form-control" id="movel" name="movel">
+                                        <option value="0">CONTROLE</option>
+
+                                        <option value="39.90">CONTROLE 18 GB - R$39,90 CADASTRO (P15$ CONTROLE18GB S/AP RENT MULTI BL)</option>
+                                        <option value="44.90">CONTROLE 23 GB - R$44.90 CADASTRO (P10$ CONTROLE23GB S/AP RENT MULTI BL)</option>
+                                        <option value="54.90">CONTROLE 30 GB - R$54.90 CADASTRO (P10$ CONTROLE30GB S/AP RENT MULTI BL)</option>
+                                        <option value="64.90">CONTROLE 35 GB - R$64.90 CADASTRO (P10$ CONTROLE35GB S/AP RENT MULTI BL)</option>
+
+                                        <option value="0">PLANO CONTA</option>
+
+                                        <option value="79.90">CONTA 50 GB - R$79,90 CADASTRO (P40$ CLARO PÓS50GB S/AP RENT MULTI BL)</option>
+
+                                        <option value="89.90">CONTA 80 GB - R$89,90 CADASTRO (P00$ CLARO PÓS80GB S/AP RENT MULTI BL)</option>
+
+                                        <option value="99.90">CONTA 100 GB
+                                            GB - R$99,90 CADASTRO (P10$ CLARO PÓS100GB S/AP RENT MULTI BL)</option>
+
+                                        <option value="139.90">CONTA 200 GB
+                                            - R$139,90 CADASTRO (P10$ CLARO PÓS200GB S/AP RENT MULTI BL)</option>
+                                    </select>
+                                </div>
+    
+                                <div class="form-group">
+                                    <label for="telefone">TELEFONE FIXO:</label>
+                                    <select class="form-control" id="telefone" name="telefone">
+                                        <option value="0">Nenhuma</option>
+                                        <option value="5">ILIMITADO BRASIL TOTAL (APENAS COM OS 4 PRODUTOS) - R$5,00</option>
+                                        <option value="35.00">ILIMITADO BRASIL TOTAL - R$35.00</option>
+                                        <option value="65.00">ILIMITADO MUNDO TOTAL - R$65.00</option>
+                                    </select>
+                                </div>
+                                <h1 style="font-size: 1em;">OBS: TODOS OS VALORES ESTÃO EM BOLETO. CONTROLE (DIMINUI 5 REAIS) E PÓS PAGO OU CONTA (10 REAIS)</h1>
+
+                                <h1 style="font-size: 1em;">OBS: PÓS PAGO E CONTA TEM OS MESMOS BENEFICIOS, SO MUDA NOMENCLATURA.</h1>
+     
+    
+                                <div class="form-group" id="calc">
+                                    <button type="button" class="btn btn-primary" onclick="calcularValor()">Calcular Valor</button>
+                                </div>
+                            </form>
+    
+                            <div id="resultado" class="mt-4"></div>
+                        </div>
+                    </td>      
+                  </tr>
+
 
 
 
@@ -1616,3 +1746,4 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="estilosJS/internet.js"></script>
+        <script src="estilosJS/calculadora.js"></script>

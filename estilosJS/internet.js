@@ -434,7 +434,7 @@ function mostrarTabelaDoGrupo(cidadeDigitada) {
   'Itapema-SC': 'ESPECIAL+ COM PROMO 3M',
   'Lajeado-RS': 'ESPECIAL+ COM PROMO 3M',
   'Passo Fundo-RS': 'ESPECIAL+ COM PROMO 3M',
-  'Ponta GrossaPR': 'ESPECIAL+ COM PROMO 3M',
+  'Ponta Grossa-PR': 'ESPECIAL+ COM PROMO 3M',
   'Santa Cruz Do Sul-RS': 'ESPECIAL+ COM PROMO 3M',
   'Santa Maria-RS': 'ESPECIAL+ COM PROMO 3M',
   'Sao Leopoldo-RS': 'ESPECIAL+ COM PROMO 3M',

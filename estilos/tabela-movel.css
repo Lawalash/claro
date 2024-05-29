@@ -13,9 +13,6 @@
     --cor3:#b32218;
 }
 
-img[src*="https://www.000webhost.com/static/default.000webhost.com/images/powered-by-000webhost.png"] {
-    display: none;
-  }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -184,7 +181,6 @@ th {
 
 th, td {
     border: 1px solid black;
-    padding-top: 10px;
 }
 
 .h1corpo {
@@ -498,4 +494,13 @@ th, td {
     transition: 1s;
   }
 
+
+#namorado1{
+    background:  linear-gradient(rgba(22, 22, 22, 0.164), rgba(20, 20, 20, 0.212)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgqKtUY-nnzF8GklZ-P5HJASJMN6YoP3NDdw&s);
+}
+.namorado2{
+    background-color: rgb(241, 81, 81);
+    color: white;
+    text-align: center;
+}
   

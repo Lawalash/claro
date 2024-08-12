@@ -166,6 +166,8 @@ table{
     width: 100%;
     
 }
+
+
 thead{
     font-size: 1.3em;
 }
@@ -205,7 +207,7 @@ th,td {
 
 #center {
     vertical-align: middle;
-    padding-left: 85px;
+    padding-left: 30px;
     font-size: 1.1em;
 }
 
@@ -219,6 +221,13 @@ th,td {
     vertical-align: middle;
     text-align: center;
     font-size: 1.1em;
+}
+.plano2 {
+  background-color: rgb(19, 19, 19);
+  color: rgb(238, 236, 236);
+  vertical-align: middle;
+  text-align: center;
+  font-size: 1.1em;
 }
 
 

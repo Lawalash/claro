@@ -132,6 +132,7 @@ header {
 
 }
 
+
 main {
     min-width: 300px;
     max-width: 1300px;
@@ -160,7 +161,7 @@ table {
 }
 
 thead {
-    font-size: 1.2em; /* Ajuste o tamanho da fonte aqui */
+    font-size:1.1em; /* Ajuste o tamanho da fonte aqui */
 }
 
 .check {
@@ -495,12 +496,12 @@ th, td {
   }
 
 
-#namorado1{
-    background:  linear-gradient(rgba(22, 22, 22, 0.164), rgba(20, 20, 20, 0.212)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgqKtUY-nnzF8GklZ-P5HJASJMN6YoP3NDdw&s);
+#diadospais{
+    background-color: #0158b4;
 }
-.namorado2{
-    background-color: rgb(241, 81, 81);
+
+.diadospais{
+    background-color:#1372d8;
     color: white;
-    text-align: center;
 }
   

@@ -249,16 +249,16 @@ function mostrarTabelaDoGrupo(cidadeDigitada) {
     'Sapiranga-RS': 'ESPECIAL+ COM PROMO 6M',
     'Xangri-La-RS': 'ESPECIAL+ COM PROMO 6M',
     'Aparecida-SP': 'ESPECIAL+ COM PROMO 6M',
-    'Belford Roxo-RJ': 'ESPECIAL+ COM PROMO 6M',
-    'Betim-MG': 'ESPECIAL+ COM PROMO 6M',
+  
+
     'Botucatu-SP': 'ESPECIAL+ COM PROMO 6M',
     'Campos Dos Goytacazes-RJ': 'ESPECIAL+ COM PROMO 6M',
-    'Duque De Caxias-RJ': 'ESPECIAL+ COM PROMO 6M',
-    'Nova Odessa-SP': 'ESPECIAL+ COM PROMO 6M',
+
+    
     'Potim-SP': 'ESPECIAL+ COM PROMO 6M',
     'Presidente Prudente-SP': 'ESPECIAL+ COM PROMO 6M',
     'Rio Das Ostras-RJ': 'ESPECIAL+ COM PROMO 6M',
-    'Sao Joao De Meriti-RJ': 'ESPECIAL+ COM PROMO 6M',
+   
     'Teofilo Otoni-MG': 'ESPECIAL+ COM PROMO 6M',
     'Teresopolis-RJ': 'ESPECIAL+ COM PROMO 6M',
     'Campina Grande-PB': 'ESPECIAL+ COM PROMO 6M',
@@ -317,7 +317,7 @@ function mostrarTabelaDoGrupo(cidadeDigitada) {
     'Santo Angelo-RS': 'ESPECIAL+ COM PROMO 6M',
     'Sao Bento Do Sul-SC': 'ESPECIAL+ COM PROMO 6M',
     'Sao Borja-RS': 'ESPECIAL+ COM PROMO 6M',
-    'Sao Francisco Do Sul-SC': 'ESPECIAL+ COM PROMO 6M',
+
     'Sao Gabriel-RS': 'ESPECIAL+ COM PROMO 6M',
     'Sao Lourenco Do Sul-RS': 'ESPECIAL+ COM PROMO 6M',
     'Sao Luiz Gonzaga-RS': 'ESPECIAL+ COM PROMO 6M',
@@ -342,8 +342,7 @@ function mostrarTabelaDoGrupo(cidadeDigitada) {
     'Adamantina-SP': 'ESPECIAL+ COM PROMO 6M',
     'Agudos-SP': 'ESPECIAL+ COM PROMO 6M',
     'Alvares Machado-SP': 'ESPECIAL+ COM PROMO 6M',
-    'Americo Brasiliense-SP': 'ESPECIAL+ COM PROMO 6M',
-    'Amparo-SP': 'ESPECIAL+ COM PROMO 6M',
+   
     'Andradina-SP': 'ESPECIAL+ COM PROMO 6M',
     'Aracruz-ES': 'ESPECIAL+ COM PROMO 6M',
     'Araguari-MG': 'ESPECIAL+ COM PROMO 6M',
@@ -359,9 +358,9 @@ function mostrarTabelaDoGrupo(cidadeDigitada) {
     'Birigui-SP': 'ESPECIAL+ COM PROMO 6M',
     'Boituva-SP': 'ESPECIAL+ COM PROMO 6M',
     'Cabo Frio-RJ': 'ESPECIAL+ COM PROMO 6M',
-    'Cabreuva-SP': 'ESPECIAL+ COM PROMO 6M',
-    'Cajamar-SP': 'ESPECIAL+ COM PROMO 6M',
-    'Campo Limpo Paulista-SP': 'ESPECIAL+ COM PROMO 6M',
+  
+
+  
     'Campos Do Jordao-SP': 'ESPECIAL+ COM PROMO 6M',
     'Casa Branca-SP': 'ESPECIAL+ COM PROMO 6M',
     'Cataguases-MG': 'ESPECIAL+ COM PROMO 6M',
@@ -369,7 +368,7 @@ function mostrarTabelaDoGrupo(cidadeDigitada) {
     'Cerquilho-SP': 'ESPECIAL+ COM PROMO 6M',
     'Colatina-ES': 'ESPECIAL+ COM PROMO 6M',
     'Conselheiro Lafaiete-MG': 'ESPECIAL+ COM PROMO 6M',
-    'Cordeiropolis-SP': 'ESPECIAL+ COM PROMO 6M',
+
     'Coronel Fabriciano-MG': 'ESPECIAL+ COM PROMO 6M',
     'Cravinhos-SP': 'ESPECIAL+ COM PROMO 6M',
     'Descalvado-SP': 'ESPECIAL+ COM PROMO 6M',
@@ -385,20 +384,20 @@ function mostrarTabelaDoGrupo(cidadeDigitada) {
     'Ibiuna-SP': 'ESPECIAL+ COM PROMO 6M',
     'Ipero-SP': 'ESPECIAL+ COM PROMO 6M',
     'Itabira-MG': 'ESPECIAL+ COM PROMO 6M',
-    'Itaguai-RJ': 'ESPECIAL+ COM PROMO 6M',
+
     'Itajuba-MG': 'ESPECIAL+ COM PROMO 6M',
     'Itapeva-SP': 'ESPECIAL+ COM PROMO 6M',
     'Itapira-SP': 'ESPECIAL+ COM PROMO 6M',
-    'Itaquaquecetuba-SP': 'ESPECIAL+ COM PROMO 6M',
+   
     'Itauna-MG': 'ESPECIAL+ COM PROMO 6M',
     'Ituiutaba-MG': 'ESPECIAL+ COM PROMO 6M',
     'Ituverava-SP': 'ESPECIAL+ COM PROMO 6M',
     'Jaboticabal-SP': 'ESPECIAL+ COM PROMO 6M',
     'Jales-SP': 'ESPECIAL+ COM PROMO 6M',
     'Jardinopolis-SP': 'ESPECIAL+ COM PROMO 6M',
-    'Jarinu-SP': 'ESPECIAL+ COM PROMO 6M',
+
     'Jose Bonifacio-SP': 'ESPECIAL+ COM PROMO 6M',
-    'Lagoa Santa-MG': 'ESPECIAL+ COM PROMO 6M',
+   
     'Laranjal Paulista-SP': 'ESPECIAL+ COM PROMO 6M',
     'Lavras-MG': 'ESPECIAL+ COM PROMO 6M',
     'Leme-SP': 'ESPECIAL+ COM PROMO 6M',
@@ -424,7 +423,7 @@ function mostrarTabelaDoGrupo(cidadeDigitada) {
   'Pedreira-SP': 'ESPECIAL+ COM PROMO 6M',
   'Penapolis-SP': 'ESPECIAL+ COM PROMO 6M',
   'Piedade-SP': 'ESPECIAL+ COM PROMO 6M',
-  'Piracaia-SP': 'ESPECIAL+ COM PROMO 6M',
+
   'Pirassununga-SP': 'ESPECIAL+ COM PROMO 6M',
   'Pocos De Caldas-MG': 'ESPECIAL+ COM PROMO 6M',
   'Pontal-SP': 'ESPECIAL+ COM PROMO 6M',
@@ -436,9 +435,9 @@ function mostrarTabelaDoGrupo(cidadeDigitada) {
   'Registro-SP': 'ESPECIAL+ COM PROMO 6M',
   'Santa Cruz das Palmeiras-SP': 'ESPECIAL+ COM PROMO 6M',
   'Santa Cruz Do Rio Pardo-SP': 'ESPECIAL+ COM PROMO 6M',
-  'Santa Gertrudes-SP': 'ESPECIAL+ COM PROMO 6M',
-  'Santa Isabel-SP': 'ESPECIAL+ COM PROMO 6M',
-  'Santa Luzia-MG': 'ESPECIAL+ COM PROMO 6M',
+
+ 
+
   'Santa Rosa De Viterbo-SP': 'ESPECIAL+ COM PROMO 6M',
   'Sao Joao Da Boa Vista-SP': 'ESPECIAL+ COM PROMO 6M',
   'Sao Joao Del Rei-MG': 'ESPECIAL+ COM PROMO 6M',
@@ -456,28 +455,28 @@ function mostrarTabelaDoGrupo(cidadeDigitada) {
   'Uba-MG': 'ESPECIAL+ COM PROMO 6M',
   'Valenca-RJ': 'ESPECIAL+ COM PROMO 6M',
   'Valparaiso-SP': 'ESPECIAL+ COM PROMO 6M',
-  'Varzea Paulista-SP': 'ESPECIAL+ COM PROMO 6M',
+ 
   'Vassouras-RJ': 'ESPECIAL+ COM PROMO 6M',
-  'Vespasiano-MG': 'ESPECIAL+ COM PROMO 6M',
+
   'Vicosa-MG': 'ESPECIAL+ COM PROMO 6M',
   'Votuporanga-SP': 'ESPECIAL+ COM PROMO 6M',
   'Cacoal-RO': 'ESPECIAL+ COM PROMO 6M',
   'Castanhal-PA': 'ESPECIAL+ COM PROMO 6M',
   'Gurupi-TO': 'ESPECIAL+ COM PROMO 6M',
   'Ji-Parana-RO': 'ESPECIAL+ COM PROMO 6M',
-  'Macapa-AP': 'ESPECIAL+ COM PROMO 6M',
+
   'Maraba-PA': 'ESPECIAL+ COM PROMO 6M',
   'Paragominas-PA': 'ESPECIAL+ COM PROMO 6M',
   'Paraiso Do Tocantins-TO': 'ESPECIAL+ COM PROMO 6M',
   'Parauapebas-PA': 'ESPECIAL+ COM PROMO 6M',
   'Vilhena-RO': 'ESPECIAL+ COM PROMO 6M',
   'Alagoinhas-BA': 'ESPECIAL+ COM PROMO 6M',
-  'Aquiraz-CE': 'ESPECIAL+ COM PROMO 6M',
+
   'Arapiraca-AL': 'ESPECIAL+ COM PROMO 6M',
   'Barreiras-BA': 'ESPECIAL+ COM PROMO 6M',
   'Caxias-MA': 'ESPECIAL+ COM PROMO 6M',
   'Eunapolis-BA': 'ESPECIAL+ COM PROMO 6M',
-  'Eusebio-CE': 'ESPECIAL+ COM PROMO 6M',
+
   'Feira De Santana-BA': 'ESPECIAL+ COM PROMO 6M',
   'Ilheus-BA': 'ESPECIAL+ COM PROMO 6M',
   'Imperatriz-MA': 'ESPECIAL+ COM PROMO 6M',
@@ -511,33 +510,33 @@ function mostrarTabelaDoGrupo(cidadeDigitada) {
   'Ponta Grossa-PR': 'ESPECIAL+ COM PROMO 6M',
   'Santa Cruz Do Sul-RS': 'ESPECIAL+ COM PROMO 6M',
   'Santa Maria-RS': 'ESPECIAL+ COM PROMO 6M',
-  'Sao Leopoldo-RS': 'ESPECIAL+ COM PROMO 6M',
+
   'Uruguaiana-RS': 'ESPECIAL+ COM PROMO 6M',
   'Aracatuba-SP': 'ESPECIAL+ COM PROMO 6M',
-  'Artur Nogueira-SP': 'ESPECIAL+ COM PROMO 6M',
+ 
   'Barra Mansa-RJ': 'ESPECIAL+ COM PROMO 6M',
-  'Bertioga-SP': 'ESPECIAL+ COM PROMO 6M',
+
   'Cachoeira Paulista-SP': 'ESPECIAL+ COM PROMO 6M',
   'Cachoeiro De Itapemirim-ES': 'ESPECIAL+ COM PROMO 6M',
   'Cruzeiro-SP': 'ESPECIAL+ COM PROMO 6M',
   'Governador Valadares-MG': 'ESPECIAL+ COM PROMO 6M',
   'Guaratingueta-SP': 'ESPECIAL+ COM PROMO 6M',
-  'Hortolandia-SP': 'ESPECIAL+ COM PROMO 6M',
+
   'Ipatinga-MG': 'ESPECIAL+ COM PROMO 6M',
   'Itapetininga-SP': 'ESPECIAL+ COM PROMO 6M',
   'Juiz De Fora-MG': 'ESPECIAL+ COM PROMO 6M',
-  'Limeira-SP': 'ESPECIAL+ COM PROMO 6M',
+
   'Lorena-SP': 'ESPECIAL+ COM PROMO 6M',
   'Macae-RJ': 'ESPECIAL+ COM PROMO 6M',
   'Marilia-SP': 'ESPECIAL+ COM PROMO 6M',
-  'Nilopolis-RJ': 'ESPECIAL+ COM PROMO 6M',
-  'Nova Iguacu-RJ': 'ESPECIAL+ COM PROMO 6M',
-  'Nova Lima-MG': 'ESPECIAL+ COM PROMO 6M',
+
+
+
   'Petropolis-RJ': 'ESPECIAL+ COM PROMO 6M',
   'Pindamonhangaba-SP': 'ESPECIAL+ COM PROMO 6M',
   'Resende-RJ': 'ESPECIAL+ COM PROMO 6M',
   'Sete Lagoas-MG': 'ESPECIAL+ COM PROMO 6M',
-  'Sumare-SP': 'ESPECIAL+ COM PROMO 6M',
+
   'Uberaba-MG': 'ESPECIAL+ COM PROMO 6M',
   'Uberlandia-MG': 'ESPECIAL+ COM PROMO 6M',
   'Varginha-MG': 'ESPECIAL+ COM PROMO 6M',
@@ -548,6 +547,40 @@ function mostrarTabelaDoGrupo(cidadeDigitada) {
   'Caruaru-PE': 'ESPECIAL+ COM PROMO 6M',
   'Vitoria Da Conquista-BA': 'ESPECIAL+ COM PROMO 6M',
 
+
+    'Belford Roxo-RJ': 'ESPECIAL+ COM PROMO 3M',
+    'Betim-MG': 'ESPECIAL+ COM PROMO 3M',
+    'Duque de Caxias-RJ': 'ESPECIAL+ COM PROMO 3M',
+    'Nova Odessa-SP': 'ESPECIAL+ COM PROMO 3M',
+    'São João de Meriti-RJ': 'ESPECIAL+ COM PROMO 3M',
+    'São Francisco do Sul-SC': 'ESPECIAL+ COM PROMO 3M',
+    'São Leopoldo-RS': 'ESPECIAL+ COM PROMO 3M',
+    'Américo Brasiliense-SP': 'ESPECIAL+ COM PROMO 3M',
+    'Cabreúva-SP': 'ESPECIAL+ COM PROMO 3M',
+    'Cajamar-SP': 'ESPECIAL+ COM PROMO 3M',
+    'Campo Limpo Paulista-SP': 'ESPECIAL+ COM PROMO 3M',
+    'Cordeirópolis-SP': 'ESPECIAL+ COM PROMO 3M',
+    'Itaguaí-RJ': 'ESPECIAL+ COM PROMO 3M',
+    'Itaquaquecetuba-SP': 'ESPECIAL+ COM PROMO 3M',
+    'Jarinu-SP': 'ESPECIAL+ COM PROMO 3M',
+    'Lagoa Santa-MG': 'ESPECIAL+ COM PROMO 3M',
+    'Piracaia-SP': 'ESPECIAL+ COM PROMO 3M',
+    'Santa Gertrudes-SP': 'ESPECIAL+ COM PROMO 3M',
+    'Santa Isabel-SP': 'ESPECIAL+ COM PROMO 3M',
+    'Santa Luzia-MG': 'ESPECIAL+ COM PROMO 3M',
+    'Vargem Paulista-SP': 'ESPECIAL+ COM PROMO 3M',
+    'Vespasiano-MG': 'ESPECIAL+ COM PROMO 3M',
+    'Artur Nogueira-SP': 'ESPECIAL+ COM PROMO 3M',
+    'Bertioga-SP': 'ESPECIAL+ COM PROMO 3M',
+    'Hortolândia-SP': 'ESPECIAL+ COM PROMO 3M',
+    'Limeira-SP': 'ESPECIAL+ COM PROMO 3M',
+    'Nilópolis-RJ': 'ESPECIAL+ COM PROMO 3M',
+    'Nova Iguaçu-RJ': 'ESPECIAL+ COM PROMO 3M',
+    'Nova Lima-MG': 'ESPECIAL+ COM PROMO 3M',
+    'Sumaré-SP': 'ESPECIAL+ COM PROMO 3M',
+    'Macapá-AP': 'ESPECIAL+ COM PROMO 3M',
+    'Aquiraz-CE': 'ESPECIAL+ COM PROMO 3M',
+    'Eusébio-CE': 'ESPECIAL+ COM PROMO 3M',
 
 
 
@@ -595,7 +628,6 @@ function mostrarTabelaDoGrupo(cidadeDigitada) {
   'Valinhos-SP': 'ESPECIAL',
   'Vila Velha-ES': 'ESPECIAL',
   'Vitoria-ES': 'ESPECIAL',
-  'Campo Grande-MS': 'ESPECIAL',
   'Cuiaba-MT': 'ESPECIAL',
   'Ananindeua-PA': 'ESPECIAL',
   'Belem-PA': 'ESPECIAL',
@@ -607,6 +639,8 @@ function mostrarTabelaDoGrupo(cidadeDigitada) {
   'Paulista-PE': 'ESPECIAL',
   'Recife-PE': 'ESPECIAL',
   'Sao Luis-MA': 'ESPECIAL',
+
+  'Campo Grande-MS': 'ESPECIAL COM PROMO 3M',
 
   'Curitiba-PR':'ESPECIAL SEM 125M',
 

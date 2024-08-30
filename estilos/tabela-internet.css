@@ -204,9 +204,9 @@ th,td {
 }
 
 #plano{
-    background-color: darkgray;
+    background-color: rgb(129, 129, 129);
     font-size: 1.1em;
-    color: black;
+    color: rgb(255, 255, 255);
     text-align: bolder; 
 }
 #plano1{
@@ -239,7 +239,35 @@ th,td {
 #center1{
     text-align: center;
 }
+#mb250tr{
+    background-color: #343a40;
+    color: white;
+}
 
+#mb250 {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    animation: blink 1s infinite;
+}
+#mb250 > td {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {
+        background-color: #343a40;
+    }
+    50% {
+        background-color: #6c757d; /* Cor mais clara, ajuste conforme necessário */
+    }
+    100% {
+        background-color: #343a40;
+    }
+}
 
 .hidden {
     display: none;

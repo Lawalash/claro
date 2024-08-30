@@ -441,6 +441,8 @@ function mostrarTabelaDoGrupo(cidadeDigitada) {
   'Santa Rosa De Viterbo-SP': 'ESPECIAL+ COM PROMO 6M',
   'Sao Joao Da Boa Vista-SP': 'ESPECIAL+ COM PROMO 6M',
   'Sao Joao Del Rei-MG': 'ESPECIAL+ COM PROMO 6M',
+  'Sao Joao De Meriti-RJ': 'ESPECIAL+ COM PROMO 6M',
+  
   'Sao Joaquim Da Barra-SP': 'ESPECIAL+ COM PROMO 6M',
   'Sao Jose Do Rio Pardo-SP': 'ESPECIAL+ COM PROMO 6M',
   'Sao Pedro Da Aldeia-RJ': 'ESPECIAL+ COM PROMO 6M',
@@ -739,7 +741,15 @@ function mostrarTabelaDoGrupo(cidadeDigitada) {
     }
 }
 
+// Se quiser um efeito mais personalizado, pode usar JavaScript para controlar a animação
+// Por exemplo, para iniciar e parar a animação em momentos específicos
+ function startBlink() {
+    document.getElementById('mb250').style.animationPlayState = 'running';
+}
 
+ function stopBlink() {
+    document.getElementById('mb250').style.animationPlayState = 'paused';
+}
 
 // Função para mostrar a tabela do grupo selecionado
 function mostrarTabela(grupo) {

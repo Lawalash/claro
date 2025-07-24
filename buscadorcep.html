@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscador de CEP</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/estilos/buscadorcep.css">
+</head>
+<body>
+  <header>
+    <div class="menu-content">
+      <div class="menu-toggle"></div>
+      <a href="home.html" class="logo">TABELA DE PREÇO</a>
+      <nav class="header-menu">
+        <ul class="list-itens">
+          <li><a href="tabelainternet.html">INTERNET</a></li>
+          <li><a href="tabelaclarotv.html">CLARO TV BOX</a></li>
+          <li><a href="tabelamovel.html">MÓVEL</a></li>
+          <li><a href="tabelafixo.html">FIXO</a></li>
+          <li><a  onclick="return false;" href="buscadorcep.html">BUSCA CEP</a></li>
+          <li><a href="blocodenotas.html">BLOCO DE NOTAS</a></li>
+          <li><a href="tabelacheck.html">CHECKLIST</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div id="alerta" class="alert d-none" role="alert">
+    <i class="fas fa-check-circle"></i>
+    <span>Endereço copiado com sucesso!</span>
+  </div>
+
+  <section>
+    <div class="container">
+      <h1><i class="fas fa-map-marker-alt"></i> Buscador de CEP</h1>
+      <p>Digite o CEP para encontrar o endereço completo</p>
+
+      <div class="card">
+        <div class="form-group">
+          <div class="input-container">
+            <i class="fas fa-search input-icon"></i>
+            <input
+              type="text"
+              class="form-control"
+              id="cep"
+              placeholder="00000-000"
+              maxlength="9"
+            />
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button class="btn btn-primary" id="buscarBtn" onclick="buscarCEP()">
+            <i class="fas fa-search"></i> Buscar
+          </button>
+          <button class="btn btn-secondary" onclick="limparCEP()">
+            <i class="fas fa-eraser"></i> Limpar
+          </button>
+        </div>
+
+        <div id="resultado"></div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./estilosJS/buscadorcep.js"></script>
+</body>
+</html>

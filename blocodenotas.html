@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloco de Notas</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./estilos/blocodenotas.css">
+</head>
+<body>
+   <header>
+    <div class="menu-content">
+      <div class="menu-toggle"></div>
+      <a href="home.html" class="logo">TABELA DE PREÇO</a>
+      <nav class="header-menu">
+        <ul class="list-itens">
+          <li><a href="tabelainternet.html">INTERNET</a></li>
+          <li><a href="tabelaclarotv.html">CLARO TV BOX</a></li>
+          <li><a href="tabelamovel.html">MÓVEL</a></li>
+          <li><a href="tabelafixo.html">FIXO</a></li>
+          <li><a href="buscadorcep.html">BUSCA CEP</a></li>
+          <li><a  onclick="return false;"  href="blocodenotas.html">BLOCO DE NOTAS</a></li>
+          <li><a href="tabelacheck.html">CHECKLIST</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div id="alerta" class="alert d-none" role="alert">
+    <i class="fas fa-check-circle"></i>
+    <span id="alertText">Texto salvo automaticamente!</span>
+  </div>
+
+  <section>
+    <div class="container">
+      <h1><i class="fas fa-sticky-note"></i> Bloco de Notas</h1>
+      <p>Suas anotações são organizadas e salvas automaticamente no seu navegador</p>
+
+      <div class="notes-layout">
+        <!-- Sidebar com lista de notas -->
+        <div class="sidebar">
+          <h3><i class="fas fa-list"></i> Minhas Notas</h3>
+          
+          <div class="search-section">
+            <input type="text" class="search-input" id="searchInput" placeholder="Buscar nas notas...">
+            <div class="date-filters">
+              <button class="filter-btn active" data-filter="all">Todas</button>
+              <button class="filter-btn" data-filter="today">Hoje</button>
+              <button class="filter-btn" data-filter="week">Esta Semana</button>
+              <button class="filter-btn" data-filter="month">Este Mês</button>
+            </div>
+          </div>
+
+          <div class="notes-list" id="notesList">
+            <!-- Notas serão inseridas aqui dinamicamente -->
+          </div>
+
+          <button class="btn btn-primary" onclick="createNewNote()" style="width: 100%; margin-top: 1rem;">
+            <i class="fas fa-plus"></i> Nova Nota
+          </button>
+        </div>
+
+        <!-- Editor principal -->
+        <div class="main-editor">
+          <div class="card">
+            <div class="toolbar">
+              <div class="toolbar-left">
+                <button class="btn btn-secondary btn-icon" onclick="formatText('bold')" title="Negrito">
+                  <i class="fas fa-bold"></i>
+                </button>
+                <button class="btn btn-secondary btn-icon" onclick="formatText('italic')" title="Itálico">
+                  <i class="fas fa-italic"></i>
+                </button>
+                <button class="btn btn-secondary btn-icon" onclick="formatText('underline')" title="Sublinhado">
+                  <i class="fas fa-underline"></i>
+                </button>
+                <button class="btn btn-secondary" onclick="insertDateTime()">
+                  <i class="fas fa-clock"></i> Data/Hora
+                </button>
+              </div>
+              <div class="toolbar-right">
+                <div class="status-info">
+                  <div class="word-count">
+                    <i class="fas fa-chart-bar"></i>
+                    <span id="wordCount">0 palavras</span>
+                  </div>
+                  <div class="save-status saved" id="saveStatus">
+                    <i class="fas fa-check"></i>
+                    <span>Salvo</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+           <div class="editor-container">
+            <input type="text" class="title-input" id="noteTitle" placeholder="Título da nota...">
+            <div
+                class="editor"
+                id="noteEditor"
+                contenteditable="true"
+                data-placeholder="Comece a escrever suas anotações aqui...">
+            </div>
+            </div>
+
+
+            <div class="toolbar bottom-toolbar">
+              <div class="toolbar-left">
+                <button class="btn btn-primary" onclick="saveCurrentNote()">
+                  <i class="fas fa-save"></i> Salvar Nota
+                </button>
+                <button class="btn btn-secondary" onclick="duplicateNote()">
+                  <i class="fas fa-copy"></i> Duplicar
+                </button>
+                <button class="btn btn-secondary" onclick="deleteCurrentNote()">
+                  <i class="fas fa-trash"></i> Excluir
+                </button>
+              </div>
+              <div class="toolbar-right">
+                <button class="btn btn-secondary" onclick="downloadCurrentNote()">
+                  <i class="fas fa-download"></i> Baixar
+                </button>
+                <button class="btn btn-secondary" onclick="printCurrentNote()">
+                  <i class="fas fa-print"></i> Imprimir
+                </button>
+                <button class="btn btn-secondary" onclick="exportAllNotes()">
+                  <i class="fas fa-file-export"></i> Exportar Todas
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./estilosJS/blocodenotas.js"></script>
+</body>
+</html>
